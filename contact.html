@@ -1,0 +1,85 @@
+---
+layout: default
+---
+<div class="contact-page">
+
+
+<div class="hero hero-homepage contactpage-hero">
+        <div class="container flex-box-1">
+          <div class="row middle-section">
+            <div class="col-txt-1 t-m-order-1">
+              <h3>Get ready to meet your Dear Digital hero.</h3>
+              <p>We seek lasting relationships to help our clients unlock rapid growth at efficient economics. Tell us where you are and where you want to be. Whatever stage you’re at, we’re happy to chat.</p>
+              <h4>Office</h4>
+              <div class="contact-address">Vlasgaardstraat 52 <br> 9000 Ghent, Belgium <br> <span class="underline-pink">Route</span>  <br>
+                <a class="underline-pink" href="mailto:info@deardigital.be">info@deardigital.be</a>
+              </div>
+              <div class="footer-middle-right justify-space-bet flex-box">
+                <div class="footer-social-logo">
+                  <a href="#" class="footer-social-logo-link">
+                    <img src="assets/icons/footer-insta.svg" alt="Footer Insta" />
+                  </a>
+                </div>
+                <div class="footer-social-logo">
+                  <a href="#" class="footer-social-logo-link">
+                    <img src="assets/icons/footer-linkedin.svg" alt="Footer Linkedin" />
+                  </a>
+                </div>
+                <div class="footer-social-logo">
+                  <a href="#" class="footer-social-logo-link">
+                    <img src="assets/icons/footer-fb.svg" alt="Footer Fb" />
+                  </a>
+                </div>
+                <div class="footer-social-logo">
+                  <a href="#" class="footer-social-logo-link">
+                    <img src="assets/icons/footer-spotify.svg" alt="Footer Spotify" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-txt-1 t-m-order-2">
+              <h4>Tell us about you</h4>
+              <form id="customer-contact" method="post">
+                <label for="CustomerName">What’s your name?</label>
+                <input type="text" class="white-border" placeholder="Samuel" name="customer[Name]" id="CustomerName" autocorrect="off" autocapitalize="off" required>
+                <label for="CustomerEmail">what is your emailaddress?</label>
+                <input type="text" class="white-border" placeholder="Hello@yourdomain.be" name="customer[Email]" id="CustomerEmail" autocorrect="off" autocapitalize="off" required>
+                <label for="CustomerCompany">what is your company name?</label>
+                <input type="text" class="white-border" placeholder="company" name="customer[Company]" id="CustomerCompany" autocorrect="off" autocapitalize="off" required>
+                <label for="CustomerPhone">what is your phone number?</label>
+                <input type="text" class="white-border" placeholder="+32 00 000 000" name="customer[Phone]" id="CustomerPhone" autocorrect="off" autocapitalize="off" required>
+                <label for="CustomerProject">Describe your project</label>
+                <input type="text" class="white-border" placeholder="Services, scope, timeline, etc…" name="customer[Project]" id="CustomerProject" autocorrect="off" autocapitalize="off" required>
+                <label for="CustomerBudget">what’s your budget?</label>
+                <input type="range" min="1000" max="100000" value="15000" class="slider" id="mobileRange">
+		            <p class="amount">€<span id="budget"></span></p>
+                <label class="checkbox-container">I’m glad to subscribe to your epic monthly insights
+                  <input type="checkbox" checked="checked">
+                  <span class="checkmark"></span>
+                </label>
+                <button class="btn" type="submit">
+                  <span>We’ll get back to you in 24h<span class="pink-dot">.</span></span>
+                    <img src="assets/icons/arrow-white.svg" alt="white arrow btn"></a>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {% include testimonial.html %}
+
+</div>
+      <script>
+        $(document).ready(function(){
+        var slider = document.getElementById("mobileRange");
+            var output = document.getElementById("budget");
+            output.innerHTML = slider.value;
+
+            slider.oninput = function() {
+              output.innerHTML = this.value;
+              var value = (this.value-this.min)/(this.max-this.min)*100
+              this.style.background = 'linear-gradient(to right, #DB9195 0%, #DB9195 ' + value + '%, #fff ' + value + '%, white 100%)'
+          }
+          });
+      </script>
