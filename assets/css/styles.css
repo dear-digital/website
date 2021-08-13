@@ -80,8 +80,8 @@ header {
   position: relative;
   width: 100%;
   height: 126px !important;
-  max-width: 1246px;
-  padding: 0 25px;
+  /* max-width: 1246px;
+  padding: 0 25px; */
   margin: 0 auto;
 }
 header nav.left-nav {
@@ -104,6 +104,7 @@ header .header-nav-list {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    margin: 0 -24px;
 }
 header .header-nav-list li {
     display: inline-flex;
@@ -1933,17 +1934,38 @@ input[type=number]::-webkit-outer-spin-button {
 	width: 100%;
 	height: 2px;
 	cursor: pointer;
-	background: linear-gradient(to right, #202248 0%, #202248 0%, #B7BAEE 0%, #B7BAEE 100%);
+  background-color: #B7BAEE;
+	/* background: linear-gradient(to right, #202248 0%, #202248 0%, #B7BAEE 0%, #B7BAEE 100%); */
 	border-radius: 0;
 }
 
 .time-bar input[type="range"]::-webkit-slider-thumb {
   /* display: none; */
   opacity: 0;
+  /* -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  /* box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; */ */
 }
 
 .time-bar {
     width: 80%;
+}
+
+.time-bar-timer{
+  position: relative;
+}
+
+.audio-completed{
+  height: 2px;
+    bottom: 18px;
+    position: absolute;
+    background-color: #202248;
 }
 
 .start-time-end-time {
