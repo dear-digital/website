@@ -34,13 +34,9 @@
         <header class="header">
         <div class="header-wrapper">
           <nav class="left-nav">
-<<<<<<< HEAD
-            <a href="/"><img class="no-t-m" src="/website/assets/icons/Header-Logo.svg" alt="Header Logo" /></a>
-            <a href="/"><img class="no-d" src="/website/assets/icons/footer-logo.svg" alt="Header Logo" /></a>
-=======
+            
             <a href="/website/"><img class="no-t-m" src="/website/assets/icons/Header-Logo.svg" alt="Header Logo" /></a>
             <a href="/website/"><img class="no-d" src="/website/assets/icons/footer-logo.svg" alt="Header Logo" /></a>
->>>>>>> 4fe5493e396e119118bcfe7635a8cf218eb5231f
           </nav>
           <nav class="right-nav">
             <ul class="header-nav-list header-nav-list-small">
@@ -267,7 +263,7 @@
             </div>
             <div class="time-bar">
               <div class="time-bar-timer">
-                <audio class="audio-player no-disp" src="/assets/audio/horse.mp3" controls type="audio/mpeg" preload="auto">
+                <audio class="audio-player no-disp" src="/website/assets/audio/horse.mp3" controls type="audio/mpeg" preload="auto">
 
                 </audio>
                 <input class="progress" type="range" min="0" max="151" value="0">
@@ -340,7 +336,7 @@
             </div>
             <div class="time-bar">
               <div class="time-bar-timer">
-                <audio class="audio-player no-disp" src="/assets/audio/audio.mp3" controls type="audio/mpeg" preload="auto">
+                <audio class="audio-player no-disp" src="/website/assets/audio/audio.mp3" controls type="audio/mpeg" preload="auto">
 
                 </audio>
                 <input class="progress" type="range" min="0" max="151" value="0">
@@ -413,7 +409,7 @@
             </div>
             <div class="time-bar">
               <div class="time-bar-timer">
-                <audio class="audio-player no-disp" src="/assets/audio/horse.mp3" controls type="audio/mpeg" preload="auto">
+                <audio class="audio-player no-disp" src="/website/assets/audio/horse.mp3" controls type="audio/mpeg" preload="auto">
 
                 </audio>
                 <input class="progress" type="range" min="0" max="151" value="0">
@@ -589,7 +585,10 @@ $('.audio-player').each(function() {
   var duration = parent.find('.end-time');
   var playTime = parent.find('.time-played');
   var tot_dur = audio.duration;
+  var cut_time = tot_dur - 0.02;
+  console.log(tot_dur);
   var cur_time = audio.currentTime;
+  var delay = 20;
 
 
   audio.addEventListener("loadedmetadata", function(_event) {
@@ -602,10 +601,14 @@ $('.audio-player').each(function() {
     var curr_time = Math.round(audio.currentTime);
     curr_time = secondsTimeSpanToHMS(curr_time);
     playTime.text(curr_time);
+    if(cur_time == tot_dur){
+      console.log('over');
+    }
+
   }
 
-  
-  setInterval(function(){ update(); }, 20);
+
+  setInterval(function(){ update(); }, delay);
 
   playBtn.click(function(e) {
     if(audio.paused){

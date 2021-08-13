@@ -115,7 +115,7 @@ layout: default
             </div>
             <div class="time-bar">
               <div class="time-bar-timer">
-                <audio class="audio-player no-disp" src="/assets/audio/horse.mp3" controls type="audio/mpeg" preload="auto">
+                <audio class="audio-player no-disp" src="{{ '/assets/audio/horse.mp3' | relative_url }}" controls type="audio/mpeg" preload="auto">
 
                 </audio>
                 <input class="progress" type="range" min="0" max="151" value="0">
@@ -188,7 +188,7 @@ layout: default
             </div>
             <div class="time-bar">
               <div class="time-bar-timer">
-                <audio class="audio-player no-disp" src="/assets/audio/audio.mp3" controls type="audio/mpeg" preload="auto">
+                <audio class="audio-player no-disp" src="{{ '/assets/audio/audio.mp3' | relative_url }}" controls type="audio/mpeg" preload="auto">
 
                 </audio>
                 <input class="progress" type="range" min="0" max="151" value="0">
@@ -261,7 +261,7 @@ layout: default
             </div>
             <div class="time-bar">
               <div class="time-bar-timer">
-                <audio class="audio-player no-disp" src="/assets/audio/horse.mp3" controls type="audio/mpeg" preload="auto">
+                <audio class="audio-player no-disp" src="{{ '/assets/audio/horse.mp3' | relative_url }}" controls type="audio/mpeg" preload="auto">
 
                 </audio>
                 <input class="progress" type="range" min="0" max="151" value="0">
@@ -437,7 +437,10 @@ $('.audio-player').each(function() {
   var duration = parent.find('.end-time');
   var playTime = parent.find('.time-played');
   var tot_dur = audio.duration;
+  var cut_time = tot_dur - 0.02;
+  console.log(tot_dur);
   var cur_time = audio.currentTime;
+  var delay = 20;
 
 
   audio.addEventListener("loadedmetadata", function(_event) {
@@ -450,10 +453,14 @@ $('.audio-player').each(function() {
     var curr_time = Math.round(audio.currentTime);
     curr_time = secondsTimeSpanToHMS(curr_time);
     playTime.text(curr_time);
+    if(cur_time == tot_dur){
+      console.log('over');
+    }
+
   }
 
-  
-  setInterval(function(){ update(); }, 20);
+
+  setInterval(function(){ update(); }, delay);
 
   playBtn.click(function(e) {
     if(audio.paused){
