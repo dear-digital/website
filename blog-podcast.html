@@ -115,7 +115,7 @@ layout: default
             </div>
             <div class="time-bar">
               <div class="time-bar-timer">
-                <audio id="audio-player" class="audio-player no-disp" src="/assets/audio/horse.mp3" controls type="audio/mpeg" preload="auto">
+                <audio class="audio-player no-disp" src="/assets/audio/horse.mp3" controls type="audio/mpeg" preload="auto">
 
                 </audio>
                 <input class="progress" type="range" min="0" max="151" value="0">
@@ -188,7 +188,7 @@ layout: default
             </div>
             <div class="time-bar">
               <div class="time-bar-timer">
-                <audio id="audio-player" class="audio-player no-disp" src="/assets/audio/horse.mp3" controls type="audio/mpeg" preload="auto">
+                <audio class="audio-player no-disp" src="/assets/audio/audio.mp3" controls type="audio/mpeg" preload="auto">
 
                 </audio>
                 <input class="progress" type="range" min="0" max="151" value="0">
@@ -261,7 +261,80 @@ layout: default
             </div>
             <div class="time-bar">
               <div class="time-bar-timer">
-                <audio id="audio-player" class="audio-player no-disp" src="/assets/audio/horse.mp3" controls type="audio/mpeg" preload="auto">
+                <audio class="audio-player no-disp" src="/assets/audio/horse.mp3" controls type="audio/mpeg" preload="auto">
+
+                </audio>
+                <input class="progress" type="range" min="0" max="151" value="0">
+              </div>
+              <div class="start-time-end-time flex-box justify-space-bet">
+                <div class="time-played audio-time">
+
+                </div>
+                <div class="end-time audio-time">
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="share-podcast flex-box justify-space-bet">
+            <a href="#" class="share-podcast-icon">
+              <img src="/assets/icons/yt.svg" alt="share">
+            </a>
+            <a href="#" class="share-podcast-icon">
+              <img src="/assets/icons/podcast-logo.svg" alt="share">
+            </a>
+            <a href="#" class="share-podcast-icon">
+              <img src="/assets/icons/spotify-black.svg" alt="share">
+            </a>
+            <a href="#" class="share-podcast-icon">
+              <img src="/assets/icons/yt.svg" alt="share">
+            </a>
+            <a href="#" class="share-podcast-icon">
+              <img src="/assets/icons/podcast-logo.svg" alt="share">
+            </a>
+            <a href="#" class="share-podcast-icon">
+              <img src="/assets/icons/spotify-black.svg" alt="share">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="podcast-card flex-box justify-space-bet">
+        <div class="podcast-img">
+          <span class="navigation-svg"><img src="assets/icons/podcast.svg" alt="Article"></span>
+          <span class="dd-logo"><img src="assets/icons/footer-logo.svg" alt="Footer Logo" /></span>
+        </div>
+        <div class="podcast-info">
+          <div class="article-date-time flex-box">
+            <div class="article-date">
+              May 27, 2021
+            </div>
+            <div class="pink-dot-small"></div>
+            <div class="article-read-time">
+              1:14 h audio
+            </div>
+          </div>
+          <div class="article-title">
+            #132: Gimber insights
+          </div>
+          <div class="podcast-description">
+            orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.
+            orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+          </div>
+        </div>
+        <div class="podcast-player-section">
+          <div class="podcast-player-title">
+            Luister hier of via je favoriete Podcast app.
+          </div>
+          <div class="podcast-player flex-box justify-space-bet">
+            <div class="play-button flex-box">
+              <div class="controller play">
+
+              </div>
+            </div>
+            <div class="time-bar">
+              <div class="time-bar-timer">
+                <audio class="audio-player no-disp" src="/assets/audio/horse.mp3" controls type="audio/mpeg" preload="auto">
 
                 </audio>
                 <input class="progress" type="range" min="0" max="151" value="0">
@@ -356,44 +429,42 @@ function secondsTimeSpanToHMS(s) {
   return h + ":" + (m < 10 ? '0' + m : m) + ":" + (s < 10 ? '0' + s : s); //zero padding on minutes and seconds
 }
 
-var audio = $('.audio-player')[0];
-var playBtn = $('.play-button');
-var prog = $('.progress');
-var duration = $('.end-time');
-var playTime = $('.time-played');
-var tot_dur = audio.duration;
-var cur_time = audio.currentTime;
+$('.audio-player').each(function() {
+  var audio = $(this)[0];
+  var parent = $(this).parent().parent().parent();
+  var playBtn = parent.find('.play-button');
+  var prog = parent.find('.progress');
+  var duration = parent.find('.end-time');
+  var playTime = parent.find('.time-played');
+  var tot_dur = audio.duration;
+  var cur_time = audio.currentTime;
 
 
-audio.addEventListener("loadedmetadata", function(_event) {
-  var dur = Math.round(audio.duration);
- dur = secondsTimeSpanToHMS(dur);
-    duration.text(dur);
-});
+  audio.addEventListener("loadedmetadata", function(_event) {
+    var dur = Math.round(audio.duration);
+   dur = secondsTimeSpanToHMS(dur);
+      duration.text(dur);
+  });
 
-function update() {
-  var curr_time = Math.round(audio.currentTime);
-  curr_time = secondsTimeSpanToHMS(curr_time);
-  playTime.text(curr_time);
-}
-
-update();
-
-
-
-
-playBtn.click(function(e) {
-  if(audio.paused){
-    audio.play();
-    update();
+  function update() {
+    var curr_time = Math.round(audio.currentTime);
+    curr_time = secondsTimeSpanToHMS(curr_time);
+    playTime.text(curr_time);
   }
-  else{
-    audio.pause();
-  }
+
+  
+  setInterval(function(){ update(); }, 20);
+
+  playBtn.click(function(e) {
+    if(audio.paused){
+      audio.play();
+      update();
+    }
+    else{
+      audio.pause();
+    }
+  });
 });
 
-prog.addEventListener("mouseUp", function (e) {
-	audio.currentTime = prog.value;
-});
 
 </script>
