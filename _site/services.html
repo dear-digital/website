@@ -38,7 +38,8 @@
         <div class="header-wrapper">
           <nav class="left-nav">
 
-            <a href="/website/"><img class="no-t-m" src="/website/assets/icons/Header-Logo.svg" alt="Header Logo" /></a>
+            <a href="/website/"><img class="cart-white no-t-m" src="/website/assets/icons/Header-Logo.svg" alt="Header Logo" /></a>
+            <a href="/website/"><img class="cart-blue no-disp no-t-m" src="/website/assets/icons/Logo-blue.svg" alt="Header Logo" /></a>
             <a href="/website/"><img class="no-d" src="/website/assets/icons/footer-logo.svg" alt="Header Logo" /></a>
           </nav>
           <nav class="right-nav">
@@ -60,7 +61,7 @@
                 </ul>
               </li>
               <li class="no-t-m"><a href="/website/blog-articles">Blog</a></li>
-              <li><a href="/website/cart" class="no-m"><img src="assets/imgs/cart.jpg" alt="cart icon"><span class="cart-item-count">15</span></a></li>
+              <li><a href="/website/cart" class="no-m"><img class="cart-white" src="/website/assets/icons/icon-cart.svg" alt="cart icon"><img class="cart-blue no-disp" src="/website/assets/icons/icon-cart-blue.svg" alt="cart icon"><span class="cart-item-count">15</span></a></li>
               <!-- 06-08-2021 Commit Ends -->
               <li class="no-t-m"><a href="/website/contact"><button class="no-t-m">Contact us<span class="pink-dot">.</span></button></a></li>
               <li class="no-d">
@@ -82,7 +83,7 @@
           </div>
           <div class="cart-and-close-nav flex-box">
             <div class="mobile-nav-cart">
-              <a href="/website/cart" class="mob-nav-cart-link flex-box"><img src="assets/imgs/cart.jpg" alt="cart icon"><span class="cart-item-count">15</span></a>
+              <a href="/website/cart" class="mob-nav-cart-link flex-box"><img src="/website/assets/icons/icon-cart.svg" alt="cart icon"><span class="cart-item-count">15</span></a>
             </div>
             <div class="mobile-nav-close">
               <img src="assets/icons/close.svg" alt="Close" />
@@ -161,11 +162,8 @@
         <div class="small-fonts">
           SERVICES
         </div>
-        <h1 class="hero-heading no-t-m">Deep e-commerce knowledge <br>leading to high growth and <br>efficient tech stacks<span class="pink-dot">.</span>
-          <h1 class="hero-heading no-d">Deep e-commerce knowledge leading to high growth and efficient tech stacks<span class="pink-dot">.</span>
-        <span class="scribble">
-          <img src="assets/icons/scribble.svg" alt="Scribble" />
-        </span>
+          <h1 class="hero-heading"><span class="rel">Deep <img class="scribble deep-scribble" src="/website/assets/icons/scribble.svg" alt=""></span> e-commerce knowledge leading to high growth and efficient tech stacks<span class="pink-dot-heading"></span>
+
         </h1>
         <div class="services-hero-text no-t-m">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean <br>
@@ -184,7 +182,7 @@
     <div class="container">
       <div class="e-comm-sales-navigation-section">
         <div class="e-comm-sales-navigation-links flex-box">
-          <div class="e-comm-sales-navigation nav-link">
+          <div id="sales" class="e-comm-sales-navigation nav-link selected">
             <div class="e-comm-sales-navigation-content flex-box">
               <div class="title-alignment">
                 <span class="small-number">01. </span>
@@ -196,7 +194,7 @@
             </div>
 
           </div>
-          <div class="e-comm-sales-navigation nav-link">
+          <div id="development" class="e-comm-sales-navigation nav-link">
             <div class="e-comm-sales-navigation-content flex-box">
               <div class="title-alignment">
                 <span class="small-number">02. </span>
@@ -209,7 +207,7 @@
 
           </div>
         </div>
-        <div class="e-comm-sales-navigation-titles flex-box">
+        <!-- <div class="e-comm-sales-navigation-titles flex-box">
           <div class="e-comm-sales-navigation nav-title current">
             <div class="e-comm-sales-navigation-content flex-box">
               <div class="title-alignment">
@@ -229,10 +227,10 @@
               </span>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
 
-      <div class="e-comm-sales">
+      <div class="e-comm-sales e-comm-sales-sec">
         <h2 class="e-comm-sales-title"><img class="title-svg" src="assets/icons/sales.svg" alt="Sales" /><span class="small-number">01. </span>E-commerce Sales<span class="pink-dot">.</span></h2>
         <div class="info-cards justify-space-bet flex-box">
           <div class="info-cards-left">
@@ -380,6 +378,7 @@
             </div>
           </div>
         </div>
+        <img class="illustration-moon" src="/website/assets/icons/illustration-moon.svg" alt="">
       </div>
 
 
@@ -440,6 +439,27 @@
 
 
 </div>
+
+<script>
+  $('.e-comm-sales-navigation').click(function() {
+    $('.e-comm-sales-navigation').removeClass('selected');
+    $('.e-comm-sales-navigation').find('.nav-link-arrow').removeClass('down-arrow');
+    $(this).addClass('selected');
+    $(this).find('.nav-link-arrow').addClass('down-arrow');
+  });
+
+  $('#sales').click(function() {
+    $('html, body').animate({
+        scrollTop: $(".e-comm-sales-sec").offset().top
+    }, 500);
+  });
+
+  $('#development').click(function() {
+    $('html, body').animate({
+        scrollTop: $(".e-comm-development").offset().top
+    }, 500);
+  });
+</script>
 
             </main>
         <footer>
