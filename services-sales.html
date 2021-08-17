@@ -29,7 +29,7 @@ layout: default
     <div class="container">
       <div class="e-comm-sales-navigation-section">
         <div class="e-comm-sales-navigation-links flex-box">
-          <div id="sales" class="e-comm-sales-navigation nav-link selected">
+          <a href="{{ '/services-sales' | relative_url }}" id="sales" class="e-comm-sales-navigation nav-link selected">
             <div class="e-comm-sales-navigation-content flex-box">
               <div class="title-alignment">
                 <span class="small-number">01. </span>
@@ -40,8 +40,8 @@ layout: default
               </span>
             </div>
 
-          </div>
-          <div id="development" class="e-comm-sales-navigation nav-link">
+          </a>
+          <a href="{{ '/services-development' | relative_url }}" id="development" class="e-comm-sales-navigation nav-link">
             <div class="e-comm-sales-navigation-content flex-box">
               <div class="title-alignment">
                 <span class="small-number">02. </span>
@@ -52,29 +52,8 @@ layout: default
               </span>
             </div>
 
-          </div>
+          </a>
         </div>
-        <!-- <div class="e-comm-sales-navigation-titles flex-box">
-          <div class="e-comm-sales-navigation nav-title current">
-            <div class="e-comm-sales-navigation-content flex-box">
-              <div class="title-alignment">
-                <span class="small-number">01. </span>
-                <span class="nav-link-text">E-commerce Sales</span>
-              </div>
-            </div>
-          </div>
-          <div class="e-comm-sales-navigation nav-title">
-            <div class="e-comm-sales-navigation-content flex-box">
-              <div class="title-alignment">
-                <span class="small-number">02. </span>
-                <span class="nav-link-text">E-commerce Development</span>
-              </div>
-              <span class="nav-link-arrow">
-                <img src="assets/icons/arrow-blue.svg" alt="Right Arrow" />
-              </span>
-            </div>
-          </div>
-        </div> -->
       </div>
 
       <div class="e-comm-sales e-comm-sales-sec">
@@ -154,81 +133,6 @@ layout: default
           </div>
         </div>
       </div>
-
-      <div class="e-comm-sales e-comm-development">
-        <h2 class="e-comm-sales-title"><img class="title-svg" src="assets/icons/development.svg" alt="Sales" /><span class="small-number">02. </span>E-commerce Development<span class="pink-dot">.</span></h2>
-        <div class="info-cards justify-space-bet flex-box">
-          <div class="info-cards-left">
-            <div class="info-card">
-              <h3 class="info-card-heading">Conversion rate optimization</h3>
-              <p class="info-card-text">
-                Driving traffic to your website via the main social media advertising platforms together with Google products is the way we acquire new customers for your business. It is here that we build your customer base by creating unique touch points for your customers.
-              </p>
-            </div>
-              <div class="info-card">
-                <h3 class="info-card-heading">Page speed optimization</h3>
-                <p class="info-card-text">
-                  Email should be making up at least 20% of your revenue. It is much cheaper to retain customer than to acquire one. This is why we build the right funnels for both Email as SMS to make your customers keep coming back for more.
-                </p>
-              </div>
-              <div class="info-card">
-                <h3 class="info-card-heading">Platform migration</h3>
-                <p class="info-card-text">
-                  Driving traffic to your website via the main social media advertising platforms together with Google products is the way we acquire new customers for your business. It is here that we build your customer base by creating unique touch points for your customers.
-                </p>
-              </div>
-              <div class="info-card">
-                <h3 class="info-card-heading">SaaS & Integration</h3>
-                <p class="info-card-text">
-                  Looking to grow while keeping your expertise in-house? Then our mentorship package is what you need. We share all our years of expertise by testing everything over various industries. The mentorship exists out of a kick off meeting where we set you up for succes and a weekly call where we discuss your campaigns, KPI’s and opportunities.
-                </p>
-              </div>
-          </div>
-
-
-          <div class="info-cards-right">
-            <div class="info-card">
-              <h3 class="info-card-heading">Headless commerce</h3>
-              <p class="info-card-text">
-                Driving traffic to your website via the main social media advertising platforms together with Google products is the way we acquire new customers for your business. It is here that we build your customer base by creating unique touch points for your customers.
-              </p>
-              <div class="info-card-link flex-box">
-                <a href="#">More about digital PR</a>
-                <span class="info-card-link-arrow">
-                  <img src="assets/icons/arrow-blue.svg" alt="Right Arrow" />
-                </span>
-              </div>
-            </div>
-            <div class="info-card">
-              <h3 class="info-card-heading">Odoo implementations</h3>
-              <p class="info-card-text">
-                Driving traffic to your website via the main social media advertising platforms together with Google products is the way we acquire new customers for your business. It is here that we build your customer base by creating unique touch points for your customers.
-              </p>
-            </div>
-            <div class="under-info">
-              <div class="absolute-info justify-space-bet flex-box">
-                <div class="abs-text">
-                  <h3 class="abs-title">
-                    Ready to take the leap? <br>
-                    Contact us and let’s talk!
-                  </h3>
-                  <div class="abs-btn justify-space-bet flex-box">
-                    <div class="abs-btn-text">
-                      Let’s take a look at your mission
-                    </div>
-                    <div class="abs-btn-arrow">
-                      <img src="assets/icons/arrow-blue.svg" alt="Right Arrow" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <img class="illustration-moon" src="{{ '/assets/icons/illustration-moon.svg' | relative_url }}" alt="">
-      </div>
-
-
     </div>
   </div>
 
@@ -237,22 +141,5 @@ layout: default
 </div>
 
 <script>
-  $('.e-comm-sales-navigation').click(function() {
-    $('.e-comm-sales-navigation').removeClass('selected');
-    $('.e-comm-sales-navigation').find('.nav-link-arrow').removeClass('down-arrow');
-    $(this).addClass('selected');
-    $(this).find('.nav-link-arrow').addClass('down-arrow');
-  });
 
-  $('#sales').click(function() {
-    $('html, body').animate({
-        scrollTop: $(".e-comm-sales-sec").offset().top
-    }, 500);
-  });
-
-  $('#development').click(function() {
-    $('html, body').animate({
-        scrollTop: $(".e-comm-development").offset().top
-    }, 500);
-  });
 </script>

@@ -42,7 +42,37 @@ $(document).ready(function(){
     ]
   });
 
+  $('.partner-carousel').slick({
+      infinite: true,
+      slidesToShow: 8,
+      slidesToScroll: 1,
+      dots: false,
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            dots: false
+          }
+        }
+      ]
+    });
 
+    $('.homepage-products-carousel').slick({
+      infinite: false,
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      dots: true,
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            dots: true
+          }
+        }
+      ]
+    });
 
 
 });
