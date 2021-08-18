@@ -18,7 +18,7 @@ layout: default
           your business<span class="pink-dot-heading"></span>
         </h1>
 
-        <div class="at-your-service-content flex-box">
+        <div class="at-your-service-content explore flex-box">
           <span class="at-your-service-text no-t-m">Discover our blog</span>
           <span class="down-arrow"><img src="{{ '/assets/icons/round-white.svg' | relative_url }}" alt="Down Chevron" /></span>
         </div>
@@ -328,93 +328,93 @@ layout: default
   //   }
   // });
 
-function secondsTimeSpanToHMS(s) {
-  var h = Math.floor(s / 3600); //Get whole hours
-  s -= h * 3600;
-  var m = Math.floor(s / 60); //Get remaining minutes
-  s -= m * 60;
-  return h + ":" + (m < 10 ? '0' + m : m) + ":" + (s < 10 ? '0' + s : s); //zero padding on minutes and seconds
-}
-
-$('.audio-player').each(function() {
-  var audio = $(this)[0];
-  var parent = $(this).parent().parent().parent();
-  var playBtn = parent.find('.play-button');
-  var prog = parent.find('.progress');
-  var duration = parent.find('.end-time');
-  var playTime = parent.find('.time-played');
-  var tot_dur = audio.duration;
-  var cut_time = tot_dur - 0.02;
-  var cur_time = audio.currentTime;
-  var delay = 20;
-  var timer;
-  var percent = 0;
-  var inter;
-
-  playBtn.click(function(e) {
-    if(audio.paused){
-      audio.play();
-      inter = setInterval(function(){ update(); }, delay);
-    }
-    else{
-      audio.pause();
-      clearInterval(inter);
-    }
-  });
-
-
-  audio.addEventListener("loadedmetadata", function(_event) {
-    var dur = Math.round(audio.duration);
-   dur = secondsTimeSpanToHMS(dur);
-      duration.text(dur);
-  });
-
-  function update() {
-    var curr_time = Math.round(audio.currentTime);
-    curr_time = secondsTimeSpanToHMS(curr_time);
-    playTime.text(curr_time);
-    audio.onended = function() {
-      clearInterval(inter);
-      console.log('ended');
-      var end_dur = 0;
-      advance(end_dur, audio);
-      audio.currentTime = 0;
-    }
-    console.log('updating');
-  }
-
-  update();
-
-  prog.change(function(){
-    var dur = Math.round(audio.duration);
-   // dur = secondsTimeSpanToHMS(dur);
-    var new_pos = $(this).val();
-    var perct = (new_pos * dur) / 100;
-    advance(dur, audio);
-    audio.currentTime = perct;
-  });
-
-  audio.addEventListener("playing", function(_event) {
-    var duration = _event.target.duration;
-    advance(duration, audio);
-  });
-  audio.addEventListener("pause", function(_event) {
-    clearTimeout(timer);
-  });
-
-  var advance = function(duration, element) {
-    var progress = parent.find('.audio-completed')[0];
-    increment = 10/duration
-    percent = Math.min(increment * element.currentTime * 10, 100);
-    progress.style.width = percent+'%'
-    startTimer(duration, element);
-  }
-  var startTimer = function(duration, element){
-  if(percent < 100) {
-    timer = setTimeout(function (){advance(duration, element)}, 10);
-  }
-}
-});
+// function secondsTimeSpanToHMS(s) {
+//   var h = Math.floor(s / 3600); //Get whole hours
+//   s -= h * 3600;
+//   var m = Math.floor(s / 60); //Get remaining minutes
+//   s -= m * 60;
+//   return h + ":" + (m < 10 ? '0' + m : m) + ":" + (s < 10 ? '0' + s : s); //zero padding on minutes and seconds
+// }
+//
+// $('.audio-player').each(function() {
+//   var audio = $(this)[0];
+//   var parent = $(this).parent().parent().parent();
+//   var playBtn = parent.find('.play-button');
+//   var prog = parent.find('.progress');
+//   var duration = parent.find('.end-time');
+//   var playTime = parent.find('.time-played');
+//   var tot_dur = audio.duration;
+//   var cut_time = tot_dur - 0.02;
+//   var cur_time = audio.currentTime;
+//   var delay = 20;
+//   var timer;
+//   var percent = 0;
+//   var inter;
+//
+//   playBtn.click(function(e) {
+//     if(audio.paused){
+//       audio.play();
+//       inter = setInterval(function(){ update(); }, delay);
+//     }
+//     else{
+//       audio.pause();
+//       clearInterval(inter);
+//     }
+//   });
+//
+//
+//   audio.addEventListener("loadedmetadata", function(_event) {
+//     var dur = Math.round(audio.duration);
+//    dur = secondsTimeSpanToHMS(dur);
+//       duration.text(dur);
+//   });
+//
+//   function update() {
+//     var curr_time = Math.round(audio.currentTime);
+//     curr_time = secondsTimeSpanToHMS(curr_time);
+//     playTime.text(curr_time);
+//     audio.onended = function() {
+//       clearInterval(inter);
+//       console.log('ended');
+//       var end_dur = 0;
+//       advance(end_dur, audio);
+//       audio.currentTime = 0;
+//     }
+//     console.log('updating');
+//   }
+//
+//   update();
+//
+//   prog.change(function(){
+//     var dur = Math.round(audio.duration);
+//    // dur = secondsTimeSpanToHMS(dur);
+//     var new_pos = $(this).val();
+//     var perct = (new_pos * dur) / 100;
+//     advance(dur, audio);
+//     audio.currentTime = perct;
+//   });
+//
+//   audio.addEventListener("playing", function(_event) {
+//     var duration = _event.target.duration;
+//     advance(duration, audio);
+//   });
+//   audio.addEventListener("pause", function(_event) {
+//     clearTimeout(timer);
+//   });
+//
+//   var advance = function(duration, element) {
+//     var progress = parent.find('.audio-completed')[0];
+//     increment = 10/duration
+//     percent = Math.min(increment * element.currentTime * 10, 100);
+//     progress.style.width = percent+'%'
+//     startTimer(duration, element);
+//   }
+//   var startTimer = function(duration, element){
+//   if(percent < 100) {
+//     timer = setTimeout(function (){advance(duration, element)}, 10);
+//   }
+// }
+// });
 
 
 

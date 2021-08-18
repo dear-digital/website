@@ -71,8 +71,11 @@ $('.accordion').click(function() {
     $(this).find('.symbol-plus').addClass('minus-sign');
     $(this).find('.symbol-plus span').addClass('no-disp');
   }
+});
 
-
-
-
+$('.explore').click(function() {
+  $('html, body').animate({
+        scrollTop: $(this).closest('.hero').next().offset().top
+    }, 100);
+  // $(this).closest('.hero').next();
 });
