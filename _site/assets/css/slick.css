@@ -252,9 +252,15 @@
 }
 
 /* Dots */
+
 .slick-dotted.slick-slider
 {
   margin-bottom: 30px;
+}
+
+.testimonials.slick-dotted.slick-slider
+{
+  margin-bottom: 130px;
 }
 
 .slick-dots

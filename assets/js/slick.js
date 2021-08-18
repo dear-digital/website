@@ -7,7 +7,7 @@ $(document).ready(function(){
     infinite: false,
     slidesToShow: 2,
     slidesToScroll: 1,
-    dots: false,
+    dots: true,
     arrows: true,
     responsive: [
       {
@@ -66,11 +66,14 @@ $(document).ready(function(){
       arrows: false,
       responsive: [
         {
-          breakpoint: 992,
-          settings: {
-            dots: true
-          }
+        breakpoint: 560,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: false
         }
+      }
       ]
     });
 
