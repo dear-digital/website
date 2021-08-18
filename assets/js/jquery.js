@@ -79,3 +79,54 @@ $('.explore').click(function() {
     }, 100);
   // $(this).closest('.hero').next();
 });
+
+$(document).ready(function () {
+  if(window.location.href.indexOf("work") > -1) {
+    $(".header-link").removeClass("page-selected");
+    $(".header-link").each(function() {
+      if($(this).text() == "Work") {
+      	$(this).addClass("page-selected");
+      }
+   });
+  }
+  if(window.location.href.indexOf("service") > -1) {
+    $(".header-link").removeClass("page-selected");
+    $(".header-link").each(function() {
+      if($(this).text() == "Services") {
+      	$(this).addClass("page-selected");
+      }
+   });
+  }
+  if(window.location.href.indexOf("about") > -1) {
+    $(".header-link").removeClass("page-selected");
+    $(".header-link").each(function() {
+      if($(this).text() == "About") {
+      	$(this).addClass("page-selected");
+      }
+   });
+ }
+   if(window.location.href.indexOf("blog") > -1) {
+     $(".header-link").removeClass("page-selected");
+     $(".header-link").each(function() {
+       if($(this).text() == "Blog") {
+       	$(this).addClass("blog-selected");
+       }
+    });
+  }
+  if(window.location.href.indexOf("cart") > -1) {
+      $(".header-link").removeClass("page-selected");
+      $(".header-link").each(function() {
+        if($(this).data("cart") == "cart") {
+        	$(this).addClass("page-selected");
+        }
+     });
+  }
+  if(window.location.href.indexOf("contact") > -1) {
+    $(".header-link").removeClass("page-selected");
+    $(".header-link").each(function() {
+      if($(this).text() == "Contact us") {
+        $(this).addClass("contactUs-selected");
+      }
+   });
+ }
+});
