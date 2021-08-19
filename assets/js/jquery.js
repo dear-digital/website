@@ -7,17 +7,20 @@
               $(".accordion").each(function() {
                 $(this).removeClass("accordion-active");
                 var panel1 = $(this).next()[0];
-                panel1.classList.remove("panel-max");
+                // panel1.classList.remove("panel-max");
+                panel1.style.maxHeight = null;
               });
               if(acc1) {
                 $(this).removeClass("accordion-active")
                 var panel2 = $(this).next()[0];
-                panel2.classList.remove("panel-max");
+                // panel2.classList.remove("panel-max");
+                panel2.style.maxHeight = null;
               }
               else {
                 $(this).addClass("accordion-active")
                 var panel3 = $(this).next()[0];
-                panel3.classList.add("panel-max");
+                // panel3.classList.add("panel-max");
+                panel3.style.maxHeight = panel3.scrollHeight + "px";
               }
             });
 
@@ -126,7 +129,29 @@ $(document).ready(function () {
     $(".header-link").each(function() {
       if($(this).text() == "Contact us") {
         $(this).addClass("contactUs-selected");
+        $(this).find('span').removeClass('pink-dot-med');
+        $(this).find('span').addClass('white-dot-med');
       }
    });
  }
 });
+
+
+
+  $(".text-fx").mousemove(function(event){
+
+    const bounderies = $(this)[0].getBoundingClientRect();
+    // Calculate the mouse coordinates relative to the hovered element
+    let mouseXrelative = event.clientX - bounderies.left;
+    let mouseYrelative = event.clientY - bounderies.top;
+
+    console.log(bounderies.bottom);
+    console.log(event.clientY);
+    console.log($(this).scroll().top);
+
+    let mouseXpct = Math.ceil(mouseXrelative / $(this)[0].clientWidth * 100);
+    let mouseYpct = Math.ceil(mouseYrelative / $(this)[0].clientHeight * 100);
+
+    $(this).find(".text-fx__bg")[0].style['-webkit-clip-path'] = `circle(150px at ${ mouseXpct }% ${ mouseYpct }%)`;
+    $(this).find(".text-fx__bg")[0].style.clipPath = `circle(150px at ${ mouseXpct }% ${ mouseYpct }%)`;
+  });

@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Blog Podcast
+description:
 ---
 
 <div class="blog-page">
@@ -38,7 +40,7 @@ layout: default
               <input id="togather-email" type="email" name="" value="" placeholder="Hello@yourdomain.be" />
             </div>
             <a href="/" class="btn to-white-btn to-blue-text">
-              <span>Yes, I’ll never miss an insight<span class="pink-dot">.</span></span>
+              <span>Yes, I’ll never miss an insight <span class="pink-dot-med"></span></span>
               <span class="white-arrow">
                 <?xml version="1.0" encoding="UTF-8"?>
                 <svg width="25px" height="18px" viewBox="0 0 25 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -60,13 +62,13 @@ layout: default
     </div>
 
     <div class="blog-podcast-navigation flex-box">
-      <a href="{{ '/blog-articles' | relative_url }}" class="navigation articles-nav flex-box">
+      <a href="{{ '/blog-articles#articles' | relative_url }}" class="navigation articles-nav flex-box">
         <span class="navigation-svg"><img src="{{ '/assets/icons/article.svg' | relative_url }}" alt="Article"></span>
 
         <span class="btn-text">Articles & insights</span>
         <span class="blog-nav-arrow"><img src="{{ '/assets/icons/arrow-blue.svg' | relative_url }}" alt="blue arrow"></span>
       </a>
-      <a href="{{ '/blog-podcast' | relative_url }}" class="navigation flex-box podcast-nav selected">
+      <a href="{{ '/blog-podcast#podcast' | relative_url }}" class="navigation flex-box podcast-nav selected">
         <span class="navigation-svg"><img src="{{ '/assets/icons/podcast.svg' | relative_url }}" alt="Podcast"></span>
 
         <span class="btn-text">Podcasts</span>
@@ -79,7 +81,7 @@ layout: default
   </div>
 
 
-  <div class="podcast-section container">
+  <div id="podcast" class="podcast-section container">
     <div class="articles-title">
       <span class="navigation-svg"><img src="assets/icons/podcast.svg" alt="Article"></span>
       Our podcasts<span class="pink-dot">.</span>
@@ -93,7 +95,7 @@ layout: default
       <span class="article-type">Videos</span>
     </div>
 
-    <section class="podcast-cards">
+    <section class="podcast-cards load-more">
       <div class="podcast-card flex-box justify-space-bet">
         <div class="podcast-img">
           <span class="navigation-svg"><img src="assets/icons/podcast.svg" alt="Article"></span>
@@ -270,11 +272,11 @@ layout: default
       </div>
     </section>
 
-    <div class="load-more-btn to-blue-btn to-white-text flex-box">
+    <div id="load-more" class="load-more-btn to-blue-btn to-white-text flex-box">
       <div class="load-more-text">
         Load more
       </div>
-      <div class="pink-dot">.</div>
+      <div class="pink-dot-med"></div>
     </div>
   </div>
 
@@ -283,7 +285,7 @@ layout: default
       <div class="flex-center">
         <h3 class="our-services-heading">Ready to <span class="rel">thrive? <img class="scribble thrive-scribble" src="{{ '/assets/icons/scribble-7.svg' | relative_url }}" alt=""></span> <br>
         Let’s have a talk!</h3>
-        <a href="/" class="btn to-white-btn to-blue-text">
+        <a href="{{ '/contact' | relative_url }}" class="btn to-white-btn to-blue-text">
           <span>Contact us and prepare for launch<span class="pink-dot-small"></span></span>
           <span class="white-arrow">
             <?xml version="1.0" encoding="UTF-8"?>
@@ -416,7 +418,13 @@ layout: default
 // }
 // });
 
-
+$('.load-more .podcast-card').hide();
+$('.load-more .podcast-card:lt(3)').show();
+$('#load-more').click(function() {
+  $('.load-more .podcast-card').show();
+  $('.articles-end-blur').addClass('no-disp');
+  $(this).addClass('no-disp');
+});
 
 
 </script>

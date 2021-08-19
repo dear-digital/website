@@ -19,6 +19,22 @@ $(document).ready(function(){
     ]
   });
 
+  $('.banner-text-outer').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+
   $('.slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -45,7 +61,7 @@ $(document).ready(function(){
   $('.partner-carousel').slick({
       infinite: true,
       slidesToShow: 8,
-      slidesToScroll: 1,
+      slidesToScroll: 4,
       dots: false,
       arrows: false,
       responsive: [

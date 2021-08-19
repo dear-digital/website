@@ -1,14 +1,16 @@
 ---
 layout: default
+title: Work
+description:
 ---
 
 
 <div class="hero hero-workpage">
-        <div class="container flex-box-1">
+        <div class="container flex-box">
           <div class="row middle-section">
             <div class="col-txt-1 t-m-order-2">
               <span class="dear-digital-text">work</span>
-              <h3>We value our clients as <span class="rel">partners <img class="scribble partners-scribble" src="{{ '/assets/icons/scribble-zigzag.svg' | relative_url }}" alt=""></span> and grow along their side. To the moon and back.</h3>
+              <h3>We value our clients as <span class="rel">partners <img class="scribble partners-scribble" src="{{ '/assets/icons/scribble-zigzag.svg' | relative_url }}" alt=""></span> and grow along their side. To the moon and back<span class="pink-dot-medium"></span></h3>
               <p>Our team is dedicated to becoming a part of our clients’ brands and meeting their unique needs. Here are a few stories about how we helped our client partners achieve their growth goals.</p>
               <div class="work-explore-link">
                 <div class="">
@@ -18,8 +20,7 @@ layout: default
             </div>
           </div>
         </div>
-        <div class="container">
-          <section class="work-section flex-box-1 justify-between">
+          <section class="work-section flex-box justify-between">
             <span class="work-type work-selected user-select-none">Show all</span>
             <span class="work-type user-select-none">Saas</span>
             <span class="work-type user-select-none">Sales</span>
@@ -28,7 +29,6 @@ layout: default
             <span class="work-type user-select-none">Content marketing</span>
             <span class="work-type user-select-none">Marketing Automation</span>
           </section>
-        </div>
 
       </div>
 
@@ -53,7 +53,7 @@ layout: default
                   <li>Active in 25 countries</li>
                 </ul>
               </div>
-              <a href="#" class="product-link"><span>View this case</span> <img src="assets/icons/arrow-blue.svg" alt="right arrow btn"></a>
+              <a href="{{ '/work-detail' | relative_url }}" class="product-link"><span>View this case</span> <img src="assets/icons/arrow-blue.svg" alt="right arrow btn"></a>
             </div>
           </div>
 
@@ -73,7 +73,7 @@ layout: default
                   <li>327% leads</li>
                 </ul>
               </div>
-              <a href="#" class="product-link"><span>View this case</span> <img src="assets/icons/arrow-blue.svg" alt="right arrow btn"></a>
+              <a href="{{ '/work-detail' | relative_url }}" class="product-link"><span>View this case</span> <img src="assets/icons/arrow-blue.svg" alt="right arrow btn"></a>
             </div>
             <div class="product-img no-t-m">
               <img src="assets/imgs/work-detail.jpg" class="product-mobile-img" alt="product mobile image">
@@ -101,7 +101,7 @@ layout: default
                   <li>Active in 25 countries</li>
                 </ul>
               </div>
-              <a href="#" class="product-link"><span>View this case</span> <img src="assets/icons/arrow-blue.svg" alt="right arrow btn"></a>
+              <a href="{{ '/work-detail' | relative_url }}" class="product-link"><span>View this case</span> <img src="assets/icons/arrow-blue.svg" alt="right arrow btn"></a>
             </div>
           </div>
 
@@ -121,7 +121,7 @@ layout: default
                   <li>327% leads</li>
                 </ul>
               </div>
-              <a href="#" class="product-link"><span>View this case</span> <img src="assets/icons/arrow-blue.svg" alt="right arrow btn"></a>
+              <a href="{{ '/work-detail' | relative_url }}" class="product-link"><span>View this case</span> <img src="assets/icons/arrow-blue.svg" alt="right arrow btn"></a>
             </div>
             <div class="product-img no-t-m">
               <img src="assets/imgs/work-detail.jpg" class="product-mobile-img" alt="product mobile image">
@@ -148,7 +148,7 @@ layout: default
                   <li>Active in 25 countries</li>
                 </ul>
               </div>
-              <a href="#" class="product-link"><span>View this case</span> <img src="assets/icons/arrow-blue.svg" alt="right arrow btn"></a>
+              <a href="{{ '/work-detail' | relative_url }}" class="product-link"><span>View this case</span> <img src="assets/icons/arrow-blue.svg" alt="right arrow btn"></a>
             </div>
           </div>
 
@@ -168,7 +168,7 @@ layout: default
                   <li>327% leads</li>
                 </ul>
               </div>
-              <a href="#" class="product-link"><span>View this case</span> <img src="assets/icons/arrow-blue.svg" alt="right arrow btn"></a>
+              <a href="{{ '/work-detail' | relative_url }}" class="product-link"><span>View this case</span> <img src="assets/icons/arrow-blue.svg" alt="right arrow btn"></a>
             </div>
             <div class="product-img no-t-m">
               <img src="assets/imgs/work-detail.jpg" class="product-mobile-img" alt="product mobile image">
@@ -195,11 +195,11 @@ layout: default
                   <li>Active in 25 countries</li>
                 </ul>
               </div>
-              <a href="#" class="product-link"><span>View this case</span> <img src="assets/icons/arrow-blue.svg" alt="right arrow btn"></a>
+              <a href="{{ '/work-detail' | relative_url }}" class="product-link"><span>View this case</span> <img src="assets/icons/arrow-blue.svg" alt="right arrow btn"></a>
             </div>
           </div>
 
-          <div class="load-more-btn marg-bottom to-blue-btn to-white-text">Load more<span class="pink-dot">.</span>
+          <div id="load-more" class="load-more-btn marg-bottom to-blue-btn to-white-text">Load more<span class="pink-dot-med"></span>
           </div>
 
         </div>
@@ -209,7 +209,7 @@ layout: default
         <div class="container flex-box-1 justify-center contact-us">
           <div class="flex-center">
             <h3 class="our-services-heading">Want to build a <span class="rel">high-performing <img class="scribble high-perf-scribble" src="{{ '/assets/icons/scribble-pink.svg' | relative_url }}" alt=""></span> e-commerce brand?</h3>
-            <a href="/" class="btn to-white-btn to-blue-text">
+            <a href="{{ '/contact' | relative_url }}" class="btn to-white-btn to-blue-text">
               <span class="no-d">Contact us<span class="pink-dot">.</span></span>
               <span class="no-t-m">Contact us and prepare for launch<span class="pink-dot-small"></span></span>
               <span class="white-arrow">
@@ -230,3 +230,15 @@ layout: default
           </div>
         </div>
       </div>
+
+
+
+      <script>
+        $('.load-more .podcast-card').hide();
+        $('.load-more .podcast-card:lt(3)').show();
+        $('#load-more').click(function() {
+          $('.load-more .podcast-card').show();
+          $('.articles-end-blur').addClass('no-disp');
+          $(this).addClass('no-disp');
+        });
+      </script>

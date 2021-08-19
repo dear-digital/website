@@ -1,19 +1,32 @@
 <!DOCTYPE html>
-<html lang="" class="no-js">
+<html lang="en" class="no-js">
     <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#202248">
 
     
     <title>
       
-        Your awesome title
+        Cart | Dear Digital
       
     </title>
-  <meta name="description" content="">
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
 
+  <!-- Facebook Meta Tags -->
+  <!-- <meta property="og:url" content="https://bombay-studio.com/cart.html"> -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cart">
+  <meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+  <meta property="og:image" content="/website/assets/icons/Header-Logo.svg">
 
+  <!-- Twitter Meta Tags -->
+  <!-- <meta property="twitter:url" content="https://bombay-studio.com/cart.html"> -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cart">
+  <meta name="twitter:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+  <meta name="twitter:image" content="/website/assets/icons/Header-Logo.svg">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,12 +35,13 @@
 
 
     <link rel="canonical" href="">
-    <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="/website/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Dear Digital" href="/website/feed.xml" />
     <link rel="stylesheet" href="/website/assets/css/styles.css">
     <link rel="stylesheet" href="/website/assets/css/slick.css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+
 </head>
 
     <body class="body-tag">
@@ -56,7 +70,7 @@
               <li class="about-dropdown no-t-m"><a href="/website/about-us" class="header-link">About</a>
                 <div class="arrow-up"></div>
                 <ul class="header-nav-list-sub about-sub-list">
-                  <li><a href="/website/about-us">Our team of experts</a></li>
+                  <li><a href="/website/about-us#team">Our team of experts</a></li>
                   <li><a href="/website/about-us">Your new career</a></li>
                 </ul>
               </li>
@@ -152,7 +166,7 @@
         </div>
       </div>
 
-        
+
             <main class="main normal-top" role="main">
                 <div class="cart-page">
 
@@ -162,8 +176,8 @@
           <div class="row middle-section">
             <div class="col-txt-1 t-m-order-2">
               <span class="dear-digital-text">cart  </span>
-              <h3>Are we that good you want to buy <br> something? Check our awesome <br> clients who did.</h3>
-              <p class="no-t-m">orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean <br> commodo ligula eget dolor. Aenean massa. Cum sociis natoque <br> penatibus et magnis dis parturient montes.</p>
+              <h3>Are we that good you want to buy something? Check our awesome clients who did<span class="white-dot-medium"></span></h3>
+              <p class="no-t-m">orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
               <div class="work-explore-link">
                 <div class="">
                   <a href="#products-block"><span class="no-t-m">Explore our shop </span><img src="/website/assets/icons/down-chevron.svg" alt="cart explore button"></a>
@@ -171,22 +185,22 @@
               </div>
             </div>
             <div class="col-txt-1 t-m-order-2 no-t-m">
-              <img class="site-logos" src="/website/assets/imgs/BLUE-ON-WHITE-BG-01.png" alt="logos">
+              <img class="site-logos" src="/website/assets/icons/sales.svg" alt="logos">
             </div>
           </div>
         </div>
         <div class="container">
           <section class="website-category-section flex-box-1 justify-between">
-            <span class="website-type user-select-none"><h3 class="services-heading"><span class="bullets-pts">01.</span>Food <img src="/website/assets/icons/arrow-blue.svg" alt="right arrow"></h3></span>
-            <span class="website-type user-select-none"><h3 class="services-heading"><span class="bullets-pts">02.</span>FMCG <img src="/website/assets/icons/arrow-blue.svg" alt="right arrow"></h3></span>
-            <span class="website-type user-select-none"><h3 class="services-heading"><span class="bullets-pts">03.</span>Pets <img src="/website/assets/icons/arrow-blue.svg" alt="right arrow"></h3></span>
+            <a href="#products-block" class="website-type user-select-none"><h3 class="services-heading"><span class="bullets-pts">01.</span>Food <img src="/website/assets/icons/arrow-blue.svg" alt="right arrow"></h3></a>
+            <a href="#fmcg" class="website-type user-select-none"><h3 class="services-heading"><span class="bullets-pts">02.</span>FMCG <img src="/website/assets/icons/arrow-blue.svg" alt="right arrow"></h3></a>
+            <a href="#pets" class="website-type user-select-none"><h3 class="services-heading"><span class="bullets-pts">03.</span>Pets <img src="/website/assets/icons/arrow-blue.svg" alt="right arrow"></h3></a>
           </section>
         </div>
       </div>
 
       <section id="products-block" class="food-products">
         <div class="container">
-          <div class="product-heading"><h3><span>01. </span>Food<span class="pink-dot">.</span></h3>
+          <div class="product-heading"><h3><span>01. </span>Food<span class="pink-dot-medium"></span></h3>
           </div>
           <div class="flex-box-1 justify-between">
             <div class="product">
@@ -197,9 +211,9 @@
               <div class="product-description">
                 <h3>Stashed</h3>
                 <p>A food brand focusing on food for bussy people. Healthy freeze-dried meals ready in minutes.</p>
-                <span class="desc">Looking for a similar project? Contact us!</span>
+                <a href="/website/contact" class="desc">Looking for a similar project? Contact us!</a>
                 <a href="#" class="btn to-blue-btn to-white-text product-btn">
-                  <span>Shop now<span class="pink-dot">.</span></span>
+                  <span>Shop now<span class="white-dot-med"></span></span>
                   <span class="blue-arrow">
                     <?xml version="1.0" encoding="UTF-8"?>
                     <svg width="25px" height="18px" viewBox="0 0 25 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -225,9 +239,9 @@
               <div class="product-description">
                 <h3>ONO Drinks</h3>
                 <p>A food brand focusing on food for bussy people. Healthy freeze-dried meals ready in minutes.</p>
-                <span class="desc">Looking for a similar project? Contact us!</span>
+                <a href="/website/contact" class="desc">Looking for a similar project? Contact us!</a>
                 <a href="#" class="btn to-blue-btn to-white-text product-btn">
-                  <span>Shop now<span class="pink-dot">.</span></span>
+                  <span>Shop now<span class="white-dot-med"></span></span>
                   <span class="blue-arrow">
                     <?xml version="1.0" encoding="UTF-8"?>
                     <svg width="25px" height="18px" viewBox="0 0 25 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -253,9 +267,9 @@
               <div class="product-description">
                 <h3>Pasa D’Oro </h3>
                 <p>A food brand focusing on food for bussy people. Healthy freeze-dried meals ready in minutes.</p>
-                <span class="desc">Looking for a similar project? Contact us!</span>
+                <a href="/website/contact" class="desc">Looking for a similar project? Contact us!</a>
                 <a href="#" class="btn to-blue-btn to-white-text product-btn">
-                  <span>Shop now<span class="pink-dot">.</span></span>
+                  <span>Shop now<span class="white-dot-med"></span></span>
                   <span class="blue-arrow">
                     <?xml version="1.0" encoding="UTF-8"?>
                     <svg width="25px" height="18px" viewBox="0 0 25 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -277,9 +291,9 @@
         </div>
       </section>
 
-      <section class="food-products">
+      <section id="fmcg" class="food-products">
         <div class="container">
-          <div class="product-heading"><h3><span>02. </span>FMCG<span class="pink-dot">.</span></h3>
+          <div class="product-heading"><h3><span>02. </span>FMCG<span class="pink-dot-medium"></span></h3>
           </div>
           <div class="flex-box-1 justify-between">
             <div class="product">
@@ -290,9 +304,9 @@
               <div class="product-description">
                 <h3>Stashed</h3>
                 <p>A food brand focusing on food for bussy people. Healthy freeze-dried meals ready in minutes.</p>
-                <span class="desc">Looking for a similar project? Contact us!</span>
+                <a href="/website/contact" class="desc">Looking for a similar project? Contact us!</a>
                 <a href="#" class="btn to-blue-btn to-white-text product-btn">
-                  <span>Shop now<span class="pink-dot">.</span></span>
+                  <span>Shop now<span class="white-dot-med"></span></span>
                   <span class="blue-arrow">
                     <?xml version="1.0" encoding="UTF-8"?>
                     <svg width="25px" height="18px" viewBox="0 0 25 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -318,9 +332,9 @@
               <div class="product-description">
                 <h3>ONO Drinks</h3>
                 <p>A food brand focusing on food for bussy people. Healthy freeze-dried meals ready in minutes.</p>
-                <span class="desc">Looking for a similar project? Contact us!</span>
+                <a href="/website/contact" class="desc">Looking for a similar project? Contact us!</a>
                 <a href="#" class="btn to-blue-btn to-white-text product-btn">
-                  <span>Shop now<span class="pink-dot">.</span></span>
+                  <span>Shop now<span class="white-dot-med"></span></span>
                   <span class="blue-arrow">
                     <?xml version="1.0" encoding="UTF-8"?>
                     <svg width="25px" height="18px" viewBox="0 0 25 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -346,9 +360,9 @@
               <div class="product-description">
                 <h3>Pasa D’Oro </h3>
                 <p>A food brand focusing on food for bussy people. Healthy freeze-dried meals ready in minutes.</p>
-                <span class="desc">Looking for a similar project? Contact us!</span>
+                <a href="/website/contact" class="desc">Looking for a similar project? Contact us!</a>
                 <a href="#" class="btn to-blue-btn to-white-text product-btn">
-                  <span>Shop now<span class="pink-dot">.</span></span>
+                  <span>Shop now<span class="white-dot-med"></span></span>
                   <span class="blue-arrow">
                     <?xml version="1.0" encoding="UTF-8"?>
                     <svg width="25px" height="18px" viewBox="0 0 25 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -376,9 +390,9 @@
               <div class="product-description">
                 <h3>Stashed</h3>
                 <p>A food brand focusing on food for bussy people. Healthy freeze-dried meals ready in minutes.</p>
-                <span class="desc">Looking for a similar project? Contact us!</span>
+                <a href="/website/contact" class="desc">Looking for a similar project? Contact us!</a>
                 <a href="#" class="btn to-blue-btn to-white-text product-btn">
-                  <span>Shop now<span class="pink-dot">.</span></span>
+                  <span>Shop now<span class="white-dot-med"></span></span>
                   <span class="blue-arrow">
                     <?xml version="1.0" encoding="UTF-8"?>
                     <svg width="25px" height="18px" viewBox="0 0 25 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -404,9 +418,9 @@
               <div class="product-description">
                 <h3>ONO Drinks</h3>
                 <p>A food brand focusing on food for bussy people. Healthy freeze-dried meals ready in minutes.</p>
-                <span class="desc">Looking for a similar project? Contact us!</span>
+                <a href="/website/contact" class="desc">Looking for a similar project? Contact us!</a>
                 <a href="#" class="btn to-blue-btn to-white-text product-btn">
-                  <span>Shop now<span class="pink-dot">.</span></span>
+                  <span>Shop now<span class="white-dot-med"></span></span>
                   <span class="blue-arrow">
                     <?xml version="1.0" encoding="UTF-8"?>
                     <svg width="25px" height="18px" viewBox="0 0 25 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -432,9 +446,9 @@
               <div class="product-description">
                 <h3>Pasa D’Oro </h3>
                 <p>A food brand focusing on food for bussy people. Healthy freeze-dried meals ready in minutes.</p>
-                <span class="desc">Looking for a similar project? Contact us!</span>
+                <a href="/website/contact" class="desc">Looking for a similar project? Contact us!</a>
                 <a href="#" class="btn to-blue-btn to-white-text product-btn">
-                  <span>Shop now<span class="pink-dot">.</span></span>
+                  <span>Shop now<span class="white-dot-med"></span></span>
                   <span class="blue-arrow">
                     <?xml version="1.0" encoding="UTF-8"?>
                     <svg width="25px" height="18px" viewBox="0 0 25 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -456,9 +470,9 @@
         </div>
       </section>
 
-      <section class="food-products padd-bottom">
+      <section id="pets" class="food-products padd-bottom">
         <div class="container">
-          <div class="product-heading"><h3><span>03. </span>Pets<span class="pink-dot">.</span></h3>
+          <div class="product-heading"><h3><span>03. </span>Pets<span class="pink-dot-medium"></span></h3>
           </div>
           <div class="flex-box-1 justify-between">
             <div class="product">
@@ -469,9 +483,9 @@
               <div class="product-description">
                 <h3>Stashed</h3>
                 <p>A food brand focusing on food for bussy people. Healthy freeze-dried meals ready in minutes.</p>
-                <span class="desc">Looking for a similar project? Contact us!</span>
+                <a href="/website/contact" class="desc">Looking for a similar project? Contact us!</a>
                 <a href="#" class="btn to-blue-btn to-white-text product-btn">
-                  <span>Shop now<span class="pink-dot">.</span></span>
+                  <span>Shop now<span class="white-dot-med"></span></span>
                   <span class="blue-arrow">
                     <?xml version="1.0" encoding="UTF-8"?>
                     <svg width="25px" height="18px" viewBox="0 0 25 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -497,9 +511,9 @@
               <div class="product-description">
                 <h3>ONO Drinks</h3>
                 <p>A food brand focusing on food for bussy people. Healthy freeze-dried meals ready in minutes.</p>
-                <span class="desc">Looking for a similar project? Contact us!</span>
+                <a href="/website/contact" class="desc">Looking for a similar project? Contact us!</a>
                 <a href="#" class="btn to-blue-btn to-white-text product-btn">
-                  <span>Shop now<span class="pink-dot">.</span></span>
+                  <span>Shop now<span class="white-dot-med"></span></span>
                   <span class="blue-arrow">
                     <?xml version="1.0" encoding="UTF-8"?>
                     <svg width="25px" height="18px" viewBox="0 0 25 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -525,9 +539,9 @@
               <div class="product-description">
                 <h3>Pasa D’Oro </h3>
                 <p>A food brand focusing on food for bussy people. Healthy freeze-dried meals ready in minutes.</p>
-                <span class="desc">Looking for a similar project? Contact us!</span>
+                <a href="/website/contact" class="desc">Looking for a similar project? Contact us!</a>
                 <a href="#" class="btn to-blue-btn to-white-text product-btn">
-                  <span>Shop now<span class="pink-dot">.</span></span>
+                  <span>Shop now<span class="white-dot-med"></span></span>
                   <span class="blue-arrow">
                     <?xml version="1.0" encoding="UTF-8"?>
                     <svg width="25px" height="18px" viewBox="0 0 25 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -681,7 +695,7 @@
       <section class="lets-work-togather-section">
   <div class="container">
     <div class="work-togather-content">
-      <h3 class="work-togather-title">Let’s work <span class="rel">together. <img class="scribble togather-scribble" src="/website/assets/icons/scribble-5.svg" alt=""></span></h3>
+      <h3 class="work-togather-title">Let’s work <span class="rel">together<span class="white-dot-medium"></span> <img class="scribble togather-scribble" src="/website/assets/icons/scribble-5.svg" alt=""></span></h3>
       <p class="work-togather-para">
         Tell us your business goals and we’ll see how we can create something amazing together.
       </p>
@@ -716,10 +730,10 @@
         </div>
         <div class="abs-btn justify-space-bet to-white-btn to-blue-text flex-box">
           <div class="abs-btn-text no-t-m">
-            The time has come to push the button
+            The time has come to push the button <span class="pink-dot-med"></span>
           </div>
           <div class="abs-btn-text no-d">
-            Push the button
+            Push the button <span class="pink-dot-med"></span>
           </div>
           <div class="abs-btn-arrow">
             <span class="white-arrow">
@@ -753,7 +767,7 @@
         <div class="footer-content justify-space-bet flex-box">
           <div class="footer-content-left">
             <div class="footer-logo">
-              <a href="/"><img src="assets/icons/footer-logo.svg" alt="Footer Logo" /></a>
+              <a href="/website/"><img src="assets/icons/footer-logo.svg" alt="Footer Logo" /></a>
             </div>
           </div>
           <div class="footer-content-right">
@@ -766,19 +780,19 @@
                   </div>
                   <div class="footer-links justify-space-bet flex-box">
                     <div class="footer-links-left">
-                      <a href="/services">Services</a>
-                      <a class="no-t-m footer-mid-link" href="/e-comm-sales">E-comm sales</a>
-                      <a class="no-t-m" href="/e-comm-dev">E-comm development</a>
+                      <a href="/website/services-sales">Services</a>
+                      <a class="no-t-m footer-mid-link" href="/website/services-sales#e-comm-sales">E-comm sales</a>
+                      <a class="no-t-m" href="/website/services-development#e-comm-development">E-comm development</a>
                     </div>
                     <div class="footer-links-middle">
-                      <a href="/about">About</a>
-                      <a class="no-t-m footer-mid-link" href="/careers">Careers</a>
-                      <a class="no-t-m" href="/team">Team</a>
+                      <a href="/website/about-us">About</a>
+                      <a class="no-t-m footer-mid-link" href="/website/about-us">Careers</a>
+                      <a class="no-t-m" href="/website/about-us#team">Team</a>
                     </div>
                     <div class="footer-links-right">
-                      <a href="/work">Work</a>
-                      <a class="footer-mid-link" href="/blog-articles">Blog</a>
-                      <a href="/contact">Contact</a>
+                      <a href="/website/work">Work</a>
+                      <a class="footer-mid-link" href="/website/blog-articles">Blog</a>
+                      <a href="/website/contact">Contact</a>
                     </div>
                   </div>
                 </div>

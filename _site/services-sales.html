@@ -1,19 +1,32 @@
 <!DOCTYPE html>
-<html lang="" class="no-js">
+<html lang="en" class="no-js">
     <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#202248">
 
     
     <title>
       
-        Your awesome title
+        E-Commerce Sales | Dear Digital
       
     </title>
-  <meta name="description" content="">
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
 
+  <!-- Facebook Meta Tags -->
+  <!-- <meta property="og:url" content="https://bombay-studio.com/services-sales.html"> -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="E-Commerce Sales">
+  <meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+  <meta property="og:image" content="/website/assets/icons/Header-Logo.svg">
 
+  <!-- Twitter Meta Tags -->
+  <!-- <meta property="twitter:url" content="https://bombay-studio.com/services-sales.html"> -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="E-Commerce Sales">
+  <meta name="twitter:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+  <meta name="twitter:image" content="/website/assets/icons/Header-Logo.svg">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,12 +35,13 @@
 
 
     <link rel="canonical" href="">
-    <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="/website/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Dear Digital" href="/website/feed.xml" />
     <link rel="stylesheet" href="/website/assets/css/styles.css">
     <link rel="stylesheet" href="/website/assets/css/slick.css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+
 </head>
 
     <body class="body-tag">
@@ -56,7 +70,7 @@
               <li class="about-dropdown no-t-m"><a href="/website/about-us" class="header-link">About</a>
                 <div class="arrow-up"></div>
                 <ul class="header-nav-list-sub about-sub-list">
-                  <li><a href="/website/about-us">Our team of experts</a></li>
+                  <li><a href="/website/about-us#team">Our team of experts</a></li>
                   <li><a href="/website/about-us">Your new career</a></li>
                 </ul>
               </li>
@@ -152,7 +166,7 @@
         </div>
       </div>
 
-        
+
             <main class="main normal-top" role="main">
                 <div class="services-page">
 
@@ -182,7 +196,7 @@
     <div class="container">
       <div class="e-comm-sales-navigation-section">
         <div class="e-comm-sales-navigation-links flex-box">
-          <a href="/website/services-sales" id="sales" class="e-comm-sales-navigation nav-link selected">
+          <a href="/website/services-sales#e-comm-sales" id="sales" class="e-comm-sales-navigation nav-link selected">
             <div class="e-comm-sales-navigation-content flex-box">
               <div class="title-alignment">
                 <span class="small-number">01. </span>
@@ -194,7 +208,7 @@
             </div>
 
           </a>
-          <a href="/website/services-development" id="development" class="e-comm-sales-navigation nav-link">
+          <a href="/website/services-development#e-comm-development" id="development" class="e-comm-sales-navigation nav-link">
             <div class="e-comm-sales-navigation-content flex-box">
               <div class="title-alignment">
                 <span class="small-number">02. </span>
@@ -209,8 +223,8 @@
         </div>
       </div>
 
-      <div class="e-comm-sales e-comm-sales-sec">
-        <h2 class="e-comm-sales-title"><img class="title-svg" src="assets/icons/sales.svg" alt="Sales" /><span class="small-number">01. </span>E-commerce Sales<span class="pink-dot">.</span></h2>
+      <div id="e-comm-sales" class="e-comm-sales e-comm-sales-sec">
+        <h2 class="e-comm-sales-title"><img class="title-svg" src="assets/icons/sales.svg" alt="Sales" /><span class="small-number">01. </span>E-commerce Sales<span class="pink-dot-medium"></span></h2>
         <div class="info-cards justify-space-bet flex-box">
           <div class="info-cards-left">
             <div class="info-card">
@@ -272,9 +286,9 @@
                       <img src="assets/icons/scribble-circle.svg" alt="Scribble" />
                     </span>
                   </h3>
-                  <div class="abs-btn justify-space-bet flex-box to-blue-btn to-white-text">
+                  <a href="/website/contact" class="abs-btn justify-space-bet flex-box to-blue-btn to-white-text">
                     <div class="abs-btn-text">
-                      Let’s talk and discuss
+                      Let’s talk and discuss <span class="pink-dot-med"></span>
                     </div>
                     <div class="abs-btn-arrow">
                       <span class="blue-arrow">
@@ -292,7 +306,7 @@
                         </svg>
                       </span>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -305,7 +319,7 @@
   <section class="lets-work-togather-section">
   <div class="container">
     <div class="work-togather-content">
-      <h3 class="work-togather-title">Let’s work <span class="rel">together. <img class="scribble togather-scribble" src="/website/assets/icons/scribble-5.svg" alt=""></span></h3>
+      <h3 class="work-togather-title">Let’s work <span class="rel">together<span class="white-dot-medium"></span> <img class="scribble togather-scribble" src="/website/assets/icons/scribble-5.svg" alt=""></span></h3>
       <p class="work-togather-para">
         Tell us your business goals and we’ll see how we can create something amazing together.
       </p>
@@ -340,10 +354,10 @@
         </div>
         <div class="abs-btn justify-space-bet to-white-btn to-blue-text flex-box">
           <div class="abs-btn-text no-t-m">
-            The time has come to push the button
+            The time has come to push the button <span class="pink-dot-med"></span>
           </div>
           <div class="abs-btn-text no-d">
-            Push the button
+            Push the button <span class="pink-dot-med"></span>
           </div>
           <div class="abs-btn-arrow">
             <span class="white-arrow">
@@ -381,7 +395,7 @@
         <div class="footer-content justify-space-bet flex-box">
           <div class="footer-content-left">
             <div class="footer-logo">
-              <a href="/"><img src="assets/icons/footer-logo.svg" alt="Footer Logo" /></a>
+              <a href="/website/"><img src="assets/icons/footer-logo.svg" alt="Footer Logo" /></a>
             </div>
           </div>
           <div class="footer-content-right">
@@ -394,19 +408,19 @@
                   </div>
                   <div class="footer-links justify-space-bet flex-box">
                     <div class="footer-links-left">
-                      <a href="/services">Services</a>
-                      <a class="no-t-m footer-mid-link" href="/e-comm-sales">E-comm sales</a>
-                      <a class="no-t-m" href="/e-comm-dev">E-comm development</a>
+                      <a href="/website/services-sales">Services</a>
+                      <a class="no-t-m footer-mid-link" href="/website/services-sales#e-comm-sales">E-comm sales</a>
+                      <a class="no-t-m" href="/website/services-development#e-comm-development">E-comm development</a>
                     </div>
                     <div class="footer-links-middle">
-                      <a href="/about">About</a>
-                      <a class="no-t-m footer-mid-link" href="/careers">Careers</a>
-                      <a class="no-t-m" href="/team">Team</a>
+                      <a href="/website/about-us">About</a>
+                      <a class="no-t-m footer-mid-link" href="/website/about-us">Careers</a>
+                      <a class="no-t-m" href="/website/about-us#team">Team</a>
                     </div>
                     <div class="footer-links-right">
-                      <a href="/work">Work</a>
-                      <a class="footer-mid-link" href="/blog-articles">Blog</a>
-                      <a href="/contact">Contact</a>
+                      <a href="/website/work">Work</a>
+                      <a class="footer-mid-link" href="/website/blog-articles">Blog</a>
+                      <a href="/website/contact">Contact</a>
                     </div>
                   </div>
                 </div>

@@ -1,5 +1,6 @@
 ---
 layout: default
+description:
 ---
 
 <div class="hero hero-homepage">
@@ -15,13 +16,13 @@ layout: default
           </div>
   </div>
   <section class="services-section flex-box-1">
-          <a href="#" class="services-block">
+          <a href="{{ '/services-sales' | relative_url }}" class="services-block">
             <div class="flex-box-1 flex-column justify-center align-center">
               <h2 class="services-heading"><span class="bullets-pts">01.</span>E-commerce Sales <img src="assets/icons/arrow-blue.svg" alt="right arrow"></h2>
               <p class="services-text no-t-m">Accelerating your e-commerce <br> business growth?</p>
             </div>
           </a>
-          <a href="#" class="services-block">
+          <a href="{{ '/services-development' | relative_url }}" class="services-block">
             <div class="flex-box-1 flex-column justify-center align-center">
               <h2 class="services-heading"><span class="bullets-pts">02.</span>E-commerce Development <img src="assets/icons/arrow-blue.svg" alt="right arrow"></h2>
               <p class="services-text no-t-m">Want to build a high-performing <br> e-commerce brand?</p>
@@ -40,7 +41,7 @@ layout: default
                   <img class="scribble obsessed-scribble" src="{{ '/assets/icons/scribble-1.svg' | relative_url }}" alt="">
                 </span> with growing your business.</h3>
               <p>We combine strategic thinking, with robust platform building and persuasive customer acquisition!</p>
-              <a href="/" class="btn to-white-btn to-blue-text">
+              <a href="{{ '/about-us' | relative_url }}" class="btn to-white-btn to-blue-text">
                 <span>How we do what we do<span class="pink-dot-small"></span></span>
                 <span class="white-arrow">
                   <?xml version="1.0" encoding="UTF-8"?>
@@ -105,7 +106,7 @@ layout: default
             <span class="dear-digital-text">our work</span>
             <h3 class="featured-heading">
               <span>Featured work we’re <br> over the moon with</span>
-              <a href="#" class="all-product-link"><span>View all our cases</span> <img src="{{ '/assets/icons/arrow-white.svg' | relative_url }}" alt="right arrow btn"></a>
+              <a href="{{ '/work' | relative_url }}" class="all-product-link"><span>View all our cases</span> <img src="{{ '/assets/icons/arrow-white.svg' | relative_url }}" alt="right arrow btn"></a>
             </h3>
           </div>
         </div>
@@ -120,7 +121,7 @@ layout: default
               </div>
               <div class="product-contents">
                 <div class="prod-abs">
-                  <a href="#" class=""><h3 class="product-heading"><span class="prod-title">Brauzz</span> <img src="assets/icons/right-arrow.svg" alt="right arrow btn"></h3></a>
+                  <a href="#" class=""><h3 class="product-heading"><span class="prod-title">Brauzz</span> <img src="{{ '/assets/icons/arrow-white.svg' | relative_url }}" alt="right arrow btn"></h3></a>
                   <div class="product-descrip">
                     <ul class="product-list">
                       <li>30% revenue</li>
@@ -138,7 +139,7 @@ layout: default
               </div>
               <div class="product-contents">
                 <div class="prod-abs">
-                  <a href="#" class=""><h3 class="product-heading"><span class="prod-title">Puzzle in a bag</span> <img src="assets/icons/right-arrow.svg" alt="right arrow btn"></h3></a>
+                  <a href="#" class=""><h3 class="product-heading"><span class="prod-title">Puzzle in a bag</span> <img src="{{ '/assets/icons/arrow-white.svg' | relative_url }}" alt="right arrow btn"></h3></a>
                   <div class="product-descrip">
                     <ul class="product-list">
                       <li>30% revenue</li>
@@ -156,7 +157,7 @@ layout: default
               </div>
               <div class="product-contents">
                 <div class="prod-abs">
-                  <a href="#" class=""><h3 class="product-heading"><span class="prod-title">Buddy Bites</span> <img src="assets/icons/right-arrow.svg" alt="right arrow btn"></h3></a>
+                  <a href="#" class=""><h3 class="product-heading"><span class="prod-title">Buddy Bites</span> <img src="{{ '/assets/icons/arrow-white.svg' | relative_url }}" alt="right arrow btn"></h3></a>
                   <div class="product-descrip">
                     <ul class="product-list">
                       <li>30% revenue</li>
@@ -174,7 +175,7 @@ layout: default
               </div>
               <div class="product-contents">
                 <div class="prod-abs">
-                  <a href="#" class=""><h3 class="product-heading"><span class="prod-title">Blisspaint</span> <img src="assets/icons/right-arrow.svg" alt="right arrow btn"></h3></a>
+                  <a href="#" class=""><h3 class="product-heading"><span class="prod-title">Blisspaint</span> <img src="{{ '/assets/icons/arrow-white.svg' | relative_url }}" alt="right arrow btn"></h3></a>
                   <div class="product-descrip">
                     <ul class="product-list">
                       <li>30% revenue</li>
@@ -240,7 +241,7 @@ layout: default
               <h3 class="our-services-heading-2">
                 <span class="rel">Accelerating <img class="scribble accelerating-scribble" src="{{ '/assets/icons/scribble-round-2.svg' | relative_url }}" alt=""></span>
                  business growth through marketing sales and development.</h3>
-              <a href="/" class="btn to-blue-btn to-white-text">
+              <a href="{{ '/services-sales' | relative_url }}" class="btn to-blue-btn to-white-text">
                 <span>Discover our services<span class="pink-dot-small"></span></span>
                 <span class="blue-arrow">
                   <?xml version="1.0" encoding="UTF-8"?>
@@ -290,9 +291,9 @@ layout: default
               <span class="rel"> high-performing
                 <img class="scribble high-perf-scribble" src="{{ '/assets/icons/scribble-white.svg' | relative_url }}" alt="">
               </span> e-commerce brand?</h3>
-            <a href="/" class="btn to-blue-btn to-white-text">
-              <span class="no-d">Contact us<span class="pink-dot">.</span></span>
-              <span class="no-t-m">Contact us and prepare for launch<span class="pink-dot">.</span></span>
+            <a href="{{ '/contact' | relative_url }}" class="btn to-blue-btn to-white-text">
+              <span class="no-d">Contact us<span class="white-dot-med"></span></span>
+              <span class="no-t-m">Contact us and prepare for launch<span class="white-dot-med"></span></span>
               <span class="blue-arrow">
                 <?xml version="1.0" encoding="UTF-8"?>
                 <svg width="25px" height="18px" viewBox="0 0 25 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

@@ -4,7 +4,7 @@
         <div class="footer-content justify-space-bet flex-box">
           <div class="footer-content-left">
             <div class="footer-logo">
-              <a href="/"><img src="assets/icons/footer-logo.svg" alt="Footer Logo" /></a>
+              <a href="{{ '/' | relative_url }}"><img src="assets/icons/footer-logo.svg" alt="Footer Logo" /></a>
             </div>
           </div>
           <div class="footer-content-right">
@@ -17,19 +17,19 @@
                   </div>
                   <div class="footer-links justify-space-bet flex-box">
                     <div class="footer-links-left">
-                      <a href="/services">Services</a>
-                      <a class="no-t-m footer-mid-link" href="/e-comm-sales">E-comm sales</a>
-                      <a class="no-t-m" href="/e-comm-dev">E-comm development</a>
+                      <a href="{{ '/services-sales' | relative_url }}">Services</a>
+                      <a class="no-t-m footer-mid-link" href="{{ '/services-sales#e-comm-sales' | relative_url }}">E-comm sales</a>
+                      <a class="no-t-m" href="{{ '/services-development#e-comm-development' | relative_url }}">E-comm development</a>
                     </div>
                     <div class="footer-links-middle">
-                      <a href="/about">About</a>
-                      <a class="no-t-m footer-mid-link" href="/careers">Careers</a>
-                      <a class="no-t-m" href="/team">Team</a>
+                      <a href="{{ '/about-us' | relative_url }}">About</a>
+                      <a class="no-t-m footer-mid-link" href="{{ '/about-us' | relative_url }}">Careers</a>
+                      <a class="no-t-m" href="{{ '/about-us#team' | relative_url }}">Team</a>
                     </div>
                     <div class="footer-links-right">
-                      <a href="/work">Work</a>
-                      <a class="footer-mid-link" href="/blog-articles">Blog</a>
-                      <a href="/contact">Contact</a>
+                      <a href="{{ '/work' | relative_url }}">Work</a>
+                      <a class="footer-mid-link" href="{{ '/blog-articles' | relative_url }}">Blog</a>
+                      <a href="{{ '/contact' | relative_url }}">Contact</a>
                     </div>
                   </div>
                 </div>

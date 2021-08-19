@@ -1,19 +1,32 @@
 <!DOCTYPE html>
-<html lang="" class="no-js">
+<html lang="en" class="no-js">
     <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#202248">
 
     
     <title>
       
-        Your awesome title
+        Work | Dear Digital
       
     </title>
-  <meta name="description" content="">
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
 
+  <!-- Facebook Meta Tags -->
+  <!-- <meta property="og:url" content="https://bombay-studio.com/work.html"> -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Work">
+  <meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+  <meta property="og:image" content="/website/assets/icons/Header-Logo.svg">
 
+  <!-- Twitter Meta Tags -->
+  <!-- <meta property="twitter:url" content="https://bombay-studio.com/work.html"> -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Work">
+  <meta name="twitter:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+  <meta name="twitter:image" content="/website/assets/icons/Header-Logo.svg">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,12 +35,13 @@
 
 
     <link rel="canonical" href="">
-    <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="/website/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Dear Digital" href="/website/feed.xml" />
     <link rel="stylesheet" href="/website/assets/css/styles.css">
     <link rel="stylesheet" href="/website/assets/css/slick.css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+
 </head>
 
     <body class="body-tag">
@@ -56,7 +70,7 @@
               <li class="about-dropdown no-t-m"><a href="/website/about-us" class="header-link">About</a>
                 <div class="arrow-up"></div>
                 <ul class="header-nav-list-sub about-sub-list">
-                  <li><a href="/website/about-us">Our team of experts</a></li>
+                  <li><a href="/website/about-us#team">Our team of experts</a></li>
                   <li><a href="/website/about-us">Your new career</a></li>
                 </ul>
               </li>
@@ -152,14 +166,14 @@
         </div>
       </div>
 
-        
+
             <main class="main normal-top" role="main">
                 <div class="hero hero-workpage">
-        <div class="container flex-box-1">
+        <div class="container flex-box">
           <div class="row middle-section">
             <div class="col-txt-1 t-m-order-2">
               <span class="dear-digital-text">work</span>
-              <h3>We value our clients as <span class="rel">partners <img class="scribble partners-scribble" src="/website/assets/icons/scribble-zigzag.svg" alt=""></span> and grow along their side. To the moon and back.</h3>
+              <h3>We value our clients as <span class="rel">partners <img class="scribble partners-scribble" src="/website/assets/icons/scribble-zigzag.svg" alt=""></span> and grow along their side. To the moon and back<span class="pink-dot-medium"></span></h3>
               <p>Our team is dedicated to becoming a part of our clients’ brands and meeting their unique needs. Here are a few stories about how we helped our client partners achieve their growth goals.</p>
               <div class="work-explore-link">
                 <div class="">
@@ -169,8 +183,7 @@
             </div>
           </div>
         </div>
-        <div class="container">
-          <section class="work-section flex-box-1 justify-between">
+          <section class="work-section flex-box justify-between">
             <span class="work-type work-selected user-select-none">Show all</span>
             <span class="work-type user-select-none">Saas</span>
             <span class="work-type user-select-none">Sales</span>
@@ -179,7 +192,6 @@
             <span class="work-type user-select-none">Content marketing</span>
             <span class="work-type user-select-none">Marketing Automation</span>
           </section>
-        </div>
 
       </div>
 
@@ -204,7 +216,7 @@
                   <li>Active in 25 countries</li>
                 </ul>
               </div>
-              <a href="#" class="product-link"><span>View this case</span> <img src="assets/icons/arrow-blue.svg" alt="right arrow btn"></a>
+              <a href="/website/work-detail" class="product-link"><span>View this case</span> <img src="assets/icons/arrow-blue.svg" alt="right arrow btn"></a>
             </div>
           </div>
 
@@ -224,7 +236,7 @@
                   <li>327% leads</li>
                 </ul>
               </div>
-              <a href="#" class="product-link"><span>View this case</span> <img src="assets/icons/arrow-blue.svg" alt="right arrow btn"></a>
+              <a href="/website/work-detail" class="product-link"><span>View this case</span> <img src="assets/icons/arrow-blue.svg" alt="right arrow btn"></a>
             </div>
             <div class="product-img no-t-m">
               <img src="assets/imgs/work-detail.jpg" class="product-mobile-img" alt="product mobile image">
@@ -252,7 +264,7 @@
                   <li>Active in 25 countries</li>
                 </ul>
               </div>
-              <a href="#" class="product-link"><span>View this case</span> <img src="assets/icons/arrow-blue.svg" alt="right arrow btn"></a>
+              <a href="/website/work-detail" class="product-link"><span>View this case</span> <img src="assets/icons/arrow-blue.svg" alt="right arrow btn"></a>
             </div>
           </div>
 
@@ -272,7 +284,7 @@
                   <li>327% leads</li>
                 </ul>
               </div>
-              <a href="#" class="product-link"><span>View this case</span> <img src="assets/icons/arrow-blue.svg" alt="right arrow btn"></a>
+              <a href="/website/work-detail" class="product-link"><span>View this case</span> <img src="assets/icons/arrow-blue.svg" alt="right arrow btn"></a>
             </div>
             <div class="product-img no-t-m">
               <img src="assets/imgs/work-detail.jpg" class="product-mobile-img" alt="product mobile image">
@@ -299,7 +311,7 @@
                   <li>Active in 25 countries</li>
                 </ul>
               </div>
-              <a href="#" class="product-link"><span>View this case</span> <img src="assets/icons/arrow-blue.svg" alt="right arrow btn"></a>
+              <a href="/website/work-detail" class="product-link"><span>View this case</span> <img src="assets/icons/arrow-blue.svg" alt="right arrow btn"></a>
             </div>
           </div>
 
@@ -319,7 +331,7 @@
                   <li>327% leads</li>
                 </ul>
               </div>
-              <a href="#" class="product-link"><span>View this case</span> <img src="assets/icons/arrow-blue.svg" alt="right arrow btn"></a>
+              <a href="/website/work-detail" class="product-link"><span>View this case</span> <img src="assets/icons/arrow-blue.svg" alt="right arrow btn"></a>
             </div>
             <div class="product-img no-t-m">
               <img src="assets/imgs/work-detail.jpg" class="product-mobile-img" alt="product mobile image">
@@ -346,11 +358,11 @@
                   <li>Active in 25 countries</li>
                 </ul>
               </div>
-              <a href="#" class="product-link"><span>View this case</span> <img src="assets/icons/arrow-blue.svg" alt="right arrow btn"></a>
+              <a href="/website/work-detail" class="product-link"><span>View this case</span> <img src="assets/icons/arrow-blue.svg" alt="right arrow btn"></a>
             </div>
           </div>
 
-          <div class="load-more-btn marg-bottom to-blue-btn to-white-text">Load more<span class="pink-dot">.</span>
+          <div id="load-more" class="load-more-btn marg-bottom to-blue-btn to-white-text">Load more<span class="pink-dot-med"></span>
           </div>
 
         </div>
@@ -360,7 +372,7 @@
         <div class="container flex-box-1 justify-center contact-us">
           <div class="flex-center">
             <h3 class="our-services-heading">Want to build a <span class="rel">high-performing <img class="scribble high-perf-scribble" src="/website/assets/icons/scribble-pink.svg" alt=""></span> e-commerce brand?</h3>
-            <a href="/" class="btn to-white-btn to-blue-text">
+            <a href="/website/contact" class="btn to-white-btn to-blue-text">
               <span class="no-d">Contact us<span class="pink-dot">.</span></span>
               <span class="no-t-m">Contact us and prepare for launch<span class="pink-dot-small"></span></span>
               <span class="white-arrow">
@@ -382,6 +394,18 @@
         </div>
       </div>
 
+
+
+      <script>
+        $('.load-more .podcast-card').hide();
+        $('.load-more .podcast-card:lt(3)').show();
+        $('#load-more').click(function() {
+          $('.load-more .podcast-card').show();
+          $('.articles-end-blur').addClass('no-disp');
+          $(this).addClass('no-disp');
+        });
+      </script>
+
             </main>
         <footer>
     <div class="footer-wrapper">
@@ -389,7 +413,7 @@
         <div class="footer-content justify-space-bet flex-box">
           <div class="footer-content-left">
             <div class="footer-logo">
-              <a href="/"><img src="assets/icons/footer-logo.svg" alt="Footer Logo" /></a>
+              <a href="/website/"><img src="assets/icons/footer-logo.svg" alt="Footer Logo" /></a>
             </div>
           </div>
           <div class="footer-content-right">
@@ -402,19 +426,19 @@
                   </div>
                   <div class="footer-links justify-space-bet flex-box">
                     <div class="footer-links-left">
-                      <a href="/services">Services</a>
-                      <a class="no-t-m footer-mid-link" href="/e-comm-sales">E-comm sales</a>
-                      <a class="no-t-m" href="/e-comm-dev">E-comm development</a>
+                      <a href="/website/services-sales">Services</a>
+                      <a class="no-t-m footer-mid-link" href="/website/services-sales#e-comm-sales">E-comm sales</a>
+                      <a class="no-t-m" href="/website/services-development#e-comm-development">E-comm development</a>
                     </div>
                     <div class="footer-links-middle">
-                      <a href="/about">About</a>
-                      <a class="no-t-m footer-mid-link" href="/careers">Careers</a>
-                      <a class="no-t-m" href="/team">Team</a>
+                      <a href="/website/about-us">About</a>
+                      <a class="no-t-m footer-mid-link" href="/website/about-us">Careers</a>
+                      <a class="no-t-m" href="/website/about-us#team">Team</a>
                     </div>
                     <div class="footer-links-right">
-                      <a href="/work">Work</a>
-                      <a class="footer-mid-link" href="/blog-articles">Blog</a>
-                      <a href="/contact">Contact</a>
+                      <a href="/website/work">Work</a>
+                      <a class="footer-mid-link" href="/website/blog-articles">Blog</a>
+                      <a href="/website/contact">Contact</a>
                     </div>
                   </div>
                 </div>

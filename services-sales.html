@@ -1,5 +1,7 @@
 ---
 layout: default
+title: E-Commerce Sales
+description:
 ---
 <div class="services-page">
 
@@ -29,7 +31,7 @@ layout: default
     <div class="container">
       <div class="e-comm-sales-navigation-section">
         <div class="e-comm-sales-navigation-links flex-box">
-          <a href="{{ '/services-sales' | relative_url }}" id="sales" class="e-comm-sales-navigation nav-link selected">
+          <a href="{{ '/services-sales#e-comm-sales' | relative_url }}" id="sales" class="e-comm-sales-navigation nav-link selected">
             <div class="e-comm-sales-navigation-content flex-box">
               <div class="title-alignment">
                 <span class="small-number">01. </span>
@@ -41,7 +43,7 @@ layout: default
             </div>
 
           </a>
-          <a href="{{ '/services-development' | relative_url }}" id="development" class="e-comm-sales-navigation nav-link">
+          <a href="{{ '/services-development#e-comm-development' | relative_url }}" id="development" class="e-comm-sales-navigation nav-link">
             <div class="e-comm-sales-navigation-content flex-box">
               <div class="title-alignment">
                 <span class="small-number">02. </span>
@@ -56,8 +58,8 @@ layout: default
         </div>
       </div>
 
-      <div class="e-comm-sales e-comm-sales-sec">
-        <h2 class="e-comm-sales-title"><img class="title-svg" src="assets/icons/sales.svg" alt="Sales" /><span class="small-number">01. </span>E-commerce Sales<span class="pink-dot">.</span></h2>
+      <div id="e-comm-sales" class="e-comm-sales e-comm-sales-sec">
+        <h2 class="e-comm-sales-title"><img class="title-svg" src="assets/icons/sales.svg" alt="Sales" /><span class="small-number">01. </span>E-commerce Sales<span class="pink-dot-medium"></span></h2>
         <div class="info-cards justify-space-bet flex-box">
           <div class="info-cards-left">
             <div class="info-card">
@@ -119,9 +121,9 @@ layout: default
                       <img src="assets/icons/scribble-circle.svg" alt="Scribble" />
                     </span>
                   </h3>
-                  <div class="abs-btn justify-space-bet flex-box to-blue-btn to-white-text">
+                  <a href="{{ '/contact' | relative_url }}" class="abs-btn justify-space-bet flex-box to-blue-btn to-white-text">
                     <div class="abs-btn-text">
-                      Let’s talk and discuss
+                      Let’s talk and discuss <span class="pink-dot-med"></span>
                     </div>
                     <div class="abs-btn-arrow">
                       <span class="blue-arrow">
@@ -139,7 +141,7 @@ layout: default
                         </svg>
                       </span>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>

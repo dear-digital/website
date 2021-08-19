@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Blog Articles
+description:
 ---
 
 <div class="blog-page">
@@ -38,7 +40,7 @@ layout: default
               <input id="togather-email" type="email" name="" value="" placeholder="Hello@yourdomain.be" />
             </div>
             <a href="/" class="btn to-white-btn to-blue-text">
-              <span>Yes, I’ll never miss an insight<span class="pink-dot">.</span></span>
+              <span>Yes, I’ll never miss an insight <span class="pink-dot-med"></span></span>
               <span class="white-arrow">
                 <?xml version="1.0" encoding="UTF-8"?>
                 <svg width="25px" height="18px" viewBox="0 0 25 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -60,13 +62,13 @@ layout: default
     </div>
 
     <div class="blog-podcast-navigation flex-box">
-      <a href="{{ '/blog-articles' | relative_url }}" class="navigation articles-nav flex-box selected">
+      <a href="{{ '/blog-articles#articles' | relative_url }}" class="navigation articles-nav flex-box selected">
         <span class="navigation-svg"><img src="{{ '/assets/icons/article.svg' | relative_url }}" alt="Article"></span>
 
         <span class="btn-text">Articles & insights</span>
         <span class="blog-nav-arrow down-arrow"><img src="{{ '/assets/icons/arrow-blue.svg' | relative_url }}" alt="blue arrow"></span>
       </a>
-      <a href="{{ '/blog-podcast' | relative_url }}" class="navigation flex-box podcast-nav">
+      <a href="{{ '/blog-podcast#podcast' | relative_url }}" class="navigation flex-box podcast-nav">
         <span class="navigation-svg"><img src="{{ '/assets/icons/podcast.svg' | relative_url }}" alt="Podcast"></span>
 
         <span class="btn-text">Podcasts</span>
@@ -78,7 +80,7 @@ layout: default
   </div>
   </div>
 
-  <div class="articles-section container">
+  <div id="articles" class="articles-section container">
     <div class="articles-title">
       <span class="navigation-svg"><img src="{{ '/assets/icons/article.svg' | relative_url }}" alt="Article"></span>
       Our articles & insights<span class="pink-dot-medium"></span>
@@ -97,9 +99,9 @@ layout: default
         <div class="article-img">
           <img src="{{ '/assets/imgs/team.jpeg' | relative_url }}" alt="">
         </div>
-        <div class="article-title">
+        <a href="{{ '/blog-detail' | relative_url }}" class="article-title">
           7 Ways to Improve Customer Retention Strategy for eCommerce
-        </div>
+        </a>
         <div class="article-author-info flex-box">
           <div class="article-author-img">
             <img src="{{ '/assets/imgs/testimonial.jpeg' | relative_url }}" alt="">
@@ -124,9 +126,9 @@ layout: default
         <div class="article-img">
           <img src="{{ '/assets/imgs/team.jpeg' | relative_url }}" alt="">
         </div>
-        <div class="article-title">
+        <a href="{{ '/blog-detail' | relative_url }}" class="article-title">
           7 Ways to Improve Customer Retention Strategy for eCommerce
-        </div>
+        </a>
         <div class="article-author-info flex-box">
           <div class="article-author-img">
             <img src="{{ '/assets/imgs/testimonial.jpeg' | relative_url }}" alt="">
@@ -151,9 +153,9 @@ layout: default
         <div class="article-img">
           <img src="{{ '/assets/imgs/team.jpeg' | relative_url }}" alt="">
         </div>
-        <div class="article-title">
+        <a href="{{ '/blog-detail' | relative_url }}" class="article-title">
           7 Ways to Improve Customer Retention Strategy for eCommerce
-        </div>
+        </a>
         <div class="article-author-info flex-box">
           <div class="article-author-img">
             <img src="{{ '/assets/imgs/testimonial.jpeg' | relative_url }}" alt="">
@@ -181,9 +183,9 @@ layout: default
         <img src="{{ '/assets/imgs/team.jpeg' | relative_url }}" alt="">
       </div>
       <div class="article-info">
-        <div class="article-title">
+        <a href="{{ '/blog-detail' | relative_url }}" class="article-title">
           Shopify vs BigCommerce vs Magento: Pricing Guide
-        </div>
+        </a>
         <div class="article-author-info flex-box">
           <div class="article-author-img">
             <img src="{{ '/assets/imgs/testimonial.jpeg' | relative_url }}" alt="">
@@ -206,14 +208,14 @@ layout: default
       </div>
     </div>
 
-    <div class="article-cards flex-box">
+    <div class="article-cards load-more flex-box">
       <div class="article-card">
         <div class="article-img">
           <img src="{{ '/assets/imgs/team.jpeg' | relative_url }}" alt="">
         </div>
-        <div class="article-title">
+        <a href="{{ '/blog-detail' | relative_url }}" class="article-title">
           7 Ways to Improve Customer Retention Strategy for eCommerce
-        </div>
+        </a>
         <div class="article-author-info flex-box">
           <div class="article-author-img">
             <img src="{{ '/assets/imgs/testimonial.jpeg' | relative_url }}" alt="">
@@ -238,9 +240,9 @@ layout: default
         <div class="article-img">
           <img src="{{ '/assets/imgs/team.jpeg' | relative_url }}" alt="">
         </div>
-        <div class="article-title">
+        <a href="{{ '/blog-detail' | relative_url }}" class="article-title">
           7 Ways to Improve Customer Retention Strategy for eCommerce
-        </div>
+        </a>
         <div class="article-author-info flex-box">
           <div class="article-author-img">
             <img src="{{ '/assets/imgs/testimonial.jpeg' | relative_url }}" alt="">
@@ -265,9 +267,9 @@ layout: default
         <div class="article-img">
           <img src="{{ '/assets/imgs/team.jpeg' | relative_url }}" alt="">
         </div>
-        <div class="article-title">
+        <a href="{{ '/blog-detail' | relative_url }}" class="article-title">
           7 Ways to Improve Customer Retention Strategy for eCommerce
-        </div>
+        </a>
         <div class="article-author-info flex-box">
           <div class="article-author-img">
             <img src="{{ '/assets/imgs/testimonial.jpeg' | relative_url }}" alt="">
@@ -292,9 +294,9 @@ layout: default
         <div class="article-img">
           <img src="{{ '/assets/imgs/team.jpeg' | relative_url }}" alt="">
         </div>
-        <div class="article-title">
+        <a href="{{ '/blog-detail' | relative_url }}" class="article-title">
           7 Ways to Improve Customer Retention Strategy for eCommerce
-        </div>
+        </a>
         <div class="article-author-info flex-box">
           <div class="article-author-img">
             <img src="{{ '/assets/imgs/testimonial.jpeg' | relative_url }}" alt="">
@@ -319,9 +321,9 @@ layout: default
         <div class="article-img">
           <img src="{{ '/assets/imgs/team.jpeg' | relative_url }}" alt="">
         </div>
-        <div class="article-title">
+        <a href="{{ '/blog-detail' | relative_url }}" class="article-title">
           7 Ways to Improve Customer Retention Strategy for eCommerce
-        </div>
+        </a>
         <div class="article-author-info flex-box">
           <div class="article-author-img">
             <img src="{{ '/assets/imgs/testimonial.jpeg' | relative_url }}" alt="">
@@ -346,9 +348,9 @@ layout: default
         <div class="article-img">
           <img src="{{ '/assets/imgs/team.jpeg' | relative_url }}" alt="">
         </div>
-        <div class="article-title">
+        <a href="{{ '/blog-detail' | relative_url }}" class="article-title">
           7 Ways to Improve Customer Retention Strategy for eCommerce
-        </div>
+        </a>
         <div class="article-author-info flex-box">
           <div class="article-author-img">
             <img src="{{ '/assets/imgs/testimonial.jpeg' | relative_url }}" alt="">
@@ -373,9 +375,9 @@ layout: default
         <div class="article-img">
           <img src="{{ '/assets/imgs/team.jpeg' | relative_url }}" alt="">
         </div>
-        <div class="article-title">
+        <a href="{{ '/blog-detail' | relative_url }}" class="article-title">
           7 Ways to Improve Customer Retention Strategy for eCommerce
-        </div>
+        </a>
         <div class="article-author-info flex-box">
           <div class="article-author-img">
             <img src="{{ '/assets/imgs/testimonial.jpeg' | relative_url }}" alt="">
@@ -400,9 +402,36 @@ layout: default
         <div class="article-img">
           <img src="{{ '/assets/imgs/team.jpeg' | relative_url }}" alt="">
         </div>
-        <div class="article-title">
+        <a href="{{ '/blog-detail' | relative_url }}" class="article-title">
           7 Ways to Improve Customer Retention Strategy for eCommerce
+        </a>
+        <div class="article-author-info flex-box">
+          <div class="article-author-img">
+            <img src="{{ '/assets/imgs/testimonial.jpeg' | relative_url }}" alt="">
+          </div>
+          <div class="article-author-name-date">
+            <div class="article-author-name">
+              Sam Rieder
+            </div>
+            <div class="article-date-time flex-box">
+              <div class="article-date">
+                May 27, 2021
+              </div>
+              <div class="pink-dot-small"></div>
+              <div class="article-read-time">
+                13 min read
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="article-card">
+        <div class="article-img">
+          <img src="{{ '/assets/imgs/team.jpeg' | relative_url }}" alt="">
+        </div>
+        <a href="{{ '/blog-detail' | relative_url }}" class="article-title">
+          7 Ways to Improve Customer Retention Strategy for eCommerce
+        </a>
         <div class="article-author-info flex-box">
           <div class="article-author-img">
             <img src="{{ '/assets/imgs/testimonial.jpeg' | relative_url }}" alt="">
@@ -430,11 +459,11 @@ layout: default
 
     </div>
 
-    <div class="load-more-btn to-blue-btn to-white-text flex-box">
+    <div id="load-more" class="load-more-btn to-blue-btn to-white-text flex-box">
       <div class="load-more-text">
         Load more
       </div>
-      <div class="pink-dot">.</div>
+      <div class="pink-dot-med"></div>
     </div>
     <img class="illustration-moon" src="{{ '/assets/icons/illustration-moon.svg' | relative_url }}" alt="">
   </div>
@@ -455,5 +484,11 @@ layout: default
 </div>
 
 <script>
-
+  $('.load-more .article-card').hide();
+  $('.load-more .article-card:lt(6)').show();
+  $('#load-more').click(function() {
+    $('.load-more .article-card').show();
+    $('.articles-end-blur').addClass('no-disp');
+    $(this).addClass('no-disp');
+  });
 </script>
