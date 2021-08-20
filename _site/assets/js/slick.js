@@ -74,10 +74,32 @@ $(document).ready(function(){
       ]
     });
 
+    function check(currentSlide) {
+         if (document.documentElement.clientWidth <= 560) {
+           if(!currentSlide) {
+             currentSlide = 0;
+           }
+           var i = currentSlide+1;
+           $(".current-slide").text(i);
+         }
+         else {
+           if(!currentSlide) {
+             currentSlide = 1;
+           }
+           var i = currentSlide;
+           $(".current-slide").text(i);
+         }
+    }
     $('.homepage-products-carousel').on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
       //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
       var i = (currentSlide ? currentSlide : 0) + 1;
       $(".current-slide").text(i);
+      check(currentSlide);
+
+
+      $(window).on('resize', function(){
+          check();
+      });
     });
 
     $('.homepage-products-carousel').slick({
@@ -100,6 +122,4 @@ $(document).ready(function(){
       }
       ]
     });
-
-
 });

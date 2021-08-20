@@ -152,8 +152,9 @@ $(document).ready(function () {
     let mouseXpct = Math.ceil(mouseXrelative / $(this)[0].clientWidth * 100);
     let mouseYpct = Math.ceil(mouseYrelative / $(this)[0].clientHeight * 100);
 
-    $(this).find(".text-fx__bg")[0].style['-webkit-clip-path'] = `circle(150px at ${ mouseXpct }% ${ mouseYpct }%)`;
-    $(this).find(".text-fx__bg")[0].style.clipPath = `circle(150px at ${ mouseXpct }% ${ mouseYpct }%)`;
+    $(this).find(".text-fx__bg")[0].style['-webkit-clip-path'] = `circle(75px at ${ mouseXpct }% ${ mouseYpct }%)`;
+    $(this).find(".text-fx__bg")[0].style.clipPath = `circle(75px at ${ mouseXpct }% ${ mouseYpct }%)`;
+    $(this).find(".text-fx__bg")[0].style.backgroundColor = "#DB9195";
   });
 
   // const slider = document.querySelector('.homepage-products-carousel');
