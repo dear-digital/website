@@ -590,6 +590,13 @@ transition: .4s ease;
     transition: max-height .4s ease-in-out;
     color: #202248;
 }
+
+.rectangle-2 .panel p{
+  color: #8F90A3;
+  font-size: 16px;
+  line-height: 25px;
+}
+
 .panel-max {
     max-height: none!important;
 }
