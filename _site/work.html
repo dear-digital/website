@@ -237,7 +237,8 @@
 
       <div class="products-section" id="products-block">
         <div class="container padd-top padd-bottom">
-          <div class="our-products">
+          <div class="products-wrapper rel">
+          <div class="our-products Saas Paid-search">
             <div class="product-img no-t-m">
               <img src="assets/imgs/work-detail.jpg" class="product-desktop-img" alt="product desktop image">
               <img src="assets/imgs/work-detail.jpg" class="product-mobile-img" alt="product mobile image">
@@ -260,7 +261,11 @@
             </div>
           </div>
 
-          <div class="our-products rev-cols">
+          <div class="our-products rev-cols Saas Sales">
+            <div class="product-img no-t-m">
+              <img src="assets/imgs/work-detail.jpg" class="product-mobile-img" alt="product mobile image">
+              <img src="assets/imgs/work-detail.jpg" class="product-desktop-img" alt="product desktop image">
+            </div>
             <div class="product-contents">
               <h3 class="product-heading">Puzzle in a bag</h3>
               <div class="product-img no-d">
@@ -278,13 +283,9 @@
               </div>
               <a href="/website/work-detail" class="product-link"><span>View this case</span> <img src="assets/icons/arrow-blue.svg" alt="right arrow btn"></a>
             </div>
-            <div class="product-img no-t-m">
-              <img src="assets/imgs/work-detail.jpg" class="product-mobile-img" alt="product mobile image">
-              <img src="assets/imgs/work-detail.jpg" class="product-desktop-img" alt="product desktop image">
-            </div>
           </div>
 
-          <div class="our-products">
+          <div class="our-products Development Content-marketing">
             <div class="product-img no-t-m">
               <img src="assets/imgs/work-detail.jpg" class="product-desktop-img" alt="product desktop image">
               <img src="assets/imgs/work-detail.jpg" class="product-mobile-img" alt="product mobile image">
@@ -308,7 +309,11 @@
             </div>
           </div>
 
-          <div class="our-products rev-cols">
+          <div class="our-products rev-cols Paid-search Marketing-Automation">
+          <div class="product-img no-t-m">
+            <img src="assets/imgs/work-detail.jpg" class="product-mobile-img" alt="product mobile image">
+            <img src="assets/imgs/work-detail.jpg" class="product-desktop-img" alt="product desktop image">
+          </div>
             <div class="product-contents">
               <h3 class="product-heading">Blisspaint</h3>
               <div class="product-img no-d">
@@ -326,13 +331,9 @@
               </div>
               <a href="/website/work-detail" class="product-link"><span>View this case</span> <img src="assets/icons/arrow-blue.svg" alt="right arrow btn"></a>
             </div>
-            <div class="product-img no-t-m">
-              <img src="assets/imgs/work-detail.jpg" class="product-mobile-img" alt="product mobile image">
-              <img src="assets/imgs/work-detail.jpg" class="product-desktop-img" alt="product desktop image">
-            </div>
           </div>
 
-          <div class="our-products">
+          <div class="our-products Sales Content-marketing">
             <div class="product-img no-t-m">
               <img src="assets/imgs/work-detail.jpg" class="product-desktop-img" alt="product desktop image">
               <img src="assets/imgs/work-detail.jpg" class="product-mobile-img" alt="product mobile image">
@@ -355,7 +356,11 @@
             </div>
           </div>
 
-          <div class="our-products rev-cols">
+          <div class="our-products rev-cols Development Marketing-Automation">
+          <div class="product-img no-t-m">
+            <img src="assets/imgs/work-detail.jpg" class="product-mobile-img" alt="product mobile image">
+            <img src="assets/imgs/work-detail.jpg" class="product-desktop-img" alt="product desktop image">
+          </div>
             <div class="product-contents">
               <h3 class="product-heading">Stickerpet</h3>
               <div class="product-img no-d">
@@ -373,13 +378,9 @@
               </div>
               <a href="/website/work-detail" class="product-link"><span>View this case</span> <img src="assets/icons/arrow-blue.svg" alt="right arrow btn"></a>
             </div>
-            <div class="product-img no-t-m">
-              <img src="assets/imgs/work-detail.jpg" class="product-mobile-img" alt="product mobile image">
-              <img src="assets/imgs/work-detail.jpg" class="product-desktop-img" alt="product desktop image">
-            </div>
           </div>
 
-          <div class="our-products fade-product">
+          <div class="our-products fade-product Paid-search">
             <div class="product-img no-t-m">
               <img src="assets/imgs/work-detail.jpg" class="product-desktop-img" alt="product desktop image">
               <img src="assets/imgs/work-detail.jpg" class="product-mobile-img" alt="product mobile image">
@@ -402,9 +403,12 @@
             </div>
           </div>
 
-          <div id="load-more" class="load-more-btn marg-bottom to-blue-btn to-white-text">Load more<span class="pink-dot-med"></span>
-          </div>
+          <div class="articles-end-blur"></div>
 
+
+        </div>
+        <div id="load-more" class="load-more-btn marg-bottom to-blue-btn to-white-text">Load more<span class="pink-dot-med"></span>
+        </div>
         </div>
       </div>
 
@@ -444,6 +448,67 @@
           $('.articles-end-blur').addClass('no-disp');
           $(this).addClass('no-disp');
         });
+
+        $(".work-type").click(function() {
+              $(".work-type").removeClass("work-selected");
+              $(this).addClass("work-selected");
+              $(".our-products").removeClass("rev-cols");
+              $(".our-products").addClass("no-disp");
+
+              if ($(this).text() == "Show all") {
+                $(".our-products").removeClass("no-disp");
+              }
+              else if ($(this).text() == "Saas") {
+                $(".our-products").each(function () {
+                  if ($(this).hasClass("Saas")) {
+                    $(this).removeClass("no-disp");
+                  }
+                });
+              }
+              else if ($(this).text() == "Sales") {
+                $(".our-products").each(function () {
+                  if ($(this).hasClass("Sales")) {
+                    $(this).removeClass("no-disp");
+                  }
+                });
+              }
+              else if ($(this).text() == "Development") {
+                $(".our-products").each(function () {
+                  if ($(this).hasClass("Development")) {
+                    $(this).removeClass("no-disp");
+                  }
+                });
+              }
+              else if ($(this).text() == "Paid search") {
+                $(".our-products").each(function () {
+                  if ($(this).hasClass("Paid-search")) {
+                    $(this).removeClass("no-disp");
+                  }
+                });
+              }
+              else if ($(this).text() == "Content marketing") {
+                $(".our-products").each(function () {
+                  if ($(this).hasClass("Content-marketing")) {
+                    $(this).removeClass("no-disp");
+                  }
+                });
+              }
+              else if ($(this).text() == "Marketing Automation") {
+                $(".our-products").each(function () {
+                  if ($(this).hasClass("Marketing-Automation")) {
+                    $(this).removeClass("no-disp");
+                  }
+                });
+              }
+
+              var counter=1;
+              $(".our-products:not(.no-disp)").each(function () {
+                if(counter % 2 == 0) {
+                  $(this).addClass("rev-cols");
+                }
+                counter=counter+1;
+              });
+            });
       </script>
 
             </main>

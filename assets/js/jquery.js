@@ -155,3 +155,49 @@ $(document).ready(function () {
     $(this).find(".text-fx__bg")[0].style['-webkit-clip-path'] = `circle(150px at ${ mouseXpct }% ${ mouseYpct }%)`;
     $(this).find(".text-fx__bg")[0].style.clipPath = `circle(150px at ${ mouseXpct }% ${ mouseYpct }%)`;
   });
+
+  // const slider = document.querySelector('.homepage-products-carousel');
+  //       let isDown = false;
+  //       let startX;
+  //       let scrollLeft;
+  //
+  //       slider.addEventListener('mousedown', (e) => {
+  //         isDown = true;
+  //         slider.classList.add('active');
+  //         startX = e.pageX - slider.offsetLeft;
+  //         scrollLeft = slider.scrollLeft;
+  //       });
+  //       slider.addEventListener('mouseleave', () => {
+  //         isDown = false;
+  //         slider.classList.remove('active');
+  //       });
+  //       slider.addEventListener('mouseup', () => {
+  //         isDown = false;
+  //         slider.classList.remove('active');
+  //       });
+  //       slider.addEventListener('mousemove', (e) => {
+  //         if(!isDown) return;
+  //         e.preventDefault();
+  //         const x = e.pageX - slider.offsetLeft;
+  //         const walk = (x - startX) * 3; //scroll-fast
+  //         slider.scrollLeft = scrollLeft - walk;
+  //         // console.log(walk);
+  //       });
+  //
+  //       const rightBtn = document.querySelector('.slider-right');
+  //       const leftBtn = document.querySelector('.slider-left');
+  //
+  //       rightBtn.addEventListener("click", function(event) {
+  //         // $('.homepage-products-carousel').animate({scrollLeft: $('.homepage-products').next().position().left}, 500);
+  //       const content = document.querySelector('.homepage-products-carousel');
+  //       content.scrollLeft += 300;
+  //       leftBtn.style.display = "block";
+  //       event.preventDefault();
+  //       });
+  //
+  //       leftBtn.addEventListener("click", function(event) {
+  //         // $('.homepage-products-carousel').animate({scrollLeft: $('.homepage-products').prev().position().left}, 500);
+  //       const content = document.querySelector('.homepage-products-carousel');
+  //       content.scrollLeft -= 300;
+  //       event.preventDefault();
+  //       });
