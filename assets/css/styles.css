@@ -247,6 +247,23 @@ span.hero-bg-cover {
     padding: 0 20px 0 40px;
   }
 }
+
+@media (min-width: 993px) and (max-width: 1440px) {
+  .testimonials .slick-list {
+      padding-right: 0!important;
+      margin-left: 0!important;
+  }
+  .testimonial-blur {
+    display: none !important;
+  }
+  .testimonials .slick-prev, .testimonials .slick-next {
+    bottom: -148px !important;
+    top: auto !important;
+}
+.testimonial-text {
+    width: auto !important;
+}
+}
 .services-block:first-child {
   border-right: 2px solid rgba(255,255,255,0.5);
   padding-left: 0;
@@ -509,6 +526,11 @@ transition: .4s ease;
     letter-spacing: 0;
     line-height: 35px;
     margin: 0;
+    align-items: flex-start;
+}
+
+.rectangle-2 .our-services-heading{
+  height: 62px;
 }
 
 .our-services-heading .thrive-scribble {
@@ -566,12 +588,15 @@ transition: .4s ease;
     line-height: 27px;
     /* padding-right: 40px; */
 }
+.rectangle-2  .accordion {
+  padding: 12px 0;
+}
 .accordion .symbol {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 34px;
-    width: 34px;
+    height: 32px;
+    width: 32px;
     background-color: #DB9195;
     border: 2px solid #DB9195;
     -webkit-transition-property: background,-webkit-transform;
@@ -753,6 +778,7 @@ transition: .4s ease;
     bottom: -65px;
     display: block;
     width: 100%;
+    max-width: 1246px;
 }
 
 .testimonials .slick-dots{
@@ -1007,16 +1033,16 @@ button {
     margin-left: 16px;
 }
 .work-section {
-    position: absolute;
-    bottom: 0;
-    left: 5%;
-    right: 5%;
-    width: 90%;
-    max-width: 1480px;
-    height: 120px;
-    background-color: #1F2AC9;
-    margin: 0 auto;
-    padding: 0 25px;
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  max-width: 1246px;
+  height: 120px;
+  background-color: #1F2AC9;
+  margin: 0 auto;
+  padding: 0 105px;
 }
 .work-type {
     display: flex;
@@ -1049,7 +1075,17 @@ button {
 
 .homepage-slide.slide-number{
   color: #FFFFFF;
-  letter-spacing: 8px;
+    margin-top: -90px;
+    letter-spacing: 8px;
+    margin-bottom: 160px;
+}
+
+@media (max-width: 1330px) {
+
+
+  .homepage-products-carousel .slick-dots{
+    width: 97%;
+  }
 }
 
 .homepage-slide .slider-right {
@@ -1981,7 +2017,6 @@ input[type=number]::-webkit-outer-spin-button {
 .our-team-rectangle {
     background-color: #FFFFFF;
     box-shadow: 4px 4px 24px 0 rgb(32 34 72 / 40%);
-    width: 90%;
     margin: 0 auto;
     position: relative;
     color: #202248;
@@ -5517,6 +5552,10 @@ input[type=number]::-webkit-outer-spin-button {
     line-height: 21px;
 }
 
+.testimonials .slick-dots li {
+    width: 18%;
+}
+
 .about-page .testimonials-section{
   margin-top: 48px;
 }
@@ -5770,10 +5809,23 @@ header .header-nav-list {
 }
 
 .carousel-wrapper {
-  padding-left: calc(50vw - 659px) !important;
+  padding-left: calc(50vw - 637px) !important;
   margin: 0 !important;
   max-width: none !important;
   padding-right: 0 !important;
+}
+@media (max-width: 1440px) {
+
+  .carousel-wrapper {
+  padding-left: calc(50vw - 655px) !important;
+}
+}
+
+@media (max-width: 1330px) {
+
+  .carousel-wrapper {
+  padding-left: calc(50vw - 644px) !important;
+}
 }
 @media (min-width: 1261px) and (max-width: 1330px) {
   .homepage-products .product-images .desktop-img {
@@ -5787,5 +5839,29 @@ header .header-nav-list {
 @media (min-width: 1331px) and (max-width: 1440px) {
   .homepage-products .product-images .desktop-img {
     width: 420px;;
+  }
+}
+@media (min-width: 993px) and (max-width: 1160px) {
+  .product-img .product-desktop-img {
+    width: 90%;
+    height: 262px;
+  }
+  .product-img .product-mobile-img {
+    height: 378px;
+  }
+}
+@media (min-width: 993px) and (max-width: 1600px) {
+  .hero-workpage {
+    height: auto !important;
+    max-height: none !important;
+  }
+  .hero-services {
+    min-height: 100vh;
+    max-height: none;
+  }
+  .hero.hero-blog {
+    height: auto;
+    min-height: 100vh;
+    max-height: none;
   }
 }

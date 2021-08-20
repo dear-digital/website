@@ -19,6 +19,70 @@ $(document).ready(function(){
     ]
   });
 
+  $('.testimonials').on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+      //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+
+      // 20-08-2021 Commit Starts
+      if(!currentSlide) {
+        currentSlide = 0;
+      }
+      console.log("currentSlide"+currentSlide);
+      console.log("nextSlide"+nextSlide);
+      var i = currentSlide;
+      if(currentSlide > 0) {
+        var i = currentSlide + 1;
+      }
+      else {
+        i = 1;
+      }
+      console.log("i"+i);
+      $(".current-slide").text(i);
+
+      // $(window).bind('orientationchange', check);
+      //
+      // function testimonialcheck() {
+      //      if (document.documentElement.clientWidth <= 992) {
+      //        if(!currentSlide) {
+      //          currentSlide = 0;
+      //        }
+      //        console.log("currentSlide"+currentSlide);
+      //        console.log("nextSlide"+nextSlide);
+      //        var i = currentSlide;
+      //        if(currentSlide > 0) {
+      //          var i = currentSlide + 1;
+      //        }
+      //        else {
+      //          i = 1;
+      //        }
+      //        console.log("i"+i);
+      //        $(".current-slide").text(i);
+      //      }
+      //      else {
+      //        if(!currentSlide) {
+      //          currentSlide = 0;
+      //        }
+      //        console.log("currentSlide"+currentSlide);
+      //        console.log("nextSlide"+nextSlide);
+      //        var i = currentSlide;
+      //        if(currentSlide > 0) {
+      //          var i = currentSlide + 1;
+      //        }
+      //        else {
+      //          i = 1;
+      //        }
+      //        console.log("i"+i);
+      //        $(".current-slide").text(i);
+      //      }
+      // }
+      //
+      // setTimeout(function() {
+      //   check();
+      // }, 200);
+
+      // 20-08-2021 Commit Starts Ends
+
+    });
+
   $('.banner-text-outer').slick({
     infinite: true,
     slidesToShow: 3,

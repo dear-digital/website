@@ -156,7 +156,7 @@
 .slick-next:hover:before
 {
   opacity: 1;
-  content: url("/assets/icons/right-chevron.svg") !important;
+  content: url("../icons/right-chevron.svg") !important;
 }
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before
@@ -191,7 +191,7 @@
 }
 .slick-prev:before
 {
-  content: url("/assets/icons/right-chevron.svg");
+  content: url("../icons/right-chevron.svg");
 }
 
 .testimonials .slick-list{
@@ -216,7 +216,7 @@
 
 [dir='rtl'] .slick-prev:before
 {
-  content: url("/assets/icons/right-chevron.svg");
+  content: url("../icons/right-chevron.svg");
 }
 
 .slick-next
@@ -231,11 +231,11 @@
 
 .slick-next:before
 {
-  content: url("/assets/icons/right-chevron.svg");
+  content: url("../icons/right-chevron.svg");
 }
 [dir='rtl'] .slick-next:before
 {
-  content: url("/assets/icons/right-chevron.svg");
+  content: url("../icons/right-chevron.svg");
   -webkit-transform: rotateY(180deg) translate(0, -50%);
   -ms-transform: rotateY(180deg) translate(0, -50%);
   transform: rotateY(180deg) translate(0, -50%);
@@ -245,7 +245,7 @@
 
 [dir='rtl'] .product-info-left .slick-next:before
 {
-  content: url("/assets/icons/right-chevron.svg");
+  content: url("../icons/right-chevron.svg");
   -webkit-transform: rotateY(180deg) translate(0, -50%);
   -ms-transform: rotateY(180deg) translate(0, -50%);
   transform: rotateY(180deg) translate(0, -50%);
@@ -490,14 +490,66 @@
 }
 
 .testimonials .slick-prev, .testimonials .slick-next {
-    top: 144%;
+    top: 156%;
 }
 
 .testimonials .slick-prev {
-    left: 40%;
+    left: 44%;
 }
 
 .testimonials .slick-next {
-    right: 40%;
+    right: 44%;
+}
+}
+
+@media (max-width: 788px) {
+
+.testimonials .slick-prev, .testimonials .slick-next {
+    top: 150%;
+}
+}
+
+@media (max-width: 515px) {
+
+.testimonials .slick-prev, .testimonials .slick-next {
+    top: 145%;
+}
+
+.testimonials .slick-prev {
+    left: 42%;
+}
+
+.testimonials .slick-next {
+    right: 42%;
+}
+}
+
+@media (max-width: 411px) {
+
+.testimonials .slick-prev, .testimonials .slick-next {
+    top: 142%;
+}
+
+.testimonials .slick-prev {
+    left: 41%;
+}
+
+.testimonials .slick-next {
+    right: 41%;
+}
+}
+
+@media (max-width: 342px) {
+
+.testimonials .slick-prev, .testimonials .slick-next {
+    top: 138%;
+}
+
+.testimonials .slick-prev {
+    left: 38%;
+}
+
+.testimonials .slick-next {
+    right: 38%;
 }
 }
