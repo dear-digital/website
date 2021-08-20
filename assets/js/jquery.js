@@ -145,9 +145,9 @@ $(document).ready(function () {
     let mouseXrelative = event.clientX - bounderies.left;
     let mouseYrelative = event.clientY - bounderies.top;
 
-    console.log(bounderies.bottom);
+    // console.log(bounderies.bottom);
     console.log(event.clientY);
-    console.log($(this).scroll().top);
+    //console.log($(this).scroll().top);
 
     let mouseXpct = Math.ceil(mouseXrelative / $(this)[0].clientWidth * 100);
     let mouseYpct = Math.ceil(mouseYrelative / $(this)[0].clientHeight * 100);

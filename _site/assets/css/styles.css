@@ -23,8 +23,8 @@ a {
   display: block;
   position: relative;
   width: 100%;
-  max-width: 1680px;
-  padding: 0 40px;
+  max-width: 1318px;
+  padding: 0 36px;
   margin: 0 auto;
 }
 .no-scroll{
@@ -162,7 +162,7 @@ header .header-nav-list button:last-child {
     margin-left: 9px;
 }
 .hero {
-    height: 66.66667vw;
+    height: 100vh;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -219,7 +219,7 @@ header .header-nav-list button:last-child {
 }
 .services-section {
   position: absolute;
-  left: 40px;
+  left: 36px;
   bottom: 0;
   width: 75%;
   max-width: 1440px;
@@ -1890,6 +1890,7 @@ input[type=number]::-webkit-outer-spin-button {
 .why-dd-banner {
     position: relative;
     padding-bottom: 182px;
+    overflow: hidden;
 }
 
 .banner-text-outer {
@@ -1904,6 +1905,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .text-fx{
     position: relative;
+    white-space: nowrap;
 }
 .text-fx__outline {
     -webkit-text-fill-color: transparent;
@@ -1916,7 +1918,7 @@ input[type=number]::-webkit-outer-spin-button {
     top: 0;
     right: 0;
     bottom: 0;
-    left: 20px;
+    left: 0;
     z-index: 10;
     transition: -webkit-clip-path .1s ease-out;
     transition: clip-path .1s ease-out;
@@ -1925,6 +1927,17 @@ input[type=number]::-webkit-outer-spin-button {
     background-position: 50%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.banner-text{
+  font-size: 72px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 100px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff80;
+    margin: 0 40px;
 }
 /* .why-dd-banner img{
   width: 100%;
@@ -1980,7 +1993,7 @@ input[type=number]::-webkit-outer-spin-button {
   position: absolute;
   top: 0;
   left: 0;
-  image-rendering: pixeleted;
+  image-rendering: pixelated;
 }
 
 .member-image img:last-child{
@@ -4000,9 +4013,7 @@ input[type=number]::-webkit-outer-spin-button {
 /* 08-08-2021 Commit Ends */
 
   /* 06-08-2021 Commit */
-  .hero {
-    height: 82vw;
-  }
+
   .contactpage-hero.hero{
     height: auto;
   }
@@ -4234,6 +4245,10 @@ input[type=number]::-webkit-outer-spin-button {
 .hero-homepage .flex-box-1{
   flex-direction: column;
     justify-content: center;
+}
+
+.services-section{
+  left: 32px;
 }
 
 .hero-homepage .flex-box-1 .flex-center{
