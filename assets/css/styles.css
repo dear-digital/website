@@ -3905,6 +3905,22 @@ input[type=number]::-webkit-outer-spin-button {
   line-height: 21px;
 }
 
+.footer-lower{
+  width: 30%;
+}
+
+.footer-lower-left{
+  text-align: left;
+}
+
+.footer-lower-middle{
+  text-align: center;
+}
+
+.footer-lower-right{
+  text-align: right;
+}
+
 .minus-sign:after{
   content: '-';
 }
