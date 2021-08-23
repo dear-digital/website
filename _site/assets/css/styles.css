@@ -279,7 +279,7 @@ span.hero-bg-cover {
   line-height: 35px;
   color: #202248;
   text-align: left;
-  margin: 0 0 30px;
+  margin: 0 0 16px;
   font-weight: 600;
 }
 .bullets-pts {
@@ -1550,6 +1550,7 @@ button {
 .e-comm-sales-section {
     position: relative;
     padding-top: 128px;
+    overflow-x: hidden;
 }
 
 .e-comm-sales-navigation-section{
@@ -3894,6 +3895,10 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 10px 0;
 }
 
+.dot-text {
+    display: inline-block;
+}
+
 @media (min-width: 993px) and (max-width: 1200px){
   .rectangle-2 .our-services-block{
     flex-wrap: wrap;
@@ -4213,6 +4218,11 @@ input[type=number]::-webkit-outer-spin-button {
     bottom: 0;
   }
 
+  .pink-dot-medium {
+    width: 4px;
+    height: 4px;
+}
+
   header .header-nav-list button {
     display: block;
     width: auto;
@@ -4296,6 +4306,7 @@ input[type=number]::-webkit-outer-spin-button {
     border-bottom: 2px solid rgba(255,255,255,0.5);
     width: fit-content;
     margin-bottom: 24px;
+    display: block;
 }
 
 .mob-header-lower-section .footer-middle-right{
@@ -4358,13 +4369,17 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .services-section {
-  width: 90%;
+  width: calc(100% - 64px);
     height: fit-content;
 }
 
 .services-block {
     padding: 28px 5px 28px 32px;
     width: 100%;
+}
+
+.services-block:first-child{
+  padding-left: 32px;
 }
 
 .bullets-pts {
@@ -4756,7 +4771,11 @@ input[type=number]::-webkit-outer-spin-button {
 .product-contents ul.product-list li {
     font-size: 15px;
     line-height: 28px;
-    padding-left: 5%;
+    padding-left: 36px;
+}
+
+.banner-text {
+    font-size: 11vw;
 }
 
 .product-link {
@@ -4777,6 +4796,14 @@ input[type=number]::-webkit-outer-spin-button {
 
 .our-products.rev-cols{
   flex-direction: column;
+}
+
+.partner-carousel-blocks{
+    justify-content: space-around;
+}
+
+.partner-carousel-blocks img{
+  display: block;
 }
 
 .rev-cols .product-img .product-mobile-img {
@@ -4995,6 +5022,15 @@ input[type=number]::-webkit-outer-spin-button {
 .work-detail-testimonial {
     width: 100%;
     flex-direction: column;
+}
+
+.illustration-moon {
+    width: 150%;
+    margin-left: -25%;
+}
+
+.e-comm-sales.e-comm-development {
+    margin-bottom: 80px;
 }
 
 .work-detail-testimonial-title {
@@ -5341,6 +5377,7 @@ input[type=number]::-webkit-outer-spin-button {
   width: 24%;
   height: 21.33vw;
     padding: 0;
+    order: 2;
     align-items: center;
 }
 
@@ -5360,14 +5397,15 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .podcast-info {
-    width: 100%;
-    order: 3;
-    margin-top: 24px;
+  width: 100%;
+  order: 1;
+  margin-top: 24px;
+  margin-bottom: 12px;
 }
 
 .podcast-player-section {
     width: 74%;
-    order: 2;
+    order: 3;
 }
 
 .podcast-info .article-date-time{
