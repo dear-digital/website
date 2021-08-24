@@ -148,10 +148,23 @@ header .header-nav-list button:last-child {
     position: absolute;
     bottom: 0;
     left: calc(50% - 35px);
+    z-index: -1;
+}
+.o-y-hidden {
+  overflow-y: hidden;
 }
 
 .straight-rocket img{
   width: 100%;
+}
+.about-rocket.no-d {
+    left: -3%;
+    top: 1%;
+    height: 280vw;
+    width: 100%;
+}
+.about-rocket.no-d img{
+  transform: rotate(20deg);
 }
 
 .pink-dot-heading{
@@ -901,7 +914,9 @@ transition: .4s ease;
 .featured-heading .all-product-link {
   width: auto;
 }
-
+.pyramid-section {
+  z-index: 1;
+}
 .pyramid-block {
     display: flex;
     flex-direction: column;

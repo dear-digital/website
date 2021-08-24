@@ -213,58 +213,58 @@ $(document).ready(function () {
   $(window).scroll(function() {
     elem = $("#featured-work .blue-circle");
     var scroll = $(window).scrollTop();
-    var scroll2 = $(window).scrollTop();
     var elem_height = $(elem).height();
-    var elem2 = $('.pyramid-section');
-    var elem2_height = $(elem2).height();
     // var x = 0;
     // console.log($(window).scrollTop());
     // console.log($(elem).offset().top);
     // console.log($(elem).offset().top + $(elem).height());
-    if(($(elem).offset().top - $(window).scrollTop() -700 < 0) && ($(window).scrollTop() < $(elem).offset().top + $(elem).height())){
-      if(scroll > position) {
-        degrees = degrees + (elem_height/1000);
-        $('.about-rocket').css({'transform' : 'rotate('+ degrees +'deg)'});
-        // console.log('scroll-down');
-        x = 1;
-      }
-      else{
-        if(x == 1){
-          // $('.about-rocket').rotate
-        }
-        degrees = degrees - (elem_height/1000);
-        $('.about-rocket').css({'transform' : 'rotate('+ degrees +'deg)'});
-        x = 2;
-        // console.log('scroll-up');
-      }
-      position = scroll;
-    }
-    else{
-      // console.log('false');
-    }
-    //($(elem2).offset().top - $(window).scrollTop() -700 < 0) &&
-    console.log($(window).scrollTop());
-    console.log($(elem2).offset().top);
-    console.log($(elem2).offset().top + $(elem2).height());
-    if(($(elem2).offset().top - $(window).scrollTop() -700 < 0) && ($(window).scrollTop() < $(elem2).offset().top + $(elem2).height() - 100)){
-      if(scroll2 > position2) {
-        degrees2 = degrees2 + (elem_height/1000);
-        $('.straight-rocket').css({'bottom' : + degrees2 +'%'});
-        console.log('scroll-down');
-        y = 1;
-      }
-      else{
-        if(y == 1){
-          // $('.about-rocket').rotate
-        }
-        degrees2 = degrees2 - (elem_height/1000);
-        $('.straight-rocket').css({'bottom' : + degrees2 +'%'});
-        y = 2;
-        console.log('scroll-up');
-      }
-      position2 = scroll2;
-    }
-    else{
-      console.log('false');
-    }
+    // if(($(elem).offset().top - $(window).scrollTop() -700 < 0) && ($(window).scrollTop() < $(elem).offset().top + $(elem).height())){
+    //   if(scroll > position) {
+    //     degrees = degrees + (elem_height/1000);
+    //     $('.about-rocket').css({'transform' : 'rotate('+ degrees +'deg)'});
+    //      console.log('scroll-down');
+    //     x = 1;
+    //   }
+    //   else{
+    //     if(x == 1){
+    //       // $('.about-rocket').rotate
+    //     }
+    //     degrees = degrees - (elem_height/1000);
+    //     $('.about-rocket').css({'transform' : 'rotate('+ degrees +'deg)'});
+    //     x = 2;
+    //      console.log('scroll-up');
+    //   }
+    //   position = scroll;
+    // }
+    // else{
+    //   // console.log('false');
+    // }
+    $('.about-rocket').css({'transform' : 'rotate('+ ((scroll-$(elem).offset().top)/($(elem).height()/250)+70) +'deg)'});
+    var scroll2 = $(window).scrollTop();
+    var elem2 = $('.pyramid-section');
+    var elem2_height = $(elem2).height();
+    //console.log(scroll2);
+    //console.log(scroll2 - elem2_height);
+    // if(($(elem2).offset().top - $(window).scrollTop() -700 < 0) && ($(window).scrollTop() < $(elem2).offset().top + $(elem2).height() - 100)){
+    //   if(scroll2 > position2) {
+    //     degrees2 = degrees2 + (elem_height/1000);
+    //
+    //     console.log('scroll-down');
+    //     y = 1;
+    //   }
+    //   else{
+    //     if(y == 1){
+    //       // $('.about-rocket').rotate
+    //     }
+    //     degrees2 = degrees2 - (elem_height/1000);
+    //     $('.straight-rocket').css({'bottom' : + degrees2 +'%'});
+    //     y = 2;
+    //     console.log('scroll-up');
+    //   }
+    //   position2 = scroll2;
+    // }
+    // else{
+    //   console.log('false');
+    // }
+    $('.straight-rocket').css({'bottom' : + scroll2 +'px'});
   });
