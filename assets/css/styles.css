@@ -128,6 +128,16 @@ header .header-nav-list a, header .header-nav-list button {
 header .header-nav-list button:last-child {
     margin-right: 0;
 }
+.down-chev {
+    transform: rotate(90deg);
+    padding-bottom: 10px;
+}
+.font-blue .down-chev .header-down-chev{
+  stroke: #202248;
+}
+.go-white .header-logo-pink-dot{
+  fill: #FFFFFF;
+}
 .pink-dot {
     color: #DB9195;
 }
@@ -327,6 +337,7 @@ span.hero-bg-cover {
 }
 .blue-background {
     background-color: #2631D4;
+    overflow-x: clip;
 }
 .pink-background {
     background-color: #DB9195;
@@ -1893,9 +1904,12 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .about-rocket {
-    position: absolute;
-    left: 16vw;
-    top: 48px;
+  position: absolute;
+  left: 9%;
+  top: 9%;
+  transform: rotate(1deg);
+  width: 82%;
+  height: 82%;
 }
 
 .about-us-office-img {
