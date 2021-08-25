@@ -2589,6 +2589,10 @@ input[type=number]::-webkit-outer-spin-button {
     color: #202248;
 }
 
+.moon-img {
+    overflow-x: hidden;
+}
+
 .page-no{
   padding: 0 5px;
 }
@@ -5835,6 +5839,10 @@ header .header-nav-list {
 .member-image img{
   position: relative;
   image-rendering: auto;
+}
+
+.pagination-section {
+    margin-bottom: 80px;
 }
 
 }
