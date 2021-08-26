@@ -5,7 +5,7 @@ $(document).ready(function(){
 
   $('.testimonials').slick({
     infinite: false,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
     arrows: true,

@@ -196,11 +196,11 @@
 
 .testimonials .slick-list{
   padding-right: 100px;
-  margin-left: -100px;
+  padding-left: 44vw;
 }
 
 .testimonials .slick-prev, .testimonials .slick-next {
-  top: 340px;
+  top: 376px;
     height: 8px;
     width: 14px;
 }
@@ -487,10 +487,11 @@
     padding-right: 0;
     margin-left: 5%;
     margin-right: 5%;
+    padding-left: 0;
 }
 
 .testimonials .slick-prev, .testimonials .slick-next {
-    top: 156%;
+    top: 155%;
 }
 
 .testimonials .slick-prev {
@@ -502,10 +503,24 @@
 }
 }
 
+@media (max-width: 913px) {
+
+.testimonials .slick-prev, .testimonials .slick-next {
+    top: 150%;
+}
+}
+
 @media (max-width: 788px) {
 
 .testimonials .slick-prev, .testimonials .slick-next {
     top: 150%;
+}
+}
+
+@media (max-width: 618px) {
+
+.testimonials .slick-prev, .testimonials .slick-next {
+    top: 146%;
 }
 }
 
@@ -524,6 +539,13 @@
 }
 }
 
+@media (max-width: 483px) {
+
+.testimonials .slick-prev, .testimonials .slick-next {
+    top: 142%;
+}
+}
+
 @media (max-width: 411px) {
 
 .testimonials .slick-prev, .testimonials .slick-next {
@@ -539,11 +561,11 @@
 }
 }
 
-@media (max-width: 342px) {
+@media (max-width: 381px) {
 
-.testimonials .slick-prev, .testimonials .slick-next {
+/* .testimonials .slick-prev, .testimonials .slick-next {
     top: 138%;
-}
+} */
 
 .testimonials .slick-prev {
     left: 38%;
@@ -551,5 +573,19 @@
 
 .testimonials .slick-next {
     right: 38%;
+}
+}
+
+@media (max-width: 366px) {
+
+.testimonials .slick-prev, .testimonials .slick-next {
+    top: 138%;
+}
+}
+
+@media (max-width: 341px) {
+
+.testimonials .slick-prev, .testimonials .slick-next {
+    top: 136%;
 }
 }
