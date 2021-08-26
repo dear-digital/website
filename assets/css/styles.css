@@ -3041,6 +3041,9 @@ input[type=number]::-webkit-outer-spin-button {
     padding-top: 120px;
     background-color: #FAFAFD;
 }
+#food.food-products, #fashion.food-products{
+  padding-top: 72px;
+}
 .product-heading h3 {
   color: #202248;
   font-family: Poppins;
@@ -3056,6 +3059,11 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: 600;
   line-height: 32px;
 }
+.food-products .flex-box-1.justify-between{
+  justify-content: unset;
+    flex-wrap: wrap;
+    margin: 0 -1.5%;
+}
 .product {
     display: flex;
     flex-direction: column;
@@ -3063,7 +3071,9 @@ input[type=number]::-webkit-outer-spin-button {
     max-width: 480px;
     min-height: 700px;
     background-color: #FFFFFF;
-    box-shadow: 4px 4px 24px 0 rgba(32,34,72,0.06)
+    box-shadow: 4px 4px 24px 0 rgba(32,34,72,0.06);
+    margin: 0 1.5%;
+    margin-bottom: 48px;
 }
 .product-image {
     width: 100%;
@@ -4231,7 +4241,7 @@ input[type=number]::-webkit-outer-spin-button {
       padding: 0 40px !important;
   }
   .product {
-      margin: 0 6px;
+      /* margin: 0 6px; */
   }
   /* 06-08-2021 Commit Ends */
 }
@@ -4263,7 +4273,7 @@ input[type=number]::-webkit-outer-spin-button {
       max-width: 1100px !important;
   }
   .product {
-      margin: 0 24px;
+      /* margin: 0 24px; */
   }
 
   .hero-services {
