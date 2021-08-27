@@ -149,6 +149,7 @@ header .header-nav-list button:last-child {
     bottom: 0;
     left: calc(50% - 35px);
     z-index: -1;
+    transition: .1s ease;
 }
 .o-y-hidden {
   overflow-y: hidden;
@@ -1246,6 +1247,7 @@ button {
 }
 .product-link {
     width: fit-content;
+    width: -moz-fit-content;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -1345,6 +1347,7 @@ button {
 }
 .contact-address, .contact-address a {
     width: fit-content;
+    width: -moz-fit-content;
     display: block;
     color: #FFFFFF;
     font-family: Poppins;
@@ -1696,6 +1699,7 @@ button {
     line-height: 25px;
     border-bottom: 2px solid #DB9195;
     width: fit-content;
+    width: -moz-fit-content;
 }
 
 .abs-title {
@@ -1840,6 +1844,7 @@ input[type=number]::-webkit-outer-spin-button {
   cursor: pointer;
   align-items: center;
   width: fit-content;
+  width: -moz-fit-content;
   margin-bottom: 47px;
 }
 
@@ -1937,6 +1942,7 @@ input[type=number]::-webkit-outer-spin-button {
   transform: rotate(1deg);
   width: 82%;
   height: 82%;
+  transition: .1s ease;
 }
 
 .about-us-office-img {
@@ -2606,6 +2612,7 @@ input[type=number]::-webkit-outer-spin-button {
   padding: 18px 47px 18px 41px;
   border: 2px solid #F1DFE0;
   width: fit-content;
+  width: -moz-fit-content;
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0;
@@ -2671,6 +2678,7 @@ input[type=number]::-webkit-outer-spin-button {
   width: 20%;
   background: linear-gradient(45deg, #501BBB 0%, #6630F4 100%);
   height: fit-content;
+  height: -moz-fit-content;
   position: relative;
   padding: 84px 0 108px;
   display: flex;
@@ -3130,6 +3138,7 @@ input[type=number]::-webkit-outer-spin-button {
 .product-description .desc {
     display: block;
     width: fit-content;
+    width: -moz-fit-content;
     color: #8F90A3;
     font-family: Poppins;
     font-size: 14px;
@@ -3171,6 +3180,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .hero-blog-detail{
   height: fit-content;
+  height: -moz-fit-content;
   max-height: unset;
   box-shadow: 0 6px 4px 0 rgba(32,34,72,0.06);
 }
@@ -3702,6 +3712,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .rgc-text .product-link {
     width: fit-content;
+    width: -moz-fit-content;
 }
 
 .scale-company-title-section {
@@ -3785,6 +3796,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .prev-overview-next .product-link{
   width: fit-content;
+  width: -moz-fit-content;
 }
 
 .perv-btn .product-link img{
@@ -4270,6 +4282,7 @@ input[type=number]::-webkit-outer-spin-button {
 
   .hero-blog-detail {
     height: fit-content;
+    height: -moz-fit-content;
   }
 
   /* 08-08-2021 Commit */
@@ -4415,6 +4428,7 @@ input[type=number]::-webkit-outer-spin-button {
     padding-bottom: 3px;
     border-bottom: 2px solid rgba(255,255,255,0.5);
     width: fit-content;
+    width: -moz-fit-content;
     margin-bottom: 24px;
     display: block;
 }
@@ -4481,6 +4495,7 @@ input[type=number]::-webkit-outer-spin-button {
 .services-section {
   width: calc(100% - 64px);
     height: fit-content;
+    height: -moz-fit-content;
 }
 
 .services-block {
@@ -4894,6 +4909,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .product-link {
     width: fit-content;
+    width: -moz-fit-content;
     margin-top: 26px;
 }
 
@@ -6045,7 +6061,7 @@ header .header-nav-list {
   }
   .hero-services {
     min-height: 100vh;
-    max-height: none;
+    /* max-height: none; */
   }
   .hero.hero-blog {
     height: auto;
