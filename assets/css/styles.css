@@ -1298,6 +1298,15 @@ button {
   background-size: 0% 100%;
   transition: .4s ease;
 }
+
+.load-more-btn.without-prev{
+  margin-left: calc(50% - 73px);
+}
+
+.load-more-btn.without-next{
+  margin-right: calc(50% - 106px);
+}
+
 .load-more-btn:hover{
   background-size: 100% 100%;
 }
