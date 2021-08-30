@@ -2392,6 +2392,12 @@ input[type=number]::-webkit-outer-spin-button {
 
 .blog-podcast-navigation{
   width: 80%;
+  position: absolute;
+    bottom: 0;
+}
+
+.h-100{
+  height: 100%;
 }
 
 .hero-blog .navigation {
@@ -4240,7 +4246,7 @@ input[type=number]::-webkit-outer-spin-button {
     height: auto;
   }
   .hero.hero-blog{
-    height: 100%;
+    /* height: 100%; */
   }
   .middle-section .col-txt-1 h3 {
     font-size: 32px;
@@ -5405,6 +5411,7 @@ input[type=number]::-webkit-outer-spin-button {
 .blog-podcast-navigation {
     width: 100%;
     flex-direction: column;
+    position: relative;
 }
 
 .hero-blog .navigation {
@@ -6073,7 +6080,7 @@ header .header-nav-list {
     /* max-height: none; */
   }
   .hero.hero-blog {
-    height: auto;
+    /* height: auto; */
     min-height: 100vh;
     max-height: none;
   }

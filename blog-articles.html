@@ -7,7 +7,7 @@ description:
 <div class="blog-page">
 
   <div class="hero hero-blog">
-    <div class="container  flex-box-1">
+    <div class="container h-100">
     <div class="flex-center">
     <div class="hero-blog-content justify-space-bet flex-box">
       <div class="blog-hero-left">
@@ -61,21 +61,22 @@ description:
       </div>
     </div>
 
-    <div class="blog-podcast-navigation flex-box">
-      <a href="{{ '/blog-articles#articles' | relative_url }}" class="navigation articles-nav flex-box selected">
-        <span class="navigation-svg"><img src="{{ '/assets/icons/article.svg' | relative_url }}" alt="Article"></span>
 
-        <span class="btn-text">Articles & insights</span>
-        <span class="blog-nav-arrow down-arrow"><img src="{{ '/assets/icons/arrow-blue.svg' | relative_url }}" alt="blue arrow"></span>
-      </a>
-      <a href="{{ '/blog-podcast#podcast' | relative_url }}" class="navigation flex-box podcast-nav">
-        <span class="navigation-svg"><img src="{{ '/assets/icons/podcast.svg' | relative_url }}" alt="Podcast"></span>
 
-        <span class="btn-text">Podcasts</span>
-        <span class="blog-nav-arrow"><img src="{{ '/assets/icons/arrow-blue.svg' | relative_url }}" alt="blue arrow"></span>
-      </a>
-    </div>
+  </div>
+  <div class="blog-podcast-navigation flex-box">
+    <a href="{{ '/blog-articles#articles' | relative_url }}" class="navigation articles-nav flex-box selected">
+      <span class="navigation-svg"><img src="{{ '/assets/icons/article.svg' | relative_url }}" alt="Article"></span>
 
+      <span class="btn-text">Articles & insights</span>
+      <span class="blog-nav-arrow down-arrow"><img src="{{ '/assets/icons/arrow-blue.svg' | relative_url }}" alt="blue arrow"></span>
+    </a>
+    <a href="{{ '/blog-podcast#podcast' | relative_url }}" class="navigation flex-box podcast-nav">
+      <span class="navigation-svg"><img src="{{ '/assets/icons/podcast.svg' | relative_url }}" alt="Podcast"></span>
+
+      <span class="btn-text">Podcasts</span>
+      <span class="blog-nav-arrow"><img src="{{ '/assets/icons/arrow-blue.svg' | relative_url }}" alt="blue arrow"></span>
+    </a>
   </div>
   </div>
   </div>
@@ -482,7 +483,7 @@ description:
       Join for our newsletter
     </h2>
     <form class="monthly-insights-form" action="index.html" method="post">
-      <input class="common-input" id="footer-email" type="email" name="" value="" placeholder="Enter your emailaddress" />
+      <input class="common-input" id="upper-footer-email" type="email" name="" value="" placeholder="Enter your emailaddress" />
       <div class="footer-white-arrow">
         <img src="assets/icons/arrow-white.svg" alt="Footer Arrow" />
       </div>
