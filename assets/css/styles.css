@@ -2327,7 +2327,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .hero-blog {
   background: linear-gradient(45deg, #D68186 0%, #D07070 100%);
-  padding-top: 320px;
+  padding-top: 24vh;
     margin-bottom: 120px;
     /* max-height: none; */
     /* height: auto; */
@@ -6100,5 +6100,6 @@ header .header-nav-list {
     /* height: auto; */
     min-height: 100vh;
     max-height: none;
+    padding-top: 20vh;
   }
 }

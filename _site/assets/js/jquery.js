@@ -129,9 +129,9 @@ $(document).ready(function () {
     $(".header-link").removeClass("page-selected");
     $(".header-link").each(function() {
       if($(this).text() == "Contact us") {
-        $(this).addClass("contactUs-selected");
-        $(this).find('span').removeClass('pink-dot-med');
-        $(this).find('span').addClass('white-dot-med');
+        // $(this).addClass("contactUs-selected");
+        // $(this).find('span').removeClass('pink-dot-med');
+        // $(this).find('span').addClass('white-dot-med');
       }
    });
  }
