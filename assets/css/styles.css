@@ -372,6 +372,10 @@ span.hero-bg-cover {
   width: 100%;
     padding: 160px 0;
 }
+
+.hero-workpage .middle-section{
+  padding: 160px 0 0 0;
+}
 .row {
     display: flex;
     justify-content: space-between;
@@ -1737,7 +1741,7 @@ button {
     letter-spacing: 0;
     line-height: 25px;
     align-items: center;
-    border: 2px solid #F1DFE0;
+    border: 2px solid #DB9195;
     cursor: pointer;
     background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -1810,6 +1814,10 @@ button {
     line-height: 16px;
     text-transform: uppercase;
     display: block;
+}
+
+.work-togather-content label .abs-btn-text{
+  text-transform: none;
 }
 
 .half-input {
@@ -2356,6 +2364,11 @@ input[type=number]::-webkit-outer-spin-button {
     line-height: 16px;
     text-transform: uppercase;
     display: block;
+}
+
+.blog-hero-monthly-insight-form label a{
+  text-transform: none;
+  cursor: pointer;
 }
 
 .blog-hero-monthly-insight-form input {
@@ -4530,6 +4543,10 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 19vh 0;
 }
 
+.hero-workpage .middle-section{
+  padding: 33vh 0;
+}
+
 .services-block:first-child {
     border-right: none;
     border-bottom: 2px solid rgba(255,255,255,0.5);
@@ -6017,7 +6034,7 @@ header .header-nav-list {
 
 @media(max-width: 560px){
   .hero-workpage {
-    height: auto !important;
+    /* height: auto !important; */
     min-height: 100vh !important;
     max-height: unset !important;
   }
@@ -6072,7 +6089,7 @@ header .header-nav-list {
 }
 @media (min-width: 993px) and (max-width: 1600px) {
   .hero-workpage {
-    height: auto !important;
+    /* height: auto !important; */
     max-height: none !important;
   }
   .hero-services {

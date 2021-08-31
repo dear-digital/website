@@ -9,7 +9,7 @@
       {% if {{page.title}} %}
         {{page.title}} | {{title}}
       {% else %}
-        {{ title }}
+        {{ title | capitalize}}
       {% endif %}
     </title>
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">

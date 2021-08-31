@@ -16,7 +16,7 @@ description:
           </div>
 
     <section class="services-section flex-box-1">
-            <a href="{{ '/services-sales' | relative_url }}" class="services-block">
+            <a href="{{ '/digital-marketing' | relative_url }}" class="services-block">
               <div class="flex-box-1 flex-column justify-center align-center">
                 <h2 class="services-heading"><span class="bullets-pts">01.</span>Digital marketing <img src="assets/icons/arrow-blue.svg" alt="right arrow"></h2>
                 <p class="services-text no-t-m">Accelerating your e-commerce <br> business growth?</p>
@@ -43,7 +43,7 @@ description:
                   <img class="scribble obsessed-scribble" src="{{ '/assets/icons/scribble-1.svg' | relative_url }}" alt="scribble" loading="lazy">
                 </span> with growing your business.</h3>
               <p>We combine strategic thinking, with robust platform building and persuasive customer acquisition!</p>
-              <a href="{{ '/about-us' | relative_url }}" class="btn to-white-btn to-blue-text">
+              <a href="{{ '/about-dear-digital-team' | relative_url }}" class="btn to-white-btn to-blue-text">
                 <span>How we do what we do<span class="pink-dot-small"></span></span>
                 <span class="white-arrow">
                   <?xml version="1.0" encoding="UTF-8"?>
@@ -119,7 +119,7 @@ description:
             <span class="dear-digital-text">our work</span>
             <h3 class="featured-heading">
               <span>Featured work we’re <br> over the moon with</span>
-              <a href="{{ '/work' | relative_url }}" class="all-product-link"><span>View all our cases</span> <img src="{{ '/assets/icons/arrow-white.svg' | relative_url }}" alt="right arrow btn" loading="lazy"></a>
+              <a href="{{ '/featured-work' | relative_url }}" class="all-product-link"><span>View all our cases</span> <img src="{{ '/assets/icons/arrow-white.svg' | relative_url }}" alt="right arrow btn" loading="lazy"></a>
             </h3>
           </div>
         </div>
@@ -265,7 +265,7 @@ description:
               <h3 class="our-services-heading-2">
                 <span class="rel">Accelerating <img class="scribble accelerating-scribble" src="{{ '/assets/icons/scribble-round-2.svg' | relative_url }}" alt="scribble"  loading="lazy"></span>
                  business growth through digital marketing and development.</h3>
-              <a href="{{ '/services-sales' | relative_url }}" class="btn to-blue-btn to-white-text">
+              <a href="{{ '/digital-marketing' | relative_url }}" class="btn to-blue-btn to-white-text">
                 <span>Discover our services<span class="pink-dot-small"></span></span>
                 <span class="blue-arrow">
                   <?xml version="1.0" encoding="UTF-8"?>
@@ -394,6 +394,7 @@ description:
           // }
           $('.about-rocket').css({'transform' : 'rotate('+ ((scroll-$(elem).offset().top)/($(elem).height()/250)+70) +'deg)'});
           var scroll2 = $(window).scrollTop();
+          scroll2 = scroll2/1.5;
           var elem2 = $('.pyramid-section');
           var elem2_height = $(elem2).height();
           //console.log(scroll2);
