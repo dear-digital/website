@@ -171,7 +171,7 @@
           </div>
           <div class="cart-and-close-nav flex-box">
             <div class="mobile-nav-cart">
-              <a href="/website/all-dear-digital-e-commerce-clients" class="mob-nav-cart-link flex-box"><img src="/website/assets/icons/icon-cart.svg" alt="cart icon"><span class="cart-item-count">15</span></a>
+              <a href="/website/all-dear-digital-e-commerce-clients" class="mob-nav-cart-link flex-box"><img src="/website/assets/icons/icon-cart.svg" alt="cart icon"><span class="cart-item-count">22</span></a>
             </div>
             <div class="mobile-nav-close">
               <img src="assets/icons/close.svg" alt="Close" />
@@ -631,7 +631,7 @@ of changing the cleaning  products industry <br> that drove <span class="rel">20
         <p class="work-togather-para">
           Tell us your business goals and we’ll see how we can create something amazing together.
         </p>
-        <form class="work-togather-form" action="mailto:info@deardigital.be" method="post" enctype="text/plain">
+        <form class="work-togather-form" action="https://formspree.io/f/xzbyydky" method="post">
           <div class="half-inputs justify-space-bet flex-box">
             <div class="half-input">
               <label for="togather-name">What’s your name?</label>
@@ -639,7 +639,7 @@ of changing the cleaning  products industry <br> that drove <span class="rel">20
             </div>
             <div class="half-input">
               <label for="togather-email">On what emailaddress can we reach you?</label>
-              <input id="togather-email" type="email" name="email" value="" placeholder="Hello@yourdomain.be" />
+              <input id="togather-email" type="email" name="_replyto" value="" placeholder="Hello@yourdomain.be" />
             </div>
           </div>
           <div class="half-inputs justify-space-bet flex-box">
@@ -652,14 +652,18 @@ of changing the cleaning  products industry <br> that drove <span class="rel">20
               <input id="togather-details" type="text" name="project details" value="" placeholder="Services, scope, timeline, etc…" />
             </div>
           </div>
-          <div class="togather-checkbox-section flex-box">
+          <label class="checkbox-container">I’m glad to subscribe to your epic monthly insights
+            <input name="subscription" type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+          </label>
+          <!-- <div class="togather-checkbox-section flex-box">
             <span class="checkbox-outer">
               <span class="checkbox-inner"></span>
             </span>
             <input class="no-disp" type="checkbox" id="togather-checkbox" name="subscribe" value="subscribe">
 
             <span class="togather-checkbox-text">I’m glad to subscribe to your epic monthly insights</span>
-          </div>
+          </div> -->
           <label>
             <input class="no-disp" type="submit" />
             <div class="abs-btn justify-space-bet to-white-btn to-blue-text flex-box">
@@ -715,19 +719,19 @@ of changing the cleaning  products industry <br> that drove <span class="rel">20
                   </div>
                   <div class="footer-links justify-space-bet flex-box">
                     <div class="footer-links-left">
-                      <span class="footer-bold">Services</span>
+                      <span class="footer-bold no-t-m">Services</span>
                       <a class="footer-mid-link" href="/website/digital-marketing">Digital marketing</a>
                       <a href="/website/services-development">Development</a>
                     </div>
                     <div class="footer-links-middle">
-                      <a href="/website/about-dear-digital-team">About</a>
-                      <a class="no-t-m footer-mid-link" href="/website/about-dear-digital-team">Careers</a>
-                      <a class="no-t-m" href="/website/about-us#team">Team</a>
+                      <a class="no-t-m" href="/website/featured-work">Work</a>
+                      <a class="footer-mid-link" href="/website/about-dear-digital-team">About</a>
+                      <a class="no-t-m" href="/website/about-dear-digital-team">Careers</a>
                     </div>
                     <div class="footer-links-right">
-                      <a href="/website/featured-work">Work</a>
-                      <a class="footer-mid-link" href="/website/blog-articles">Blog</a>
-                      <a href="/website/contact">Contact</a>
+                      <a class="no-d" href="/website/featured-work">Work</a>
+                      <a href="/website/blog-articles">Blog</a>
+                      <a class="footer-mid-link"  href="/website/contact">Contact</a>
                     </div>
                   </div>
                 </div>
@@ -736,11 +740,19 @@ of changing the cleaning  products industry <br> that drove <span class="rel">20
                 <div class="footer-link-header">
                   Join for monthly insights
                 </div>
-                <form class="monthly-insights-form" action="mailto:info@deardigital.be" method="post" enctype="text/plain">
-                  <input class="common-input no-d" id="footer-email-mobile" type="email" name="email" value="" placeholder="Emailaddress" />
-                  <input class="common-input no-t-m" id="footer-email" type="email" name="email" value="" placeholder="Enter your emailaddress" />
+                <form class="monthly-insights-form no-d" action="https://formspree.io/f/xjvjjgpw" method="post">
+                  <input class="common-input no-d" id="footer-email-mobile" type="email" name="_replyto" value="" placeholder="Emailaddress" required/>
                   <label>
-                    <input class="no-disp" type="submit" />
+                    <input name="submit" class="no-disp" type="submit" />
+                    <div class="footer-white-arrow">
+                      <img src="assets/icons/arrow-white.svg" alt="Footer Arrow" loading="lazy" />
+                    </div>
+                  </label>
+                </form>
+                <form class="monthly-insights-form no-t-m" action="https://formspree.io/f/xjvjjgpw" method="post">
+                  <input class="common-input no-t-m" id="footer-email" type="email" name="_replyto" value="" placeholder="Enter your emailaddress" required/>
+                  <label>
+                    <input name="submit" class="no-disp" type="submit" />
                     <div class="footer-white-arrow">
                       <img src="assets/icons/arrow-white.svg" alt="Footer Arrow" loading="lazy" />
                     </div>
