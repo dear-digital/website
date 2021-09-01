@@ -32,12 +32,17 @@ permalink: "/about-dear-digital-team"
       </div>
     </div>
   </div>
-
-  <div class="dark-pink-circle">
-    <div class="about-rocket">
+  <div id="featured-work" class="rel">
+    <div class="about-rocket no-d">
       <img src="{{ '/assets/icons/illustration-rocket.svg' | relative_url }}" alt="rocket" loading="lazy">
     </div>
+    <div class="dark-pink-circle blue-circle">
+      <div class="about-rocket no-t-m">
+        <img src="{{ '/assets/icons/illustration-rocket.svg' | relative_url }}" alt="rocket" loading="lazy">
+      </div>
+    </div>
   </div>
+
 
   <div id="products-block" class="about-us-office-img">
     <img src="{{ '/assets/imgs/about-us-office.jpg' | relative_url }}" alt="office" loading="lazy">
@@ -249,3 +254,19 @@ permalink: "/about-dear-digital-team"
 
 
 </div>
+
+<script>
+  var degrees = 0;
+  var degrees2 = 0;
+  var position = $(window).scrollTop();
+  var position2 = $(window).scrollTop();
+  var x = 1;
+  var y = 1;
+  $(window).scroll(function() {
+    elem = $("#featured-work .dark-pink-circle");
+    var scroll = $(window).scrollTop();
+    var elem_height = $(elem).height();
+    $('.about-rocket').css({'transform' : 'rotate('+ ((scroll-$(elem).offset().top)/($(elem).height()/250)+70) +'deg)'});
+
+  });
+</script>

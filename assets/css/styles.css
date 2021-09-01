@@ -1949,7 +1949,11 @@ input[type=number]::-webkit-outer-spin-button {
   width: 100%;
   border-radius: 50%;
   position: absolute;
-  top: 82vh;
+  top: -20vh;
+}
+
+#featured-work{
+  overflow-x: clip;
 }
 
 .about-rocket {
@@ -2629,6 +2633,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .page-no{
   padding: 0 5px;
+  cursor: pointer;
 }
 
 .page-no.current {
@@ -2675,10 +2680,11 @@ input[type=number]::-webkit-outer-spin-button {
  color: #ffffff;
 }
 
-.more-scribble {
-    left: -22px;
-    bottom: -9px;
-    width: 120%;
+.scribble.more-scribble {
+  left: -5px;
+  bottom: -9px;
+  width: 90%;
+  height: auto;
 }
 
 .join-for-monthly-insight-section .monthly-insights-form{
@@ -2875,7 +2881,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .partner-carousel img {
     width: 192px;
-    height: 96px;
+    height: 150px;
     object-fit: contain;
 }
 .partner-blur {
@@ -4966,6 +4972,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .partner-carousel-blocks img{
   display: block;
+  width: 100%;
 }
 
 .rev-cols .product-img .product-mobile-img {
@@ -5831,6 +5838,18 @@ header .header-nav-list {
       clip-path: circle(57%);
       border-radius: 0;
     }
+    .about-page .about-rocket.no-d{
+      top: -34vh;
+    }
+    /* .about-page .about-rocket.no-d img{
+      transform: rotate(4deg);
+    } */
+    .about-rocket.no-d{
+      height: 155vw;
+    }
+    .dark-pink-circle.blue-circle{
+      top: -34vh;
+    }
     .padd-top-xl {
       padding-top: 140px;
     }
@@ -5919,6 +5938,9 @@ header .header-nav-list {
       height: 280vw;
       border-radius: 0;
     }
+    .about-rocket.no-d{
+      height: 280vw;
+    }
     .homepage-products {
       margin: 0 40px 0 0;
     }
@@ -5964,6 +5986,9 @@ header .header-nav-list {
       height: 340vw;
       border-radius: 0;
   }
+  .about-rocket.no-d{
+    height: 340vw;
+  }
   .homepage-products-blur {
       width: 80px;
   }
@@ -5990,6 +6015,9 @@ header .header-nav-list {
   .blue-circle {
       height: 360vw;
       border-radius: 0;
+  }
+  .about-rocket.no-d{
+    height: 360vw;
   }
   .featured-heading {
       font-size: 24px;
