@@ -92,10 +92,10 @@ $(document).ready(function () {
       }
    });
   }
-  if(window.location.href.indexOf("service") > -1) {
+  if(window.location.href.indexOf("digital") > -1) {
     $(".header-link").removeClass("page-selected");
     $(".header-link").each(function() {
-      if($(this).text() == "Services") {
+      if($(this).find('.text').text() == "Services") {
       	$(this).addClass("page-selected");
       }
    });
@@ -103,7 +103,7 @@ $(document).ready(function () {
   if(window.location.href.indexOf("about") > -1) {
     $(".header-link").removeClass("page-selected");
     $(".header-link").each(function() {
-      if($(this).text() == "About") {
+      if($(this).find('.text').text() == "About") {
       	$(this).addClass("page-selected");
       }
    });
@@ -117,7 +117,7 @@ $(document).ready(function () {
        }
     });
   }
-  if(window.location.href.indexOf("cart") > -1) {
+  if(window.location.href.indexOf("clients") > -1) {
       $(".header-link").removeClass("page-selected");
       $(".header-link").each(function() {
         if($(this).data("cart") == "cart") {

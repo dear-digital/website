@@ -1244,7 +1244,7 @@ button {
     padding-left: 40px;
     background-image: url("../icons/development.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 24px;
 }
 .product-contents ul.product-list li:last-child {
     margin: 0;
@@ -1970,10 +1970,9 @@ input[type=number]::-webkit-outer-spin-button {
   transition: .1s ease;
 }
 
-/* .about-page .about-rocket{
-  left: 13%;
-  top: 13%;
-} */
+.about-page .about-rocket{
+  transform: rotate(-46deg);
+}
 
 .about-us-office-img {
   height: 33vw;
@@ -2138,11 +2137,12 @@ input[type=number]::-webkit-outer-spin-button {
   position: absolute;
   top: 0;
   left: 0;
-  image-rendering: pixelated;
+
 }
 
 .member-image img:last-child{
   transition: .9s ease;
+  image-rendering: pixelated;
 }
 
 .member-image img:last-child:hover{
@@ -4891,6 +4891,10 @@ input[type=number]::-webkit-outer-spin-button {
     flex-direction: column;
 }
 
+.work-togather-content .half-inputs.last-child {
+    margin: 0;
+}
+
 .half-input {
     width: 100%;
     margin-bottom: 30px;
@@ -5200,6 +5204,10 @@ input[type=number]::-webkit-outer-spin-button {
 .work-detail-testimonial {
     width: 100%;
     flex-direction: column;
+}
+
+.over-x-none {
+    overflow-x: hidden;
 }
 
 .illustration-moon {
