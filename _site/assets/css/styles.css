@@ -33,6 +33,9 @@ a {
 .rel {
   position: relative !important;
 }
+.inline-bl{
+  display: inline-block;
+}
 .text-center {
   text-align: center !important;
 }
@@ -1291,7 +1294,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #F1DFE0;
+    border: 2px solid #DB9195;
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
@@ -1896,6 +1899,10 @@ input[type=number]::-webkit-outer-spin-button {
 .work-togather-form .abs-btn{
   width: 45%;
   max-width: 482px;
+}
+
+.work-detail-page .work-togather-form .abs-btn{
+  border: 2px solid #FFFFFF;
 }
 
 .e-comm-sales-navigation-content {
@@ -3213,7 +3220,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .font-blue .header-nav-list button {
-  border: 2px solid #F1DFE0;
+  border: 2px solid #DB9195;
 }
 
 .blog-detail-page, .work-detail-page {
