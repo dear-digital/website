@@ -92,7 +92,7 @@ $(document).ready(function () {
       }
    });
   }
-  if(window.location.href.indexOf("digital") > -1) {
+  if((window.location.href.indexOf("digital-marketing") > -1) || (window.location.href.indexOf("development") > -1)) {
     $(".header-link").removeClass("page-selected");
     $(".header-link").each(function() {
       if($(this).find('.text').text() == "Services") {
