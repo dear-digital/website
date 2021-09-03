@@ -84,7 +84,7 @@ $('.explore').click(function() {
 });
 
 $(document).ready(function () {
-  if(window.location.href.indexOf("work") > -1) {
+  if(window.location.href.indexOf("featured-work") > -1) {
     $(".header-link").removeClass("page-selected");
     $(".header-link").each(function() {
       if($(this).text() == "Work") {
