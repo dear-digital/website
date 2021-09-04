@@ -3588,7 +3588,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .services-desc {
-    width: 70%;
+    width: 100%;
     flex-wrap: wrap;
     font-size: 18px;
     letter-spacing: 0;
@@ -3604,8 +3604,8 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 18px;
   letter-spacing: 0;
   line-height: 32px;
-  margin-top: 66px;
-  margin-bottom: 80px;
+  /* margin-top: 66px;
+  margin-bottom: 80px; */
 }
 
 .services-desc-text {
@@ -3613,8 +3613,13 @@ input[type=number]::-webkit-outer-spin-button {
     color: #8F90A3;
 }
 
+.scs-inner-middle-section{
+  margin-top: 66px;
+  margin-bottom: 80px;
+}
+
 .challenge-title{
-  margin-top: 151px;
+  /* margin-top: 66px; */
     margin-bottom: 271px;
 }
 
@@ -5076,6 +5081,15 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 18px;
     line-height: 27px;
     margin-bottom: 27px;
+}
+
+.scs-inner-section {
+    flex-direction: column;
+    margin: 0;
+}
+
+.scs-left, .scs-right{
+  width: 100%;
 }
 
 .scs-desc {
