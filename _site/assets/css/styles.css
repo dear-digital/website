@@ -1970,10 +1970,6 @@ input[type=number]::-webkit-outer-spin-button {
   overflow-x: clip;
 }
 
-.about-page #featured-work{
-  overflow-x: unset;
-}
-
 
 .about-rocket {
   position: absolute;
@@ -6047,11 +6043,6 @@ header .header-nav-list {
 
 .pagination-section {
     margin-bottom: 80px;
-}
-
-.about-page #featured-work{
-  overflow-x: hidden;
-  overflow-x: clip;
 }
 
 }
