@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Home page - welcome | dear digital
+title: dear digital
 email: info@deardigital.be
 description: >- # this means to ignore newlines until "baseurl:"
   Award-winning growth e-commerce agency run by dedicated and top notch growth hackers focussed on scalability and internationalisation in Ghent Belgium.
