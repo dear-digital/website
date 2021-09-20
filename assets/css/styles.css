@@ -2322,6 +2322,11 @@ input[type=number]::-webkit-outer-spin-button {
     bottom: 0;
 }
 
+.our-scribble-circle {
+  bottom: -8px;
+  width: 110%;
+}
+
 .togather-scribble {
     left: 0;
     bottom: 0;
@@ -3605,6 +3610,10 @@ input[type=number]::-webkit-outer-spin-button {
     width: 100%;
     bottom: -3px;
     left: 0;
+}
+
+.long-scribble-low {
+    bottom: -13px;
 }
 
 .work-detail-page .services-hero-text {
@@ -6051,6 +6060,9 @@ header .header-nav-list {
 
 .pagination-section {
     margin-bottom: 80px;
+}
+.work-detail-testimonial-section .perv-btn, .work-detail-testimonial-section .next-btn {
+  max-width: 20%;
 }
 
 }
