@@ -558,7 +558,7 @@
 @media (max-width: 424px) {
 
 .testimonials .slick-prev, .testimonials .slick-next {
-    top: 136%;
+    top: 138%;
 }
 }
 
@@ -581,7 +581,7 @@
 @media (max-width: 381px) {
 
 .testimonials .slick-prev, .testimonials .slick-next {
-    top: 134%;
+    top: 136%;
 }
 
 .testimonials .slick-prev {
@@ -603,6 +603,6 @@
 @media (max-width: 321px) {
 
 .testimonials .slick-prev, .testimonials .slick-next {
-    top: 131%;
+    top: 133%;
 }
 }
