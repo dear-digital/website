@@ -6064,7 +6064,9 @@ header .header-nav-list {
 .work-detail-testimonial-section .perv-btn, .work-detail-testimonial-section .next-btn {
   max-width: 20%;
 }
-
+.hero-homepage {
+    min-height: 675px;
+}
 }
 
 @media (max-width: 560px) {
