@@ -512,6 +512,10 @@ transition: .4s ease;
   border-color: #202248;
 }
 
+.blue-arrow .blue-arrow-new{
+  stroke: #202248;
+}
+
 .to-white-text:hover .blue-arrow svg .blue{
   stroke: #FFFFFF;
 }
@@ -4169,6 +4173,14 @@ input[type=number]::-webkit-outer-spin-button {
     display: inline-block;
 }
 
+.to-cart-btn{
+  color: #202248;
+  width: 500px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
 @media (min-width: 993px) and (max-width: 1200px){
   .rectangle-2 .our-services-block{
     flex-wrap: wrap;
@@ -4487,6 +4499,10 @@ input[type=number]::-webkit-outer-spin-button {
     position: absolute;
     right: -7px;
     bottom: 0;
+  }
+
+  .to-cart-btn{
+    width: 100%;
   }
 
   .pink-dot-medium {
@@ -4947,6 +4963,12 @@ input[type=number]::-webkit-outer-spin-button {
 
 .abs-btn {
     font-size: 13px;
+}
+
+.to-cart-btn {
+    width: 100%;
+    height: 66px;
+    font-size: 16px;
 }
 
 .work-explore-link {
@@ -6064,7 +6086,9 @@ header .header-nav-list {
 .work-detail-testimonial-section .perv-btn, .work-detail-testimonial-section .next-btn {
   max-width: 20%;
 }
-
+.hero-homepage {
+    min-height: 675px;
+}
 }
 
 @media (max-width: 560px) {
