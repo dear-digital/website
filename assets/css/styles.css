@@ -1762,6 +1762,14 @@ button {
   transition: .4s ease;
 }
 
+.to-cart-btn{
+  color: #202248;
+  width: 500px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+} 
+
 .abs-btn:hover{
   background-size: 100% 100%;
 }
@@ -4171,14 +4179,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 .dot-text {
     display: inline-block;
-}
-
-.to-cart-btn{
-  color: #202248;
-  width: 500px;
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
 }
 
 @media (min-width: 993px) and (max-width: 1200px){
