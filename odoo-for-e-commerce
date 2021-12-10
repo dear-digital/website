@@ -1,0 +1,149 @@
+---
+layout: default
+title: Odoo for e-commerce
+description: We focus 100% on e-commerce Odoo implementations. Our business analysts and developers are constantly focussing on optimizing e-commerce flow to create the most optimal experiences.
+---
+<div class="services-page">
+
+  <div class="hero hero-services">
+    <div class="container justify-center flex-box-1">
+      <div class="flex-center">
+        <div class="small-fonts">
+          SERVICES
+        </div>
+          <h1 class="hero-heading">Odoo for <span class="rel">e-commerce <img class="scribble togather-scribble" src="{{ '/assets/icons/scribble-5.svg' | relative_url }}" alt="scribble"></span> e-commerce <span class="dot-text"><span class="pink-dot-heading"></span></span>
+
+        </h1>
+        <div class="services-hero-text no-t-m">
+          A fully integrated e-commerce machine<br>
+        </div>
+        <div class="at-your-service-content explore justify-center flex-box">
+          <span class="at-your-service-text no-t-m">At your service</span>
+          <span class="down-arrow"><img src="assets/icons/down-chevron.svg" alt="Right Chevron" /></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="e-comm-sales-section">
+    <div class="container">
+      <div class="e-comm-sales-navigation-section">
+        <div class="e-comm-sales-navigation-links flex-box">
+          <a href="{{ '/digital-marketing' | relative_url }}" id="digitalmarketing" class="e-comm-sales-navigation nav-link">
+            <div class="e-comm-sales-navigation-content flex-box">
+              <div class="title-alignment">
+                <span class="small-number">01. </span>
+                <span class="nav-link-text">Digital marketing</span>
+              </div>
+              <span class="nav-link-arrow">
+                <img src="assets/icons/arrow-blue.svg" alt="Down Arrow"  loading="lazy"/>
+              </span>
+            </div>
+
+          </a>
+          <a href="{{ '/services-development' | relative_url }}" id="development" class="e-comm-sales-navigation nav-link selected">
+            <div class="e-comm-sales-navigation-content flex-box">
+              <div class="title-alignment">
+                <span class="small-number">02. </span>
+                <span class="nav-link-text">Development</span>
+              </div>
+              <span class="nav-link-arrow down-arrow">
+                <img src="assets/icons/arrow-blue.svg" alt="Right Arrow"  loading="lazy"/>
+              </span>
+            </div>
+
+          </a>
+        </div>
+      </div>
+
+
+
+      <div id="e-comm-development" class="e-comm-sales e-comm-development">
+        <h2 class="e-comm-sales-title"><img class="title-svg" src="assets/icons/development.svg" alt="Sales"  loading="lazy"/><span class="small-number">02. </span>The Odoo for e-commerce <span class="dot-text">stack<span class="pink-dot-medium"></span></span></h2>
+        <div class="info-cards justify-space-bet flex-box">
+          <div class="info-cards-left">
+            <div class="info-card">
+              <h3 class="info-card-heading">E-commerce ERP</h3>
+              <p class="info-card-text">
+                We implement our ERP for e-commerce companies. It's a selection of the tools you need to build your scalable e-commerce companies. This set up will catapult you into a state you would otherwise only be in after 2 years. Perpare for your growth in advance!
+              </p>
+            </div>
+            <div class="info-card">
+              <h3 class="info-card-heading">The beating heart</h3>
+              <p class="info-card-text">
+                Odoo's strength is that it can become your companies OS (operating system). Completely composable, interconnected in the deepest possible way and scalable. It can connect to multiple webshops, marketplaces, POS systems and more!
+              </p>
+            </div>
+            <div class="info-card">
+              <h3 class="info-card-heading">Customization</h3>
+              <p class="info-card-text">
+                While we do not advice to ive head first into customization of Odoo, the possibility is there. Because of the open-source nature we can customize Odoo to your specific needs.
+              </p>
+            </div>
+          </div>
+
+
+          <div class="info-cards-right">
+            <div class="info-card">
+              <h3 class="info-card-heading">B2B e-commerce</h3>
+              <p class="info-card-text">
+                Selling to business can be cumbersome VAT rules, personalised pricing, bulk discounts. All things that we worked on already.
+              </p>
+            </div>
+            <div class="info-card">
+                <h3 class="info-card-heading">Digitalisation</h3>
+                <p class="info-card-text">
+                  A lot of e-commerce companies have amazing websites that are very performant, but lack the same efficiency in their backend processes. Odoo is all about repetitive reducing time-consuming tasks and letting you focus on your core business.
+                </p>
+             </div>
+            <div class="under-info">
+              <div class="absolute-info justify-space-bet flex-box">
+                <div class="abs-text">
+                  <h3 class="abs-title">
+                    Contact us for a coffee and a <br>
+                    free demo!
+                  </h3>
+                  <a href="{{ '/contact' | relative_url }}" class="abs-btn justify-space-bet to-blue-btn to-white-text flex-box">
+                    <div class="abs-btn-text">
+                      Let's grab a coffee <span class="pink-dot-med"></span>
+                    </div>
+                    <div class="abs-btn-arrow">
+                      <span class="blue-arrow">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg width="25px" height="18px" viewBox="0 0 25 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>E32E55EC-C325-44C7-979D-2FC7D2BB9A67</title>
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+                                <g class="blue" transform="translate(-446.000000, -916.000000)" stroke="#202248" stroke-width="2">
+                                    <g transform="translate(446.000000, 917.000000)">
+                                        <line x1="0" y1="8" x2="24" y2="8" id="Path"></line>
+                                        <polyline id="Path" points="16 0 24 8 16 16"></polyline>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="illustration-moon no-t-m" src="{{ '/assets/icons/illustration-moon.svg' | relative_url }}" alt="moon" loading="lazy">
+      </div>
+
+
+    </div>
+    <div class="over-x-none">
+      <img class="illustration-moon no-d" src="{{ '/assets/icons/illustration-moon.svg' | relative_url }}" alt="moon" loading="lazy">
+    </div>
+
+  </div>
+
+  {% include work-togather.html %}
+
+</div>
+
+<script>
+
+</script>
