@@ -113,7 +113,12 @@ $(document).ready(function () {
      $(".header-link").each(function() {
        if($(this).text() == "Blog") {
        	$(this).addClass("blog-selected");
-        $('.header-logo').addClass('go-white');
+        if(window.location.href.indexOf("blog-detail") > -1){
+
+        }
+        else{
+          $('.header-logo').addClass('go-white');
+        }
        }
     });
   }

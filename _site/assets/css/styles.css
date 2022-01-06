@@ -1768,7 +1768,7 @@ button {
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
-} 
+}
 
 .abs-btn:hover{
   background-size: 100% 100%;
@@ -2799,8 +2799,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 .scribble.more-scribble {
   left: -5px;
-  bottom: -9px;
-  width: 90%;
+  bottom: -2px;
+  width: 100%;
   height: auto;
 }
 
@@ -3468,7 +3468,7 @@ input[type=number]::-webkit-outer-spin-button {
   letter-spacing: 0;
   line-height: 32px;
   margin-bottom: 80px;
-  color: #252222;
+  color: #202248;
 }
 
 .article-inner-para .pink-dot-med {
@@ -3484,7 +3484,7 @@ input[type=number]::-webkit-outer-spin-button {
 .article-inner-img img{
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .article-contact-us-btn-section {
@@ -6089,6 +6089,11 @@ header .header-nav-list {
 .hero-homepage {
     min-height: 675px;
 }
+
+.blog-detail-page .container.marg-top{
+  padding: 0;
+}
+
 }
 
 @media (max-width: 560px) {
