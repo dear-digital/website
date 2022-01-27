@@ -96,7 +96,8 @@
                 <div class="arrow-up"></div>
                 <ul class="header-nav-list-sub">
                   <li><a href="{{ '/digital-marketing' | relative_url }}"><img src="assets/icons/sales.svg" alt="sales-logo"> Digital marketing</a></li>
-                  <li><a href="{{ '/services-development' | relative_url }}"><img src="assets/icons/development.svg" alt="development-logo"> Development</a></li>
+                  <li><a href="{{ '/services-development' | relative_url }}"><img src="assets/icons/development.svg" alt="development-logo"> Shopify dev</a></li>
+
                 </ul>
               </li>
               <li class="no-t-m"><a href="{{ '/featured-work' | relative_url }}" class="header-link">Work</a></li>
@@ -120,7 +121,27 @@
                   <li><a href="https://deardigital.homerun.co/" target="_blank"><img src="assets/icons/career-01.svg" alt="sales-logo">Your new career</a></li>
                 </ul>
               </li>
-              <li class="no-t-m"><a href="{{ '/blog-podcast' | relative_url }}" class="header-link">Blog</a></li>
+              <li class="about-dropdown no-t-m"><a href="{{ '/blog-articles' | relative_url }}" class="header-link">
+                <span class="text">Content</span>
+                <span class="down-chev">
+                  <?xml version="1.0" encoding="UTF-8"?>
+                  <svg width="9px" height="14px" viewBox="0 0 9 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <title>9C887A23-220B-4032-AAFB-C25CFD89933D</title>
+                      <g id="DESKTOP" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g class="header-down-chev" transform="translate(-1753.000000, -3149.000000)" stroke="#FFFFFF" stroke-width="2">
+                              <polyline id="arrow/pointer-white" transform="translate(1757.000000, 3156.000000) scale(-1, 1) rotate(90.000000) translate(-1757.000000, -3156.000000) " points="1751 3153 1757 3159 1763 3153"></polyline>
+                          </g>
+                      </g>
+                  </svg>
+                </span>
+              </a>
+                <div class="arrow-up"></div>
+                <ul class="header-nav-list-sub about-sub-list">
+                  <li><a href="{{ '/blog-articles' | relative_url }}"><img src="{{ '/assets/icons/article.svg' | relative_url }}" alt="articles-logo">Articles</a></li>
+                  <li><a href="{{ '/blog-podcast' | relative_url }}"><img src="{{ '/assets/icons/podcast.svg' | relative_url }}" alt="podcast-logo">Podcasts</a></li>
+                </ul>
+              </li>
+
               <li><a href="{{ '/all-dear-digital-e-commerce-clients' | relative_url }}" class="no-m"><img class="cart-white header-link padding-auto" data-cart="cart" src="{{ '/assets/icons/icon-cart.svg' | relative_url }}" alt="cart icon"><img class="cart-blue no-disp" src="{{ '/assets/icons/icon-cart-blue.svg' | relative_url }}" alt="cart icon"><span class="cart-item-count">24</span></a></li>
               <!-- 06-08-2021 Commit Ends -->
               <li class="no-t-m"><a href="{{ '/contact' | relative_url }}"><button class="no-t-m contact-btn to-white-btn to-blue-text header-link">Contact us<span class="pink-dot-med"></span></button></a></li>
@@ -158,7 +179,8 @@
             <h5 class="accordion">Services<span class="symbol symbol-plus"><span>+</span></span></h5>
             <div class="panel">
                   <a class="header-accordion-link" href="{{ '/digital-marketing' | relative_url }}">Digital marketing</a>
-                  <a class="header-accordion-link" href="{{ '/services-development' | relative_url }}">Development</a>
+                  <a class="header-accordion-link" href="{{ '/services-development' | relative_url }}">Shopify dev</a>
+
             </div>
           </div>
           <div class="menu-item">
@@ -171,8 +193,12 @@
                   <a class="header-accordion-link" href="https://deardigital.homerun.co/" target="_blank">Your new career</a>
             </div>
           </div>
-          <div class="menu-item">
-            <a href="{{ '/blog-podcast' | relative_url }}">Blog</a>
+          <div class="accordion-wrapper">
+            <h5 class="accordion">Content<span class="symbol symbol-plus"><span>+</span></span></h5>
+            <div class="panel">
+                  <a class="header-accordion-link" href="{{ '/blog-articles' | relative_url }}">Articles</a>
+                  <a class="header-accordion-link" href="{{ '/blog-podcast' | relative_url }}">Podcasts</a>
+            </div>
           </div>
           <div class="menu-item">
             <a href="{{ '/contact' | relative_url }}">Contact</a>

@@ -3,7 +3,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#202248">
-
+    {% if {{page.title}} == "E-commerce development services" %}
+    <meta http-equiv="Refresh" content="0; url='{{ '/shopify-development' | relative_url }}'" />
+    {% endif %}
     {% assign title = site.title %}
     <title>
       {% if {{page.title}} %}
@@ -13,7 +15,7 @@
       {% endif %}
     </title>
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-    
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-188870800-1"></script>
     <script>
