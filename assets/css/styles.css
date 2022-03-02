@@ -200,6 +200,17 @@ header .header-nav-list button:last-child {
     line-height: 17px;
     margin-left: 9px;
 }
+
+.header-nav-list-sub .odoo-svg{
+  margin-top: -12px;
+}
+
+.header-nav-list-sub li.odoo-svg a img{
+  width: 50px;
+    height: 50px;
+    margin-left: -12px;
+    margin-right: 16px;
+}
 .hero {
     height: 100vh;
     width: 100%;
@@ -1716,6 +1727,13 @@ button {
 
 .title-svg {
   margin-right: 16px;
+}
+
+.title-svg.odoo-svg {
+    height: 90px;
+    margin-bottom: -24px;
+    margin-right: -16px;
+    margin-left: -31px;
 }
 
 .e-comm-sales-title {
@@ -4959,6 +4977,14 @@ input[type=number]::-webkit-outer-spin-button {
 .title-svg {
     margin-right: 10px;
     width: 24px
+}
+
+.title-svg.odoo-svg {
+    height: 56px;
+    margin-bottom: -18px;
+    margin-right: -10px;
+    margin-left: -16px;
+    width: 48px;
 }
 
 .e-comm-sales-title .small-number {
