@@ -1,0 +1,313 @@
+---
+layout: default
+title: Kriket case study page
+description: Smart and yummy? Now that's a no brainer.
+prev: "/work-detail-brauzz"
+next: "/work-detail-piab"
+alt: logo
+---
+
+<div class="work-detail-page">
+
+  <div class="hero hero-blog-detail">
+    <div class="container justify-center flex-box-1">
+      <div class="flex-center">
+        <div class="small-fonts">
+          Kriket
+        </div>
+        <h1 class="hero-heading">Guiding a young marketing team of a detective game company to <span class="rel inline-bl">double revenue<img class="scribble long-scribble" src="{{ '/assets/icons/scribble-long.svg' | relative_url }}" alt=""></span> in a post corona period<span class="pink-dot-heading"></span>
+        </h1>
+        <div class="services-hero-text no-t-m">
+          “Why crickets?” you may ask. “Why not?” seems like a more suitable question. Missing out on an abundance of natural antioxidants, protein, fibre, vitamin B12, iron and zinc would be a noticeable waste.
+         </div>
+        <div class="stroke-fonts flex-box justify-space-bet">
+          <div class="stroke new-revenue">
+            <div class="stroke-font">
+              +30%
+            </div>
+            <div class="stroke-desc">
+              Repurchase rate
+            </div>
+          </div>
+          <div class="stroke">
+            <div class="stroke-font">
+              +20%
+            </div>
+            <div class="stroke-desc">
+              Conversion rate
+            </div>
+          </div>
+          <div class="stroke">
+            <div class="stroke-font">
+              +30%
+            </div>
+            <div class="stroke-desc">
+              Average order value
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="work-detail-img">
+    <img src="{{ '/assets/imgs/kriket-hero.png' | relative_url }}" alt="work-detail" loading="lazy">
+  </div>
+
+  <div class="container">
+    <div class="scs-section">
+      <div class="scs-inner-section flex-box justify-space-bet">
+        <div class="scs-left">
+          <div class="scs-title">
+            Services
+          </div>
+        </div>
+        <div class="scs-right">
+          <div class="scs-desc services-desc flex-box justify-space-bet">
+            <div class="services-desc-left">
+              <div class="services-desc-text">
+                <img src="{{ '/assets/icons/blue-flag.svg' | relative_url }}" alt="flag" loading="lazy">
+                E-commerce mentorship
+              </div>
+              <div class="services-desc-text">
+                <img src="{{ '/assets/icons/blue-flag.svg' | relative_url }}" alt="flag" loading="lazy">
+                CRO
+              </div>
+              <div class="services-desc-text">
+                <img src="{{ '/assets/icons/blue-flag.svg' | relative_url }}" alt="flag" loading="lazy">
+                Email marketing
+              </div>
+            </div>
+            <div class="services-desc-right">
+              <div class="services-desc-text">
+                <img src="{{ '/assets/icons/blue-flag.svg' | relative_url }}" alt="flag" loading="lazy">
+                Performance marketing
+              </div>
+              <div class="services-desc-text">
+                <img src="{{ '/assets/icons/blue-flag.svg' | relative_url }}" alt="flag" loading="lazy">
+                Creative consulting
+              </div>
+            </div>
+          </div>
+          </div>
+      </div>
+
+      <div class="scs-inner-section scs-inner-middle-section flex-box justify-space-bet">
+        <div class="scs-left">
+          <div class="scs-title challenge-title">
+            Challenge
+          </div>
+        </div>
+        <div class="scs-right">
+          <div class="scs-desc challenge-desc">
+            Crimibox is a detective game company that sells unsolved murder cases. Founded by Jimmy Cowe, who actually has experience working for the police.
+            <br><br>
+            Crimibox has had a crazy track record for the last 3 years, growing to a revenue of 1M€ in 2020, and wants to continue to grow at the same pace. But to do so the marketing efforts had to professionalise, so a young inhouse marketing team was hired.
+            <br><br>
+            But combining this with big revenue ambitions, a post corona year and the limitation of no geographic expansion and you have yourself a fun challenge. A challenge where some senior e-commerce marketing and business knowledge was necessary.
+          </div>
+          </div>
+      </div>
+      <div class="scs-inner-section flex-box justify-space-bet">
+        <div class="scs-left">
+          <div class="scs-title">
+            Solutions
+          </div>
+        </div>
+        <div class="scs-right">
+          <div class="scs-desc solutions-desc flex-box justify-space-bet">
+            <div class="info-card flex-box justify-space-bet">
+              <div class="pink-num">
+                01.
+              </div>
+              <p class="info-card-text">
+                Provided the inhouse team with an intensive coaching and training course. Including weekly calls and monthly in depth workshops.
+              </p>
+            </div>
+            <div class="info-card flex-box justify-space-bet">
+              <div class="pink-num">
+                02.
+              </div>
+              <p class="info-card-text">
+                Lowered CAC by introducing a rapid experimenting approach in angles, creatives and audiences.
+              </p>
+            </div>
+            <div class="info-card flex-box justify-space-bet">
+              <div class="pink-num">
+                03.
+              </div>
+              <p class="info-card-text">
+                Revisited the whole customer journey with focus on improving the key metrics: Conversion rates, AOV and repurchase rates.
+              </p>
+            </div>
+            <div class="info-card flex-box justify-space-bet">
+              <div class="pink-num">
+                04.
+              </div>
+              <p class="info-card-text">
+                Developed a future proof omnichannel approach together with the Crimibox team and selected industry experts.
+              </p>
+            </div>
+          </div>
+          </div>
+      </div>
+
+    </div>
+  </div>
+<!--
+  <div class="work-dtail-ss-imgs-section">
+    <div class="container">
+      <div class="work-dtail-ss-imgs flex-box">
+        <div class="mobile-img left-mob-of-3">
+          <img src="{{ '/assets/imgs/kriket-een.png' | relative_url }}" alt="work-detail" loading="lazy">
+        </div>
+        <div class="tablet-img mid-tab-of-3">
+          <img src="{{ '/assets/imgs/kriket-drie.png' | relative_url }}" alt="work-detail" loading="lazy">
+        </div>
+        <div class="mobile-img right-mob-of-3">
+          <img src="{{ '/assets/imgs/kriket-twee.png' | relative_url }}" alt="work-detail" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+  <div class="scale-company-title-section">
+    <div class="container">
+      <h2 class="scale-compnay-title">
+        <br><br>
+Fighting crime or having a booming e-commerce business? <br> Why not both?
+      </h2>
+    </div>
+  </div>
+
+  <div class="work-dtail-ss-imgs-section lower">
+    <div class="container">
+      <div class="work-dtail-ss-imgs lower flex-box">
+        <div class="tablet-img">
+          <img src="{{ '/assets/imgs/crimibox-black.jpeg' | relative_url }}" alt="work-detail" loading="lazy">
+        </div>
+        <div class="tablet-img lower">
+          <img src="{{ '/assets/imgs/undercover-crimibox.jpeg' | relative_url }}" alt="work-detail" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="work-detail-testimonial-section">
+    <div class="container">
+      <div class="work-detail-testimonial flex-box justify-space-bet">
+        <div class="work-detail-testimonial-title">
+          Chief Murder Officer on collab with dear digital:
+        </div>
+        <div class="work-detail-testimonial-desc">
+          <p class="work-detail-testimonial-para">
+            Crimibox has been working with dear digital for a year now. A fantastic collaboration! They have single-handedly ensured that not only our turnover, but also our profit margin have increased enormously. A must for every e-commerce company!
+          </p>
+          <div class="work-detail-testimonial-author-info flex-box">
+            <div class="article-author-img">
+              <img src="{{ '/assets/imgs/jimmycowecrimiboxtestimonial.jpg' | relative_url }}" alt="jimmy cowe testimonial on collaboration with dear digital" loading="lazy">
+            </div>
+            <div class="article-author-name-date">
+              <div class="article-author-name">
+                Jimmy Cowe
+              </div>
+              <div class="article-date-time flex-box">
+                Chief Murder Officer at Crimibox
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="prev-overview-next flex-box justify-space-bet">
+        {% if page.prev %}
+        <div class="perv-btn">
+          <a href="{{ page.prev | relative_url }}" class="product-link"><img src="{{ '/assets/icons/arrow-blue.svg' | relative_url }}" alt="right arrow btn" loading="lazy"><span>Previous</span> </a>
+        </div>
+        {% endif %}
+        <a href="{{ '/featured-work' | relative_url }}" class="load-more-btn to-blue-btn to-white-text">
+          Overview <span class="pink-dot-med"></span>
+        </a>
+        {% if page.next %}
+        <div class="next-btn">
+          <a href="{{ page.next | relative_url }}" class="product-link"><span>Next</span> <img src="{{ '/assets/icons/arrow-blue.svg' | relative_url }}" alt="right arrow btn" loading="lazy"></a>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <section class="lets-work-togather-section">
+    <div class="container">
+      <div class="work-togather-content">
+        <h3 class="work-togather-title">Let’s work <span class="rel">together<span class="blue-dot-medium"></span><img class="scribble white-scribble" src="{{ '/assets/icons/scribble-white.svg' | relative_url }}" alt="scribble" loading="lazy"></span></h3>
+        <p class="work-togather-para">
+          Tell us your business goals and we’ll see how we can create something amazing together.
+        </p>
+        <form class="work-togather-form" action="https://formspree.io/f/xzbyydky" method="post">
+          <div class="half-inputs justify-space-bet flex-box">
+            <div class="half-input">
+              <label for="togather-name">What’s your name?</label>
+              <input id="togather-name" type="text" name="name" value="" placeholder="Samuel" />
+            </div>
+            <div class="half-input">
+              <label for="togather-email">On what emailaddress can we reach you?</label>
+              <input id="togather-email" type="email" name="_replyto" value="" placeholder="Hello@yourdomain.be" />
+            </div>
+          </div>
+          <div class="half-inputs justify-space-bet flex-box">
+            <div class="half-input">
+              <label for="togather-phone">Or would you rather get a phone call?</label>
+              <input id="togather-phone" type="number" name="phone" value="" placeholder="+32 00 000 000" />
+            </div>
+            <div class="half-input">
+              <label for="togather-details">DETAILS ABOUT YOUR PROJECT</label>
+              <input id="togather-details" type="text" name="project details" value="" placeholder="Services, scope, timeline, etc…" />
+            </div>
+          </div>
+          <label class="checkbox-container">I’m glad to subscribe to your epic monthly insights
+            <input name="subscription" type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+          </label>
+          <!-- <div class="togather-checkbox-section flex-box">
+            <span class="checkbox-outer">
+              <span class="checkbox-inner"></span>
+            </span>
+            <input class="no-disp" type="checkbox" id="togather-checkbox" name="subscribe" value="subscribe">
+
+            <span class="togather-checkbox-text">I’m glad to subscribe to your epic monthly insights</span>
+          </div> -->
+          <label>
+            <input class="no-disp" type="submit" />
+            <div class="abs-btn justify-space-bet to-white-btn to-blue-text flex-box">
+              <div class="abs-btn-text no-t-m">
+                The time has come to push the button <span class="pink-dot-med"></span>
+              </div>
+              <div class="abs-btn-text no-d">
+                Push the button <span class="pink-dot-med"></span>
+              </div>
+              <div class="abs-btn-arrow">
+                <span class="white-arrow">
+                  <?xml version="1.0" encoding="UTF-8"?>
+                  <svg width="25px" height="18px" viewBox="0 0 25 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <title>E32E55EC-C325-44C7-979D-2FC7D2BB9A67</title>
+                      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+                          <g class="white" transform="translate(-446.000000, -916.000000)" stroke="#ffffff" stroke-width="2">
+                              <g transform="translate(446.000000, 917.000000)">
+                                  <line x1="0" y1="8" x2="24" y2="8" id="Path"></line>
+                                  <polyline id="Path" points="16 0 24 8 16 16"></polyline>
+                              </g>
+                          </g>
+                      </g>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </label>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+</div>
