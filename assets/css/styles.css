@@ -228,13 +228,17 @@ header .header-nav-list button:last-child {
 .hero-heading {
   margin: 0px;
   width: 100%;
-  max-width: 830px;
+  max-width: 800px;
   text-align: left;
   /* font-family: poppins, sans-serif; */
   font-size: 56px;
   line-height: 72px;
   color: #fff;
   font-weight: 600;
+}
+
+.hero-heading .home{
+	max-width: 850px;
 }
 
 .really-scribble {
