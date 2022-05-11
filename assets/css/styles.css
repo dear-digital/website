@@ -485,8 +485,8 @@ span.hero-bg-cover {
   line-height: 25px;
     align-items: center;
     justify-content: space-between;
-    /* color: rgba(255,255,255,0.5); */
-    border: 2px solid rgba(255,255,255,0.5);
+    /* color: #202248; */
+    border: 2px solid #202248;
     text-decoration: none;
     padding: 0 40px;
     background-position: 50% 50%;
