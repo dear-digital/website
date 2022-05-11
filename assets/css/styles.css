@@ -1009,7 +1009,7 @@ transition: .4s ease;
     margin: 0 auto;
     padding: 10px 0;
     background-color: #DB9195;
-    border: 1px solid #1F2AC9;
+    border: 1px solid #F5E0E0;
 }
 .pyramid-2 {
   width: 58%;
@@ -1075,7 +1075,7 @@ transition: .4s ease;
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 10px solid #1F2AC9;
+    border-bottom: 10px solid #F5E0E0;
 }
 .all-product-link {
     width: 160px;
