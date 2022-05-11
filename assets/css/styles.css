@@ -457,7 +457,7 @@ span.hero-bg-cover {
 }
 
 .col-txt-1.t-m-order-2 p a{
-	text-decoration: underlined;
+	text-decoration: underline;
 	text-decoration-color: white;
 }
 
