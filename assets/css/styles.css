@@ -434,7 +434,7 @@ span.hero-bg-cover {
 }
 .dear-digital-text {
     display: block;
-    color: rgba(255,255,255,0.5);
+    color: #202248;
     font-family: Poppins;
     font-size: 10px;
     font-weight: 500;
@@ -444,7 +444,7 @@ span.hero-bg-cover {
 }
 .middle-section .col-txt-1 h3 {
     max-width: 800px;
-    color: #fff;
+    color: #202248;
     font-family: Poppins;
     font-size: 40px;
     font-weight: 600;
@@ -467,7 +467,7 @@ span.hero-bg-cover {
 }
 .middle-section .col-txt-1 p {
     max-width: 640px;
-    color: rgba(255,255,255,0.5);
+    color: #202248;
     font-family: Poppins;
     font-size: 18px;
     letter-spacing: 0;
