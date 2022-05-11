@@ -237,7 +237,7 @@ header .header-nav-list button:last-child {
   font-weight: 600;
 }
 
-.hero-heading .home{
+h1.hero-heading.home{
 	max-width: 850px;
 }
 
