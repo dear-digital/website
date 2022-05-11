@@ -512,7 +512,15 @@ span.hero-bg-cover {
   background-size: 0% 100%;
   transition: .4s ease;
 }
+	
+.btn.to-white-btn.to-blue-text.black{
+  color: black;
+}
 
+.btn.black{
+  border-color:black;
+}	
+	
 .contact-btn{
   background-position: 50% 50%;
 background-repeat: no-repeat;
