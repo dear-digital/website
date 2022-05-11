@@ -398,6 +398,11 @@ span.hero-bg-cover {
     background-color: #2631D4;
     overflow-x: clip;
 }
+
+.blue-background.o-y-hidden.pp{
+  background-color: #F5E0E0;
+}
+
 .pink-background {
     background-color: #DB9195;
 }
