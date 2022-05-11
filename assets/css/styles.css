@@ -432,9 +432,10 @@ span.hero-bg-cover {
     width: 50%;
     align-self: center;
 }
+
 .dear-digital-text {
     display: block;
-    color: #202248;
+    color: #FAFAFD;
     font-family: Poppins;
     font-size: 10px;
     font-weight: 500;
@@ -442,9 +443,22 @@ span.hero-bg-cover {
     line-height: 16px;
     text-transform: uppercase;
 }
+
+.dear-digital-text.black{
+  color: #202248;
+}
+
+.col-txt-1.t-m-order-2 h3.black{
+  color: #202248;
+}
+
+.col-txt-1.t-m-order-2 p.black{
+  color: #202248;
+}
+
 .middle-section .col-txt-1 h3 {
     max-width: 800px;
-    color: #202248;
+    color: #FAFAFD;
     font-family: Poppins;
     font-size: 40px;
     font-weight: 600;
@@ -467,7 +481,7 @@ span.hero-bg-cover {
 }
 .middle-section .col-txt-1 p {
     max-width: 640px;
-    color: #202248;
+    color: #FAFAFD;
     font-family: Poppins;
     font-size: 18px;
     letter-spacing: 0;
@@ -486,7 +500,7 @@ span.hero-bg-cover {
     align-items: center;
     justify-content: space-between;
     /* color: #FFFFFF; */
-    border: 2px solid #202248;
+    border: 2px solid #FAFAFD;
     text-decoration: none;
     padding: 0 40px;
     background-position: 50% 50%;
