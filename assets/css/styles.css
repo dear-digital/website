@@ -990,6 +990,11 @@ transition: .4s ease;
 .featured-heading .all-product-link {
   width: auto;
 }
+
+div.col-img-1.t-m-order-1.pir{
+	display: none;
+}
+
 .pyramid-section {
   z-index: 1;
 }
