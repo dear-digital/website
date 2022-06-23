@@ -291,6 +291,11 @@ span.hero-bg-cover {
     height: 200px;
     background-color: #db9195;
 }
+
+.hero.hero-services.lightblue{
+	background-color: #CDCFF3;
+}
+
 @media (max-width: 1440px) {
   .services-block {
     padding: 0 20px 0 40px;
