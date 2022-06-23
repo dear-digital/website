@@ -304,6 +304,18 @@ div.hero.hero-services.lightpink{
 	background-color: #F5E0E0;
 }
 
+div.small-fonts.dark{
+	color: #202248;
+}
+
+h1.hero-heading.dark{
+	color: #202248;
+}
+
+span.at-your-service-text.no-t-m.dark{
+	color: #202248;
+}
+
 @media (max-width: 1440px) {
   .services-block {
     padding: 0 20px 0 40px;
