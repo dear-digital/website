@@ -296,6 +296,10 @@ div.hero.hero-services.lightblue{
 	background-color: #CDCFF3;
 }
 
+div.hero.hero-services.purple{
+	background: linear-gradient(45deg, #501BBB 0%, #6630F4 100%)
+}
+
 @media (max-width: 1440px) {
   .services-block {
     padding: 0 20px 0 40px;
