@@ -304,17 +304,7 @@ div.hero.hero-services.lightpink{
 	background-color: #F5E0E0;
 }
 
-div.small-fonts.dark{
-	color: #202248;
-}
 
-h1.hero-heading.dark{
-	color: #202248;
-}
-
-span.at-your-service-text.no-t-m.dark{
-	color: #202248;
-}
 
 @media (max-width: 1440px) {
   .services-block {
@@ -1652,6 +1642,18 @@ button {
   letter-spacing: 1px;
   line-height: 16px;
   margin-bottom: 16px;
+}
+
+.small-fonts.dark{
+	color: #202248;
+}
+
+.hero-heading.dark{
+	color: #202248;
+}
+
+.at-your-service-text.no-t-m.dark{
+	color: #202248;
 }
 
 .hero-services .flex-center, .hero-services .hero-heading{
