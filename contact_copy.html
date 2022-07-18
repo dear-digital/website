@@ -1,0 +1,72 @@
+---
+layout: default
+title: Contact page - let's talk e-commerce
+description: If you like what we do, drop us a line and we'll get back to you within 12hours.
+---
+<div class="contact-page">
+
+
+<div class="hero hero-homepage contactpage-hero">
+        <div class="container flex-box-1">
+          <div class="row middle-section">
+            <div class="col-txt-1 t-m-order-1">
+              <h3>If you're <span class="rel">ready <img class="scribble really-scribble" src="{{ '/assets/icons/scribble-round.svg' | relative_url }}" alt=""></span> to scale, drop us a line<span class="pink-dot-medium"></span></h3>
+              <p>We seek long lasting relationships to help build a valuable brand at an interesting scale. Whatever stage you’re at, we’re happy to chat.</p>
+              <h4>Office</h4>
+              <div class="contact-address">Rooigemlaan 532 <br> 9000 Ghent, Belgium <br> <a class="underline-pink" href="https://www.google.com/maps/place/Rooigemlaan+532,+9000+Gent/data=!4m2!3m1!1s0x47c37109498d4893:0x51ec7b48f3c2833a?sa=X&ved=2ahUKEwjN8rqNisL0AhXLGewKHe1PAy4Q8gF6BAgTEAE" target="_blank">Route</a><br>
+                <a class="underline-pink" href="mailto:info@deardigital.be">info@deardigital.be</a>
+              </div>
+              <div class="footer-middle-right justify-space-bet flex-box">
+                <div class="footer-social-logo">
+                  <a href="https://www.instagram.com/deardigital.agency/" class="footer-social-logo-link" target="_blank">
+                    <img src="assets/icons/footer-insta.svg" alt="Footer Insta" />
+                  </a>
+                </div>
+                <div class="footer-social-logo">
+                  <a href="https://www.linkedin.com/company/dear-digital-agency/" class="footer-social-logo-link" target="_blank">
+                    <img src="assets/icons/footer-linkedin.svg" alt="Footer Linkedin" />
+                  </a>
+                </div>
+                <div class="footer-social-logo">
+                  <a href="https://www.facebook.com/deardigitalagency/" class="footer-social-logo-link" target="_blank">
+                    <img src="assets/icons/footer-fb.svg" alt="Footer Fb" />
+                  </a>
+                </div>
+                <div class="footer-social-logo">
+                  <a href="https://open.spotify.com/show/6EX2mKEyu2Z4B5fOC0mNe8?si=59CGhmLZTEuyaHOYsWNJwA&dl_branch=1" class="footer-social-logo-link" target="_blank">
+                    <img src="assets/icons/footer-spotify.svg" alt="Footer Spotify" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-txt-1 t-m-order-2">
+              <h4>Tell us about you</h4>
+              <div class="calendly-inline-widget" style="min-width:320px;height:580px;" data-auto-load="false">
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+                <script>
+                Calendly.initInlineWidget({
+                url: 'https://calendly.com/john-galeyn/dear-digital-introduction'
+                });
+                </script>
+              </div>
+            </div>
+          </div>
+        </div><br><br>
+      </div>
+
+      {% include testimonial.html %}
+
+</div>
+      <script>
+        $(document).ready(function(){
+        var slider = document.getElementById("mobileRange");
+            var output = document.getElementById("budget");
+            output.innerHTML = slider.value;
+
+            slider.oninput = function() {
+              output.innerHTML = this.value;
+              var value = (this.value-this.min)/(this.max-this.min)*100
+              this.style.background = 'linear-gradient(to right, #DB9195 0%, #DB9195 ' + value + '%, #fff ' + value + '%, white 100%)'
+          }
+          });
+      </script>
